@@ -21,6 +21,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		db.execSQL(DbSchema.CREATE_TBL_PRODUCT_ORDER_DETAIL);
 		// create move history table
 		db.execSQL(DbSchema.CREATE_TBL_MOVE_HISTORY);
+		// create table service table
+		db.execSQL(DbSchema.CREATE_TBL_TABLE_SERVICE);
 		db.execSQL(DbSchema.INSERT_TBL_USER);
 	}
 
@@ -51,6 +53,12 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 				db.execSQL(DbSchema.CREATE_TBL_MOVE_HISTORY);
 			} catch (Exception ignore) {}
 		}
+		// Ensure table_service exists when upgrading to DB_VERSION 4
+		if (oldVersion < 4) {
+			try {
+				db.execSQL(DbSchema.CREATE_TBL_TABLE_SERVICE);
+			} catch (Exception ignore) {}
+		}
 		// For future major upgrades, fallback recreate
 		if (oldVersion < newVersion && oldVersion >= 2) {
 			db.execSQL(DbSchema.DROP_TBL_PRODUCT_CATEGORY);
@@ -60,6 +68,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			db.execSQL(DbSchema.DROP_TBL_ORDER);
 			db.execSQL(DbSchema.DROP_TBL_PRODUCT_ORDER_DETAIL);
 			db.execSQL(DbSchema.DROP_TBL_MOVE_HISTORY);
+			db.execSQL(DbSchema.DROP_TBL_TABLE_SERVICE);
 			onCreate(db);
 		}
 	}
@@ -70,6 +79,24 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		try {
 			// ensure move_history exists for older DBs opened by newer code
 			db.execSQL("CREATE TABLE IF NOT EXISTS " + DbSchema.TBL_MOVE_HISTORY + " (" + DbSchema.COL_MOVE_HISTORY_ID + " TEXT PRIMARY KEY, " + DbSchema.COL_MOVE_HISTORY_ORDER_ID + " TEXT, " + DbSchema.COL_MOVE_HISTORY_FROM + " TEXT, " + DbSchema.COL_MOVE_HISTORY_TO + " TEXT, " + DbSchema.COL_MOVE_HISTORY_MOVED_ON + " DATETIME" + ");");
+			// ensure table_service exists for older DBs opened by newer code
+			db.execSQL("CREATE TABLE IF NOT EXISTS " + DbSchema.TBL_TABLE_SERVICE + " (" +
+				DbSchema.COL_TABLE_SERVICE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+				DbSchema.COL_TABLE_SERVICE_TABLE_ID + " INTEGER, " +
+				DbSchema.COL_TABLE_SERVICE_TABLE_NAME + " TEXT, " +
+				DbSchema.COL_TABLE_SERVICE_STATUS + " TEXT, " +
+				DbSchema.COL_TABLE_SERVICE_WAITER_ID + " TEXT, " +
+				DbSchema.COL_TABLE_SERVICE_WAITER_NAME + " TEXT, " +
+				DbSchema.COL_TABLE_SERVICE_CUSTOMER_NAME + " TEXT, " +
+				DbSchema.COL_TABLE_SERVICE_CUSTOMER_PHONE + " TEXT, " +
+				DbSchema.COL_TABLE_SERVICE_SERVICE_START_TIME + " INTEGER, " +
+				DbSchema.COL_TABLE_SERVICE_SERVICE_END_TIME + " INTEGER, " +
+				DbSchema.COL_TABLE_SERVICE_RESERVATION_TIME + " INTEGER, " +
+				DbSchema.COL_TABLE_SERVICE_SPECIAL_REQUESTS + " TEXT, " +
+				DbSchema.COL_TABLE_SERVICE_NOTES + " TEXT, " +
+				DbSchema.COL_TABLE_SERVICE_ESTIMATED_BILL + " REAL, " +
+				DbSchema.COL_TABLE_SERVICE_GUEST_COUNT + " INTEGER" +
+				");");
 		} catch (Exception ignore) {}
 	}
 }

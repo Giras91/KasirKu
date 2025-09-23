@@ -12,7 +12,9 @@ import android.database.sqlite.SQLiteDatabase;
 import com.extropos.java.sqlite.DatabaseHelper;
 import com.extropos.java.sqlite.DatabaseManager;
 import com.extropos.java.sqlite.ds.OrderDataSource;
+import com.extropos.java.sqlite.ds.TableServiceDataSource;
 import com.extropos.java.entity.Order;
+import com.extropos.java.entity.TableService;
 import android.util.Log;
 import android.widget.GridView;
 import android.widget.TextView;
@@ -39,6 +41,7 @@ public class TableActivity extends Activity {
         "T1","T2","T3","T4","T5","T6","T7","T8","T9"
     };
     private boolean[] occupied;
+    private TableServiceDataSource tableServiceDataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +59,12 @@ public class TableActivity extends Activity {
     // initialize occupied flags
     occupied = new boolean[tables.length];
     loadOccupiedTables();
+
+    // Initialize database and data sources
+    DatabaseManager.initializeInstance(new DatabaseHelper(this));
+    SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+    tableServiceDataSource = new TableServiceDataSource(db);
+
     gridTables.setAdapter(new TableAdapter());
 
         gridTables.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -74,7 +83,7 @@ public class TableActivity extends Activity {
                 final int pos = position;
                 android.app.AlertDialog.Builder b = new android.app.AlertDialog.Builder(TableActivity.this);
                 b.setTitle("Table " + tables[pos]);
-                b.setItems(new String[]{"Clear Table (mark paid)", "Force Free (clear table assignment)", "Move Table"}, new android.content.DialogInterface.OnClickListener() {
+                b.setItems(new String[]{"Clear Table (mark paid)", "Force Free (clear table assignment)", "Move Table", "Reserve Table", "Mark for Cleaning", "Mark Available"}, new android.content.DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(android.content.DialogInterface dialog, int which) {
                         DatabaseManager.initializeInstance(new DatabaseHelper(TableActivity.this));
@@ -220,6 +229,79 @@ public class TableActivity extends Activity {
                                 pick.setNegativeButton("Cancel", null);
                                 pick.show();
                             }
+
+                            // Table Service Operations
+                            if (which == 3) { // Reserve Table
+                                // Show dialog to get customer information
+                                android.app.AlertDialog.Builder reserveDialog = new android.app.AlertDialog.Builder(TableActivity.this);
+                                reserveDialog.setTitle("Reserve Table " + tname);
+                                final android.widget.EditText customerNameInput = new android.widget.EditText(TableActivity.this);
+                                customerNameInput.setHint("Customer Name");
+                                final android.widget.EditText customerPhoneInput = new android.widget.EditText(TableActivity.this);
+                                customerPhoneInput.setHint("Phone Number");
+                                final android.widget.EditText specialRequestsInput = new android.widget.EditText(TableActivity.this);
+                                specialRequestsInput.setHint("Special Requests");
+
+                                android.widget.LinearLayout layout = new android.widget.LinearLayout(TableActivity.this);
+                                layout.setOrientation(android.widget.LinearLayout.VERTICAL);
+                                layout.addView(customerNameInput);
+                                layout.addView(customerPhoneInput);
+                                layout.addView(specialRequestsInput);
+                                reserveDialog.setView(layout);
+
+                                reserveDialog.setPositiveButton("Reserve", new android.content.DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(android.content.DialogInterface dialog, int which) {
+                                        try {
+                                            TableService tableService = new TableService(pos + 1, tname);
+                                            tableService.setStatus(TableService.STATUS_RESERVED);
+                                            tableService.setCustomerName(customerNameInput.getText().toString());
+                                            tableService.setCustomerPhone(customerPhoneInput.getText().toString());
+                                            tableService.setSpecialRequests(specialRequestsInput.getText().toString());
+                                            tableService.setReservationTime(System.currentTimeMillis());
+
+                                            tableServiceDataSource.insert(tableService);
+                                            Toast.makeText(TableActivity.this, "Table " + tname + " reserved", Toast.LENGTH_SHORT).show();
+                                        } catch (Exception e) {
+                                            Log.e("TableActivity", "Error reserving table", e);
+                                            Toast.makeText(TableActivity.this, "Error reserving table", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });
+                                reserveDialog.setNegativeButton("Cancel", null);
+                                reserveDialog.show();
+                            }
+
+                            if (which == 4) { // Mark for Cleaning
+                                try {
+                                    TableService tableService = tableServiceDataSource.getByTableName(tname);
+                                    if (tableService == null) {
+                                        tableService = new TableService(pos + 1, tname);
+                                    }
+                                    tableService.setStatus(TableService.STATUS_CLEANING);
+                                    tableServiceDataSource.insert(tableService);
+                                    Toast.makeText(TableActivity.this, "Table " + tname + " marked for cleaning", Toast.LENGTH_SHORT).show();
+                                } catch (Exception e) {
+                                    Log.e("TableActivity", "Error marking table for cleaning", e);
+                                    Toast.makeText(TableActivity.this, "Error marking table for cleaning", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+
+                            if (which == 5) { // Mark Available
+                                try {
+                                    TableService tableService = tableServiceDataSource.getByTableName(tname);
+                                    if (tableService != null) {
+                                        tableService.setStatus(TableService.STATUS_AVAILABLE);
+                                        tableService.setServiceEndTime(System.currentTimeMillis());
+                                        tableServiceDataSource.update(tableService);
+                                    }
+                                    Toast.makeText(TableActivity.this, "Table " + tname + " marked as available", Toast.LENGTH_SHORT).show();
+                                } catch (Exception e) {
+                                    Log.e("TableActivity", "Error marking table as available", e);
+                                    Toast.makeText(TableActivity.this, "Error marking table as available", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+
                         } catch (Exception ex) {
                             // ignore
                         } finally {
@@ -245,14 +327,34 @@ public class TableActivity extends Activity {
             DatabaseManager.initializeInstance(new DatabaseHelper(this));
             SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
             OrderDataSource ods = new OrderDataSource(db);
+
+            // Check table service status first
+            java.util.List<TableService> activeServices = tableServiceDataSource.getActiveServices();
+
+            // Reset occupied flags
+            for (int i = 0; i < occupied.length; i++) {
+                occupied[i] = false;
+            }
+
+            // Mark tables as occupied based on table service status
+            for (TableService service : activeServices) {
+                for (int i = 0; i < tables.length; i++) {
+                    if (tables[i].equalsIgnoreCase(service.getTableName())) {
+                        occupied[i] = true;
+                        break;
+                    }
+                }
+            }
+
+            // Fallback: also check orders for backward compatibility
             java.util.ArrayList<Order> orders = ods.getAll();
             for (Order o : orders) {
-                    // consider table occupied only if order status is not 'paid'
-                    String status = o.getStatus();
-                    if (status != null && status.equalsIgnoreCase("paid"))
-                        continue;
-                    String tname = o.getTableName();
-                    if (tname != null) {
+                // consider table occupied only if order status is not 'paid'
+                String status = o.getStatus();
+                if (status != null && status.equalsIgnoreCase("paid"))
+                    continue;
+                String tname = o.getTableName();
+                if (tname != null) {
                     for (int i = 0; i < tables.length; i++) {
                         if (tables[i].equalsIgnoreCase(tname)) {
                             occupied[i] = true;
@@ -288,27 +390,62 @@ public class TableActivity extends Activity {
             String tableName = tables[position];
             tvTableName.setText(tableName);
 
-            // Get order count and total for this table
             try {
                 DatabaseManager.initializeInstance(new DatabaseHelper(TableActivity.this));
                 SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
                 OrderDataSource ods = new OrderDataSource(db);
-                
+
+                // Get table service information
+                TableService tableService = tableServiceDataSource.getByTableName(tableName);
+
                 java.util.ArrayList<Order> tableOrders = ods.getOrdersByTable(tableName);
                 double tableTotal = ods.getTableTotal(tableName);
-                
-                tvOrderCount.setText(tableOrders.size() + " orders");
-                
-                NumberFormat currency = NumberFormat.getCurrencyInstance(new Locale("ms", "MY"));
-                tvTableTotal.setText(currency.format(tableTotal));
-                
-                // Set background color based on occupancy
-                if (tableOrders.size() > 0) {
-                    convertView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+
+                // Display information based on table service status
+                if (tableService != null) {
+                    String status = tableService.getStatus();
+                    String waiterName = tableService.getWaiterName();
+                    String customerName = tableService.getCustomerName();
+
+                    if (TableService.STATUS_OCCUPIED.equals(status)) {
+                        tvOrderCount.setText(tableOrders.size() + " orders");
+                        if (waiterName != null && !waiterName.isEmpty()) {
+                            tvOrderCount.setText(tvOrderCount.getText() + " (" + waiterName + ")");
+                        }
+                        NumberFormat currency = NumberFormat.getCurrencyInstance(new Locale("ms", "MY"));
+                        tvTableTotal.setText(currency.format(tableTotal));
+                        convertView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    } else if (TableService.STATUS_RESERVED.equals(status)) {
+                        tvOrderCount.setText("Reserved");
+                        if (customerName != null && !customerName.isEmpty()) {
+                            tvOrderCount.setText(tvOrderCount.getText() + " (" + customerName + ")");
+                        }
+                        tvTableTotal.setText("Reserved");
+                        convertView.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light));
+                    } else if (TableService.STATUS_CLEANING.equals(status)) {
+                        tvOrderCount.setText("Cleaning");
+                        tvTableTotal.setText("Unavailable");
+                        convertView.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
+                    } else {
+                        // Available or other status
+                        tvOrderCount.setText("Available");
+                        tvTableTotal.setText("RM 0.00");
+                        convertView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
+                    }
                 } else {
-                    convertView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
+                    // No table service record, fallback to order-based logic
+                    tvOrderCount.setText(tableOrders.size() + " orders");
+                    NumberFormat currency = NumberFormat.getCurrencyInstance(new Locale("ms", "MY"));
+                    tvTableTotal.setText(currency.format(tableTotal));
+
+                    // Set background color based on occupancy
+                    if (tableOrders.size() > 0) {
+                        convertView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    } else {
+                        convertView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
+                    }
                 }
-                
+
                 DatabaseManager.getInstance().closeDatabase();
             } catch (Exception e) {
                 tvOrderCount.setText("0 orders");
