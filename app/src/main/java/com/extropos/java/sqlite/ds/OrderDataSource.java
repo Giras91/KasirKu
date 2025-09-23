@@ -52,6 +52,15 @@ public class OrderDataSource {
 				
 				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_BRANCH_ID);
 				if (colIndex >= 0) item.setBranchID(c.getString(colIndex));
+
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_STATUS);
+				if (colIndex >= 0) item.setStatus(c.getString(colIndex));
+
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_TABLE_ID);
+				if (colIndex >= 0) item.setTableID(c.getString(colIndex));
+
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_TABLE_NAME);
+				if (colIndex >= 0) item.setTableName(c.getString(colIndex));
 				
 				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_USER_ID);
 				if (colIndex >= 0) item.setUserID(c.getString(colIndex));
@@ -131,6 +140,12 @@ public class OrderDataSource {
 				item.setAmount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_AMOUNT)));
 				item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION)));
 				item.setBranchID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_BRANCH_ID)));
+				if (c.getColumnIndex(DbSchema.COL_ORDER_STATUS) >= 0)
+					item.setStatus(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_STATUS)));
+				if (c.getColumnIndex(DbSchema.COL_ORDER_TABLE_ID) >= 0)
+					item.setTableID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_TABLE_ID)));
+				if (c.getColumnIndex(DbSchema.COL_ORDER_TABLE_NAME) >= 0)
+					item.setTableName(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_TABLE_NAME)));
 				item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_USER_ID)));
 				item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));
 				
@@ -201,6 +216,10 @@ public class OrderDataSource {
 		values.put(DbSchema.COL_ORDER_AMOUNT, item.getAmount());
 		values.put(DbSchema.COL_ORDER_DISCOUNT,item.getDiscount());
 		values.put(DbSchema.COL_ORDER_BRANCH_ID, item.getBranchID());
+		if (item.getStatus() != null)
+			values.put(DbSchema.COL_ORDER_STATUS, item.getStatus());
+        values.put(DbSchema.COL_ORDER_TABLE_ID, item.getTableID());
+        values.put(DbSchema.COL_ORDER_TABLE_NAME, item.getTableName());
 		values.put(DbSchema.COL_ORDER_USER_ID, item.getUserID());
 		values.put(DbSchema.COL_ORDER_ORDERED_ON,  Shared.dateformat.format(item.getCreatedOn()));
 		values.put(DbSchema.COL_ORDER_UPDATED_ON,  Shared.dateformat.format(item.getUpdatedOn()));
@@ -219,6 +238,30 @@ public class OrderDataSource {
 		}
 		
 		return 1;
+	}
+
+	public int update(Order item) {
+		ContentValues values = new ContentValues();
+		values.put(DbSchema.COL_ORDER_DESCRIPTION, item.getDescription());
+		values.put(DbSchema.COL_ORDER_TAX, item.getTax());
+		values.put(DbSchema.COL_ORDER_AMOUNT, item.getAmount());
+		values.put(DbSchema.COL_ORDER_DISCOUNT, item.getDiscount());
+		values.put(DbSchema.COL_ORDER_BRANCH_ID, item.getBranchID());
+		if (item.getStatus() != null)
+			values.put(DbSchema.COL_ORDER_STATUS, item.getStatus());
+		values.put(DbSchema.COL_ORDER_TABLE_ID, item.getTableID());
+		values.put(DbSchema.COL_ORDER_TABLE_NAME, item.getTableName());
+		values.put(DbSchema.COL_ORDER_USER_ID, item.getUserID());
+		values.put(DbSchema.COL_ORDER_ORDERED_ON,  Shared.dateformat.format(item.getCreatedOn()));
+		values.put(DbSchema.COL_ORDER_UPDATED_ON,  Shared.dateformat.format(item.getUpdatedOn()));
+		return db.update(DbSchema.TBL_ORDER, values, DbSchema.COL_ORDER_CODE + " = ?", new String[] { item.getOrderID() });
+	}
+
+	public int updateTableAssignment(String orderId, String tableId, String tableName) {
+		ContentValues values = new ContentValues();
+		values.put(DbSchema.COL_ORDER_TABLE_ID, tableId);
+		values.put(DbSchema.COL_ORDER_TABLE_NAME, tableName);
+		return db.update(DbSchema.TBL_ORDER, values, DbSchema.COL_ORDER_CODE + " = ?", new String[] { orderId });
 	}
 	
 	
@@ -240,6 +283,83 @@ public class OrderDataSource {
 			has = true;
 			
 		return has;
+	}
+
+	public ArrayList<Order> getOrdersByTable(String tableName) {
+		ArrayList<Order> items = new ArrayList<Order>();
+		
+		String selectQuery = " SELECT  o.*,u."+DbSchema.COL_USER_NAME+"  FROM " + DbSchema.TBL_ORDER   + " o " +
+							" LEFT JOIN " +  DbSchema.TBL_USER +  " u ON u." +  DbSchema.COL_USER_CODE + " = o." + DbSchema.COL_ORDER_USER_ID +
+							" WHERE " + DbSchema.COL_ORDER_TABLE_NAME + " = ? AND (" + DbSchema.COL_ORDER_STATUS + " IS NULL OR " + DbSchema.COL_ORDER_STATUS + " != 'paid')";
+		
+		Cursor c = db.rawQuery(selectQuery, new String[]{tableName});
+		if (c.moveToFirst()) {
+			do {
+				Order item = new Order();
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_CODE);
+				if (colIndex >= 0) item.setOrderID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION);
+				if (colIndex >= 0) item.setDescription(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_AMOUNT);
+				if (colIndex >= 0) item.setAmount(c.getDouble(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_DISCOUNT);
+				if (colIndex >= 0) item.setDiscount(c.getDouble(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_BRANCH_ID);
+				if (colIndex >= 0) item.setBranchID(c.getString(colIndex));
+
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_STATUS);
+				if (colIndex >= 0) item.setStatus(c.getString(colIndex));
+
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_TABLE_ID);
+				if (colIndex >= 0) item.setTableID(c.getString(colIndex));
+
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_TABLE_NAME);
+				if (colIndex >= 0) item.setTableName(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_USER_ID);
+				if (colIndex >= 0) item.setUserID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_NAME);
+				if (colIndex >= 0) item.setUserName(c.getString(colIndex));
+				
+				try {  
+					colIndex = c.getColumnIndex(DbSchema.COL_ORDER_ORDERED_ON);
+					if (colIndex >= 0) item.setCreatedOn(Shared.dateformat.parse(c.getString(colIndex)));
+					
+					colIndex = c.getColumnIndex(DbSchema.COL_ORDER_UPDATED_ON);
+					if (colIndex >= 0) item.setUpdatedOn(Shared.dateformat.parse(c.getString(colIndex)));
+					
+					colIndex = c.getColumnIndex(DbSchema.COL_ORDER_SYCN_ON);
+					if (colIndex >= 0) item.setSycnOn(Shared.dateformat.parse(c.getString(colIndex)));
+				} catch (Exception e) {  
+				}
+				
+				items.add(item);
+			} while (c.moveToNext());
+		}
+		c.close();
+		
+		return items;
+	}
+
+	public double getTableTotal(String tableName) {
+		double total = 0.0;
+		String selectQuery = " SELECT SUM(" + DbSchema.COL_ORDER_AMOUNT + ") as total FROM " + DbSchema.TBL_ORDER + 
+							" WHERE " + DbSchema.COL_ORDER_TABLE_NAME + " = ? AND (" + DbSchema.COL_ORDER_STATUS + " IS NULL OR " + DbSchema.COL_ORDER_STATUS + " != 'paid')";
+		
+		Cursor c = db.rawQuery(selectQuery, new String[]{tableName});
+		if (c.moveToFirst()) {
+			total = c.getDouble(c.getColumnIndex("total"));
+		}
+		c.close();
+		
+		return total;
 	}
 
 }

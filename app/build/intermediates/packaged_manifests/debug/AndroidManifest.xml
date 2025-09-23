@@ -106,16 +106,84 @@
         <activity
             android:name="com.extropos.java.SettingListActivity"
             android:exported="false"
-            android:label="@string/title_setting_list" >
+            android:label="@string/title_setting_list"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
         <activity
             android:name="com.extropos.java.SettingDetailActivity"
             android:exported="false"
             android:label="@string/title_setting_detail"
-            android:parentActivityName="com.extropos.java.SettingListActivity" >
+            android:parentActivityName="com.extropos.java.SettingListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <meta-data
                 android:name="androidx.appcompat.app.AppCompatActivity.PARENT_ACTIVITY"
                 android:value="com.extropos.java.SettingListActivity" />
+        </activity>
+        <activity
+            android:name="com.extropos.java.ReportListActivity"
+            android:exported="false"
+            android:label="Reports"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.DailyReportActivity"
+            android:exported="false"
+            android:label="Daily Report"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.HourlyReportActivity"
+            android:exported="false"
+            android:label="Hourly Report"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.MonthlyReportActivity"
+            android:exported="false"
+            android:label="Monthly Report"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.TaxReportActivity"
+            android:exported="false"
+            android:label="Tax Report"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.TenderReportActivity"
+            android:exported="false"
+            android:label="Tender Report"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.BillReportActivity"
+            android:exported="false"
+            android:label="Bill Report"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.ProductReportActivity"
+            android:exported="false"
+            android:label="Product Report"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.TableActivity"
+            android:exported="false"
+            android:label="Tables"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.MoveHistoryActivity"
+            android:exported="false"
+            android:label="Move History"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.extropos.java.TableOrderActivity"
+            android:exported="false"
+            android:label="Table Orders"
+            android:screenOrientation="landscape" >
         </activity>
 
         <provider

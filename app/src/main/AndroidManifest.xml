@@ -93,16 +93,84 @@
         <activity
             android:name=".SettingListActivity"
             android:label="@string/title_setting_list"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" >
         </activity>
         <activity
             android:name=".SettingDetailActivity"
             android:label="@string/title_setting_detail"
             android:parentActivityName=".SettingListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" >
             <meta-data
                 android:name="androidx.appcompat.app.AppCompatActivity.PARENT_ACTIVITY"
                 android:value="com.extropos.java.SettingListActivity" />
+        </activity>
+        <activity
+            android:name=".ReportListActivity"
+            android:label="Reports"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".DailyReportActivity"
+            android:label="Daily Report"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".HourlyReportActivity"
+            android:label="Hourly Report"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".MonthlyReportActivity"
+            android:label="Monthly Report"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".TaxReportActivity"
+            android:label="Tax Report"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".TenderReportActivity"
+            android:label="Tender Report"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".BillReportActivity"
+            android:label="Bill Report"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".ProductReportActivity"
+            android:label="Product Report"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".TableActivity"
+            android:label="Tables"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".MoveHistoryActivity"
+            android:label="Move History"
+            android:screenOrientation="landscape"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".TableOrderActivity"
+            android:label="Table Orders"
+            android:screenOrientation="landscape"
+            android:exported="false" >
         </activity>
     </application>
 

@@ -1,39 +1,52 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:2:1-109:12
-INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:2:1-109:12
-INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:2:1-109:12
-INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:2:1-109:12
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:2:1-177:12
+INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:2:1-177:12
+INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:2:1-177:12
+INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:2:1-177:12
+MERGED from [com.google.android.material:material:1.8.0] /home/hp/.gradle/caches/8.9/transforms/9de76193f8de5336e23560003192d8d5/transformed/material-1.8.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/hp/.gradle/caches/8.9/transforms/79be3f954c5ffaa1cd8e3872dcd8c9ff/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/hp/.gradle/caches/8.9/transforms/b02d72315cfd12fc4d32b58b407b111d/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /home/hp/.gradle/caches/8.9/transforms/0e559d42ecdf6f9622399d9dbfb46886/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/hp/.gradle/caches/8.9/transforms/285a26435b142b523ebb779bc8fa9f8b/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/hp/.gradle/caches/8.9/transforms/7d4c3f1f7029a6722e06892886afcf7d/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /home/hp/.gradle/caches/8.9/transforms/e733871581edf702ff6c29ca227ff555/transformed/recyclerview-1.3.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/hp/.gradle/caches/8.9/transforms/dc2c3ff40049c57349db2feeed7b65e0/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.fragment:fragment:1.6.1] /home/hp/.gradle/caches/8.9/transforms/4d8eb891ecbd9f24eac4f35f6453a851/transformed/fragment-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.7.2] /home/hp/.gradle/caches/8.9/transforms/1bc9b33d27a9c3dccd8ae73064275e9e/transformed/jetified-activity-1.7.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hp/.gradle/caches/8.9/transforms/beb9905c59bb78723b985e54cbed186b/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/hp/.gradle/caches/8.9/transforms/3b51de905ba4b806a6c7a8904d768336/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/hp/.gradle/caches/8.9/transforms/31d3a56f5a44dfe35222d8b241cb532e/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /home/hp/.gradle/caches/8.9/transforms/b95c737bacec6656e6923a09965f2bc4/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/hp/.gradle/caches/8.9/transforms/071c59e631581a66a6d0d31e4fcd1a2d/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/hp/.gradle/caches/8.9/transforms/13f9c193f40701462776ff2ad0488abf/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/hp/.gradle/caches/8.9/transforms/43a1fa60e9256f0a921477f5533e6659/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/hp/.gradle/caches/8.9/transforms/03565dddffa8ea52444d8df31f63e287/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4116de0a75d975eb169744fca52f860c/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.12.0] /home/hp/.gradle/caches/8.9/transforms/486600cdeb2305627e0b0a5154dd7af4/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/hp/.gradle/caches/8.9/transforms/5a0e03448c89da8be74a31a54206ae0d/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/hp/.gradle/caches/8.9/transforms/d4016f9bbd153b4b618e90c16f57e3af/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/hp/.gradle/caches/8.9/transforms/bbeb06035715b4853d56dc842be4211b/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.7.2] /home/hp/.gradle/caches/8.9/transforms/1bc9b33d27a9c3dccd8ae73064275e9e/transformed/jetified-activity-1.7.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /home/hp/.gradle/caches/8.9/transforms/bcaf6d382c891b6e51ae40f74ef3e63a/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hp/.gradle/caches/8.9/transforms/a75a9d10d2a877c49c476527779a28db/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hp/.gradle/caches/8.9/transforms/6f4f74cf2f06b536b45a749c7fc78f6e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /home/hp/.gradle/caches/8.9/transforms/d733e54f85ab54d8a1efb7300f14cb68/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hp/.gradle/caches/8.9/transforms/beb9905c59bb78723b985e54cbed186b/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/hp/.gradle/caches/8.9/transforms/43a1fa60e9256f0a921477f5533e6659/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/hp/.gradle/caches/8.9/transforms/071c59e631581a66a6d0d31e4fcd1a2d/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/hp/.gradle/caches/8.9/transforms/03565dddffa8ea52444d8df31f63e287/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/hp/.gradle/caches/8.9/transforms/13f9c193f40701462776ff2ad0488abf/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4116de0a75d975eb169744fca52f860c/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/hp/.gradle/caches/8.9/transforms/287a89b9676869da21a8f8b0816dacab/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] /home/hp/.gradle/caches/8.9/transforms/486600cdeb2305627e0b0a5154dd7af4/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.customview:customview:1.1.0] /home/hp/.gradle/caches/8.9/transforms/0c7e65fd9eff00147bccd5eb0ff37918/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.12.0] /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
 MERGED from [com.daimajia.androidanimations:library:2.4] /home/hp/.gradle/caches/8.9/transforms/08dd933a084aadc67ffea27737c5c5ce/transformed/jetified-library-2.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/hp/.gradle/caches/8.9/transforms/c096e041a7f6313a0df3a9de5ed0a354/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6efe48a95b7f2aa8591bede0ae289a67/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hp/.gradle/caches/8.9/transforms/5480fe91b569a8996f0ae3a5fd8a62f0/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/hp/.gradle/caches/8.9/transforms/f495d85bb18be9f1e2cc9fc15537ca9b/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/hp/.gradle/caches/8.9/transforms/04157bc3ce18fb51f92c9dfdcc77c336/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hp/.gradle/caches/8.9/transforms/baa9026c8b478a29930a6afc4d4b1a91/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6d58ee030e9c041dcecd1a7024ceabee/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6200e492c7314f6eadc45ecb6da6f6d6/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6fb303ab4d1f4616921e7e0d71943d7a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/hp/.gradle/caches/8.9/transforms/0dc715c438a6d1217abce2a902b8707b/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/hp/.gradle/caches/8.9/transforms/18582aff3e54bf87e4e0e0f72ff4b6f1/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6efe48a95b7f2aa8591bede0ae289a67/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 	package
 		INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -99,8 +112,12 @@ ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:20:5-7
 	android:name
 		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:20:22-72
 application
-ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:22:5-107:19
-INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:22:5-107:19
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:22:5-175:19
+INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:22:5-175:19
+MERGED from [com.google.android.material:material:1.8.0] /home/hp/.gradle/caches/8.9/transforms/9de76193f8de5336e23560003192d8d5/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.8.0] /home/hp/.gradle/caches/8.9/transforms/9de76193f8de5336e23560003192d8d5/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/hp/.gradle/caches/8.9/transforms/b02d72315cfd12fc4d32b58b407b111d/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/hp/.gradle/caches/8.9/transforms/b02d72315cfd12fc4d32b58b407b111d/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
@@ -238,87 +255,227 @@ ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:86:9-9
 	android:name
 		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:87:13-55
 activity#com.extropos.java.SettingListActivity
-ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:93:9-97:20
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:93:9-98:20
 	android:label
 		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:95:13-55
 	android:exported
-		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:96:13-37
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:97:13-37
+	android:theme
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:96:13-69
 	android:name
 		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:94:13-48
 activity#com.extropos.java.SettingDetailActivity
-ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:98:9-106:20
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:99:9-108:20
 	android:parentActivityName
-		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:101:13-62
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:102:13-62
 	android:label
-		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:100:13-57
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:101:13-57
 	android:exported
-		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:102:13-37
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:104:13-37
+	android:theme
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:103:13-69
 	android:name
-		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:99:13-50
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:100:13-50
+activity#com.extropos.java.ReportListActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:109:9-114:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:112:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:111:13-36
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:113:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:110:13-47
+activity#com.extropos.java.DailyReportActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:115:9-120:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:118:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:117:13-41
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:119:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:116:13-48
+activity#com.extropos.java.HourlyReportActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:121:9-126:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:124:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:123:13-42
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:125:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:122:13-49
+activity#com.extropos.java.MonthlyReportActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:127:9-132:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:130:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:129:13-43
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:131:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:128:13-50
+activity#com.extropos.java.TaxReportActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:133:9-138:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:136:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:135:13-39
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:137:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:134:13-46
+activity#com.extropos.java.TenderReportActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:139:9-144:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:142:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:141:13-42
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:143:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:140:13-49
+activity#com.extropos.java.BillReportActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:145:9-150:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:148:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:147:13-40
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:149:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:146:13-47
+activity#com.extropos.java.ProductReportActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:151:9-156:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:154:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:153:13-43
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:155:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:152:13-50
+activity#com.extropos.java.TableActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:157:9-162:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:160:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:159:13-35
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:161:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:158:13-42
+activity#com.extropos.java.MoveHistoryActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:163:9-168:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:166:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:165:13-41
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:167:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:164:13-48
+activity#com.extropos.java.TableOrderActivity
+ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:169:9-174:20
+	android:screenOrientation
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:172:13-50
+	android:label
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:171:13-41
+	android:exported
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:173:13-37
+	android:name
+		ADDED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:170:13-47
 uses-sdk
 INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml
 INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.8.0] /home/hp/.gradle/caches/8.9/transforms/9de76193f8de5336e23560003192d8d5/transformed/material-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.8.0] /home/hp/.gradle/caches/8.9/transforms/9de76193f8de5336e23560003192d8d5/transformed/material-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/hp/.gradle/caches/8.9/transforms/79be3f954c5ffaa1cd8e3872dcd8c9ff/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/hp/.gradle/caches/8.9/transforms/79be3f954c5ffaa1cd8e3872dcd8c9ff/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/hp/.gradle/caches/8.9/transforms/b02d72315cfd12fc4d32b58b407b111d/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/hp/.gradle/caches/8.9/transforms/b02d72315cfd12fc4d32b58b407b111d/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.6.1] /home/hp/.gradle/caches/8.9/transforms/0e559d42ecdf6f9622399d9dbfb46886/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] /home/hp/.gradle/caches/8.9/transforms/0e559d42ecdf6f9622399d9dbfb46886/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/hp/.gradle/caches/8.9/transforms/285a26435b142b523ebb779bc8fa9f8b/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/hp/.gradle/caches/8.9/transforms/285a26435b142b523ebb779bc8fa9f8b/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/hp/.gradle/caches/8.9/transforms/7d4c3f1f7029a6722e06892886afcf7d/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/hp/.gradle/caches/8.9/transforms/7d4c3f1f7029a6722e06892886afcf7d/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /home/hp/.gradle/caches/8.9/transforms/e733871581edf702ff6c29ca227ff555/transformed/recyclerview-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /home/hp/.gradle/caches/8.9/transforms/e733871581edf702ff6c29ca227ff555/transformed/recyclerview-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/hp/.gradle/caches/8.9/transforms/dc2c3ff40049c57349db2feeed7b65e0/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/hp/.gradle/caches/8.9/transforms/dc2c3ff40049c57349db2feeed7b65e0/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.fragment:fragment:1.6.1] /home/hp/.gradle/caches/8.9/transforms/4d8eb891ecbd9f24eac4f35f6453a851/transformed/fragment-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.6.1] /home/hp/.gradle/caches/8.9/transforms/4d8eb891ecbd9f24eac4f35f6453a851/transformed/fragment-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.7.2] /home/hp/.gradle/caches/8.9/transforms/1bc9b33d27a9c3dccd8ae73064275e9e/transformed/jetified-activity-1.7.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.7.2] /home/hp/.gradle/caches/8.9/transforms/1bc9b33d27a9c3dccd8ae73064275e9e/transformed/jetified-activity-1.7.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hp/.gradle/caches/8.9/transforms/beb9905c59bb78723b985e54cbed186b/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hp/.gradle/caches/8.9/transforms/beb9905c59bb78723b985e54cbed186b/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/hp/.gradle/caches/8.9/transforms/3b51de905ba4b806a6c7a8904d768336/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/hp/.gradle/caches/8.9/transforms/3b51de905ba4b806a6c7a8904d768336/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/hp/.gradle/caches/8.9/transforms/31d3a56f5a44dfe35222d8b241cb532e/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/hp/.gradle/caches/8.9/transforms/31d3a56f5a44dfe35222d8b241cb532e/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/hp/.gradle/caches/8.9/transforms/b95c737bacec6656e6923a09965f2bc4/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/hp/.gradle/caches/8.9/transforms/b95c737bacec6656e6923a09965f2bc4/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/hp/.gradle/caches/8.9/transforms/071c59e631581a66a6d0d31e4fcd1a2d/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/hp/.gradle/caches/8.9/transforms/071c59e631581a66a6d0d31e4fcd1a2d/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/hp/.gradle/caches/8.9/transforms/13f9c193f40701462776ff2ad0488abf/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/hp/.gradle/caches/8.9/transforms/13f9c193f40701462776ff2ad0488abf/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/hp/.gradle/caches/8.9/transforms/43a1fa60e9256f0a921477f5533e6659/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/hp/.gradle/caches/8.9/transforms/43a1fa60e9256f0a921477f5533e6659/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/hp/.gradle/caches/8.9/transforms/03565dddffa8ea52444d8df31f63e287/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/hp/.gradle/caches/8.9/transforms/03565dddffa8ea52444d8df31f63e287/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4116de0a75d975eb169744fca52f860c/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4116de0a75d975eb169744fca52f860c/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.12.0] /home/hp/.gradle/caches/8.9/transforms/486600cdeb2305627e0b0a5154dd7af4/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.12.0] /home/hp/.gradle/caches/8.9/transforms/486600cdeb2305627e0b0a5154dd7af4/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/hp/.gradle/caches/8.9/transforms/5a0e03448c89da8be74a31a54206ae0d/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/hp/.gradle/caches/8.9/transforms/5a0e03448c89da8be74a31a54206ae0d/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/hp/.gradle/caches/8.9/transforms/d4016f9bbd153b4b618e90c16f57e3af/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/hp/.gradle/caches/8.9/transforms/d4016f9bbd153b4b618e90c16f57e3af/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/hp/.gradle/caches/8.9/transforms/bbeb06035715b4853d56dc842be4211b/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/hp/.gradle/caches/8.9/transforms/bbeb06035715b4853d56dc842be4211b/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.7.2] /home/hp/.gradle/caches/8.9/transforms/1bc9b33d27a9c3dccd8ae73064275e9e/transformed/jetified-activity-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.7.2] /home/hp/.gradle/caches/8.9/transforms/1bc9b33d27a9c3dccd8ae73064275e9e/transformed/jetified-activity-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /home/hp/.gradle/caches/8.9/transforms/bcaf6d382c891b6e51ae40f74ef3e63a/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/hp/.gradle/caches/8.9/transforms/bcaf6d382c891b6e51ae40f74ef3e63a/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hp/.gradle/caches/8.9/transforms/a75a9d10d2a877c49c476527779a28db/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hp/.gradle/caches/8.9/transforms/a75a9d10d2a877c49c476527779a28db/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hp/.gradle/caches/8.9/transforms/6f4f74cf2f06b536b45a749c7fc78f6e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hp/.gradle/caches/8.9/transforms/6f4f74cf2f06b536b45a749c7fc78f6e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /home/hp/.gradle/caches/8.9/transforms/d733e54f85ab54d8a1efb7300f14cb68/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/hp/.gradle/caches/8.9/transforms/d733e54f85ab54d8a1efb7300f14cb68/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hp/.gradle/caches/8.9/transforms/beb9905c59bb78723b985e54cbed186b/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hp/.gradle/caches/8.9/transforms/beb9905c59bb78723b985e54cbed186b/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/hp/.gradle/caches/8.9/transforms/43a1fa60e9256f0a921477f5533e6659/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/hp/.gradle/caches/8.9/transforms/43a1fa60e9256f0a921477f5533e6659/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/hp/.gradle/caches/8.9/transforms/071c59e631581a66a6d0d31e4fcd1a2d/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/hp/.gradle/caches/8.9/transforms/071c59e631581a66a6d0d31e4fcd1a2d/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/hp/.gradle/caches/8.9/transforms/03565dddffa8ea52444d8df31f63e287/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/hp/.gradle/caches/8.9/transforms/03565dddffa8ea52444d8df31f63e287/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/hp/.gradle/caches/8.9/transforms/13f9c193f40701462776ff2ad0488abf/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/hp/.gradle/caches/8.9/transforms/13f9c193f40701462776ff2ad0488abf/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4116de0a75d975eb169744fca52f860c/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4116de0a75d975eb169744fca52f860c/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/hp/.gradle/caches/8.9/transforms/287a89b9676869da21a8f8b0816dacab/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/hp/.gradle/caches/8.9/transforms/287a89b9676869da21a8f8b0816dacab/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] /home/hp/.gradle/caches/8.9/transforms/486600cdeb2305627e0b0a5154dd7af4/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/hp/.gradle/caches/8.9/transforms/486600cdeb2305627e0b0a5154dd7af4/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.customview:customview:1.1.0] /home/hp/.gradle/caches/8.9/transforms/0c7e65fd9eff00147bccd5eb0ff37918/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/hp/.gradle/caches/8.9/transforms/0c7e65fd9eff00147bccd5eb0ff37918/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.12.0] /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.12.0] /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [com.daimajia.androidanimations:library:2.4] /home/hp/.gradle/caches/8.9/transforms/08dd933a084aadc67ffea27737c5c5ce/transformed/jetified-library-2.4/AndroidManifest.xml:7:5-9:41
 MERGED from [com.daimajia.androidanimations:library:2.4] /home/hp/.gradle/caches/8.9/transforms/08dd933a084aadc67ffea27737c5c5ce/transformed/jetified-library-2.4/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/hp/.gradle/caches/8.9/transforms/c096e041a7f6313a0df3a9de5ed0a354/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/hp/.gradle/caches/8.9/transforms/c096e041a7f6313a0df3a9de5ed0a354/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6efe48a95b7f2aa8591bede0ae289a67/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6efe48a95b7f2aa8591bede0ae289a67/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hp/.gradle/caches/8.9/transforms/5480fe91b569a8996f0ae3a5fd8a62f0/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hp/.gradle/caches/8.9/transforms/5480fe91b569a8996f0ae3a5fd8a62f0/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/hp/.gradle/caches/8.9/transforms/f495d85bb18be9f1e2cc9fc15537ca9b/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/hp/.gradle/caches/8.9/transforms/f495d85bb18be9f1e2cc9fc15537ca9b/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/hp/.gradle/caches/8.9/transforms/04157bc3ce18fb51f92c9dfdcc77c336/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/hp/.gradle/caches/8.9/transforms/04157bc3ce18fb51f92c9dfdcc77c336/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hp/.gradle/caches/8.9/transforms/baa9026c8b478a29930a6afc4d4b1a91/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hp/.gradle/caches/8.9/transforms/baa9026c8b478a29930a6afc4d4b1a91/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6d58ee030e9c041dcecd1a7024ceabee/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6d58ee030e9c041dcecd1a7024ceabee/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6200e492c7314f6eadc45ecb6da6f6d6/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6200e492c7314f6eadc45ecb6da6f6d6/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6fb303ab4d1f4616921e7e0d71943d7a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6fb303ab4d1f4616921e7e0d71943d7a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/hp/.gradle/caches/8.9/transforms/0dc715c438a6d1217abce2a902b8707b/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/hp/.gradle/caches/8.9/transforms/0dc715c438a6d1217abce2a902b8707b/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/hp/.gradle/caches/8.9/transforms/18582aff3e54bf87e4e0e0f72ff4b6f1/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/hp/.gradle/caches/8.9/transforms/18582aff3e54bf87e4e0e0f72ff4b6f1/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6efe48a95b7f2aa8591bede0ae289a67/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hp/.gradle/caches/8.9/transforms/6efe48a95b7f2aa8591bede0ae289a67/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
 		INJECTED from /home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml
 	android:minSdkVersion

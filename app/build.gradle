@@ -14,6 +14,7 @@ android {
         applicationId "com.extropos.java"
         minSdkVersion 21
         targetSdkVersion 34
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -42,4 +43,12 @@ dependencies {
     implementation files('libs/btsdk.jar')
     implementation files('libs/NineOldAndroid-2.4.0.jar')
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'com.github.anastaciocintra:escpos-coffee:4.1.0'
+
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test:core:1.5.0'
+    testImplementation 'junit:junit:4.13.2'
 }

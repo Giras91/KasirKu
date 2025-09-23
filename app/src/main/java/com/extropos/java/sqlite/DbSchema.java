@@ -6,7 +6,7 @@ import com.extropos.java.utils.Shared;
 public interface DbSchema {
 	
 	String DB_NAME = "com_chipo_cashier.db";
-	int DB_VERSION = 1;
+	int DB_VERSION = 3;
 	
 	String TBL_SETTING = "setting";	
 	String COL_SETTING_CODE = "code";
@@ -35,7 +35,7 @@ public interface DbSchema {
 	String TBL_PRODUCT = "product";
 	String COL_PRODUCT_CODE = "product_id";
 	String COL_PRODUCT_PRODUCT_CATEGORY_CODE = "category_id";
-	String COL_PRODUCT_PRODUCT_CATEGORY_NAME = "category";
+	String COL_PRODUCT_PRODUCT_CATEGORY_NAME = "name";
 	String COL_PRODUCT_NAME = "name";
 	String COL_PRODUCT_DESCRIPTION = "description";
 	String COL_PRODUCT_PRICE = "price";
@@ -104,6 +104,9 @@ public interface DbSchema {
 	String COL_ORDER_AMOUNT = "amount";
 	String COL_ORDER_USER_ID = "user_id";
 	String COL_ORDER_BRANCH_ID = "branch_id";
+    String COL_ORDER_STATUS = "status";
+    String COL_ORDER_TABLE_ID = "table_id";
+    String COL_ORDER_TABLE_NAME = "table_name";
 	
 	String CREATE_TBL_ORDER = "CREATE TABLE "
 			+ TBL_ORDER
@@ -115,9 +118,12 @@ public interface DbSchema {
 				+ COL_ORDER_DESCRIPTION + " TEXT,"
 				+ COL_ORDER_TAX + " DOUBLE,"
 				+ COL_ORDER_DISCOUNT + " DOUBLE,"
-				+ COL_ORDER_AMOUNT + " DOUBLE,"
-				+ COL_ORDER_USER_ID + " TEXT,"
+				+ COL_ORDER_AMOUNT + " DOUBLE," 
+				+ COL_ORDER_USER_ID + " TEXT," 
 				+ COL_ORDER_BRANCH_ID + " TEXT"
+				+ "," + COL_ORDER_STATUS + " TEXT"
+				+ "," + COL_ORDER_TABLE_ID + " TEXT"
+				+ "," + COL_ORDER_TABLE_NAME + " TEXT"
 			+ ");";
 	
 	String TBL_PRODUCT_ORDER_DETAIL = "product_order_detail";
@@ -138,12 +144,23 @@ public interface DbSchema {
 				+ COL_PRODUCT_ORDER_DETAIL_QTY + " DOUBLE,"
 				+ COL_PRODUCT_ORDER_DETAIL_DISCOUNT + " DOUBLE"
 			+ ");";
-	
+
+	String TBL_MOVE_HISTORY = "move_history";
+	String COL_MOVE_HISTORY_ID = "move_id";
+	String COL_MOVE_HISTORY_FROM = "from_table";
+	String COL_MOVE_HISTORY_TO = "to_table";
+	String COL_MOVE_HISTORY_ORDER_ID = "order_id";
+	String COL_MOVE_HISTORY_MOVED_ON = "moved_on";
+
+	String CREATE_TBL_MOVE_HISTORY = "CREATE TABLE " + TBL_MOVE_HISTORY + " (" + COL_MOVE_HISTORY_ID + " TEXT PRIMARY KEY, " + COL_MOVE_HISTORY_ORDER_ID + " TEXT, " + COL_MOVE_HISTORY_FROM + " TEXT, " + COL_MOVE_HISTORY_TO + " TEXT, " + COL_MOVE_HISTORY_MOVED_ON + " DATETIME" + ");";
+
 	String DROP_TBL_PRODUCT_CATEGORY = "DROP TABLE IF EXISTS "+ TBL_PRODUCT_CATEGORY;
 	String DROP_TBL_PRODUCT = "DROP TABLE IF EXISTS "+ TBL_PRODUCT;	
 	String DROP_TBL_SETTING = "DROP TABLE IF EXISTS "+ TBL_SETTING;
 	String DROP_TBL_USER = "DROP TABLE IF EXISTS "+ TBL_USER;
 	String DROP_TBL_ORDER = "DROP TABLE IF EXISTS "+ TBL_ORDER;
+	// aliases for historical names used in DatabaseHelper
+	String DROP_TBL_PRODUCT_ORDER = "DROP TABLE IF EXISTS "+ TBL_ORDER;
+	String DROP_TBL_MOVE_HISTORY = "DROP TABLE IF EXISTS "+ TBL_MOVE_HISTORY;
 	String DROP_TBL_PRODUCT_ORDER_DETAIL = "DROP TABLE IF EXISTS "+ TBL_PRODUCT_ORDER_DETAIL;
-
 }

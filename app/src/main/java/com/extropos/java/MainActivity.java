@@ -32,6 +32,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		findViewById(R.id.btnLogout).setOnClickListener(this);
 		findViewById(R.id.btnQuickOrder).setOnClickListener(this);
 		findViewById(R.id.btnSetting).setOnClickListener(this);
+		findViewById(R.id.btnReport).setOnClickListener(this);
 		
 		TextView t1 = (TextView)findViewById(R.id.textView1);
 		TextView t2 = (TextView)findViewById(R.id.textView2);
@@ -58,6 +59,8 @@ public class MainActivity extends Activity implements OnClickListener {
 			intent = new Intent(MainActivity.this, QuickOrderActivity.class);
 		} else if (v.getId() == R.id.btnSetting) {
 			intent = new Intent(MainActivity.this,SettingListActivity.class);
+		} else if (v.getId() == R.id.btnReport) {
+			intent = new Intent(MainActivity.this, ReportListActivity.class);
 		} else if (v.getId() == R.id.btnLogout) {
 			logout();
 		}

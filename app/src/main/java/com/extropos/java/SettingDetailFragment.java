@@ -1,13 +1,40 @@
 package com.extropos.java;
 
+import android.Manifest;
+import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 
 import com.extropos.java.dummy.SettingContent;
+import com.extropos.java.printer.DeviceListActivity;
+import com.extropos.java.printer.EscPosPrinterService;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 /**
  * A fragment representing a single Setting detail screen. This fragment is
@@ -89,10 +116,238 @@ public class SettingDetailFragment extends Fragment {
 	}
 	
 	private void setupPrinterSettings(View rootView) {
-		// Basic setup for printer settings - detailed implementation would go here
-		TextView title = rootView.findViewById(R.id.tvPrinterTitle);
-		if (title != null) {
-			title.setText("Configure your receipt printer settings");
+		// Initialize UI components
+		RadioGroup rgPrinterType = rootView.findViewById(R.id.rgPrinterType);
+		LinearLayout llNetworkSettings = rootView.findViewById(R.id.llNetworkSettings);
+		LinearLayout llBluetoothSettings = rootView.findViewById(R.id.llBluetoothSettings);
+		EditText etNetworkIP = rootView.findViewById(R.id.etNetworkIP);
+		EditText etNetworkPort = rootView.findViewById(R.id.etNetworkPort);
+		Spinner spBluetoothDevices = rootView.findViewById(R.id.spBluetoothDevices);
+		Button btnScanBluetooth = rootView.findViewById(R.id.btnScanBluetooth);
+		Button btnTestPrint = rootView.findViewById(R.id.btnTestPrint);
+		Button btnSave = rootView.findViewById(R.id.btnSave);
+
+		// Load saved settings
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+		String printerType = prefs.getString("printer_type", "usb");
+		String networkIP = prefs.getString("network_ip", "");
+		String networkPort = prefs.getString("network_port", "9100");
+		String bluetoothAddress = prefs.getString("bluetooth_address", "");
+
+		// Set initial values
+		etNetworkIP.setText(networkIP);
+		etNetworkPort.setText(networkPort);
+
+		// Set printer type radio button
+		switch (printerType) {
+			case "network":
+				rgPrinterType.check(R.id.rbNetwork);
+				llNetworkSettings.setVisibility(View.VISIBLE);
+				llBluetoothSettings.setVisibility(View.GONE);
+				break;
+			case "bluetooth":
+				rgPrinterType.check(R.id.rbBluetooth);
+				llNetworkSettings.setVisibility(View.GONE);
+				llBluetoothSettings.setVisibility(View.VISIBLE);
+				break;
+			default: // usb
+				rgPrinterType.check(R.id.rbUSB);
+				llNetworkSettings.setVisibility(View.GONE);
+				llBluetoothSettings.setVisibility(View.GONE);
+				break;
+		}
+
+		// Setup printer type change listener
+		rgPrinterType.setOnCheckedChangeListener((group, checkedId) -> {
+			if (checkedId == R.id.rbNetwork) {
+				llNetworkSettings.setVisibility(View.VISIBLE);
+				llBluetoothSettings.setVisibility(View.GONE);
+			} else if (checkedId == R.id.rbBluetooth) {
+				llNetworkSettings.setVisibility(View.GONE);
+				llBluetoothSettings.setVisibility(View.VISIBLE);
+				loadBluetoothDevices(spBluetoothDevices, bluetoothAddress);
+			} else if (checkedId == R.id.rbUSB) {
+				llNetworkSettings.setVisibility(View.GONE);
+				llBluetoothSettings.setVisibility(View.GONE);
+			}
+		});
+
+		// Setup Bluetooth scan button
+		btnScanBluetooth.setOnClickListener(v -> {
+			if (checkBluetoothPermissions()) {
+				Intent intent = new Intent(getContext(), DeviceListActivity.class);
+				startActivityForResult(intent, REQUEST_BLUETOOTH_DEVICE);
+			}
+		});
+
+		// Setup test print button
+		btnTestPrint.setOnClickListener(v -> testPrint());
+
+		// Setup save button
+		btnSave.setOnClickListener(v -> savePrinterSettings());
+
+		// Load initial Bluetooth devices if Bluetooth is selected
+		if ("bluetooth".equals(printerType)) {
+			loadBluetoothDevices(spBluetoothDevices, bluetoothAddress);
+		}
+	}
+
+	private static final int REQUEST_BLUETOOTH_DEVICE = 1;
+	private EscPosPrinterService printerService;
+
+	private void loadBluetoothDevices(Spinner spinner, String selectedAddress) {
+		if (!checkBluetoothPermissions()) {
+			return;
+		}
+
+		try {
+			BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+			if (bluetoothAdapter == null) {
+				Toast.makeText(getContext(), "Bluetooth not supported", Toast.LENGTH_SHORT).show();
+				return;
+			}
+
+			Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
+			List<String> deviceList = new ArrayList<>();
+			List<String> addressList = new ArrayList<>();
+			int selectedIndex = 0;
+
+			deviceList.add("Select Bluetooth Device");
+			addressList.add("");
+
+			int index = 1;
+			for (BluetoothDevice device : pairedDevices) {
+				String deviceName = device.getName() + "\n" + device.getAddress();
+				deviceList.add(deviceName);
+				addressList.add(device.getAddress());
+				if (device.getAddress().equals(selectedAddress)) {
+					selectedIndex = index;
+				}
+				index++;
+			}
+
+			ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(),
+					android.R.layout.simple_spinner_item, deviceList);
+			adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+			spinner.setAdapter(adapter);
+			spinner.setSelection(selectedIndex);
+
+		} catch (Exception e) {
+			Log.e("PrinterSettings", "Error loading Bluetooth devices", e);
+			Toast.makeText(getContext(), "Error loading Bluetooth devices", Toast.LENGTH_SHORT).show();
+		}
+	}
+
+	private boolean checkBluetoothPermissions() {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+			if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED ||
+				ContextCompat.checkSelfPermission(getContext(), Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+				ActivityCompat.requestPermissions(getActivity(),
+					new String[]{Manifest.permission.BLUETOOTH_SCAN, Manifest.permission.BLUETOOTH_CONNECT}, 1);
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private void testPrint() {
+		View rootView = getView();
+		if (rootView == null) return;
+
+		RadioGroup rgPrinterType = rootView.findViewById(R.id.rgPrinterType);
+		int checkedId = rgPrinterType.getCheckedRadioButtonId();
+
+		printerService = new EscPosPrinterService(getContext());
+		boolean connected = false;
+
+		try {
+			if (checkedId == R.id.rbNetwork) {
+				EditText etIP = rootView.findViewById(R.id.etNetworkIP);
+				EditText etPort = rootView.findViewById(R.id.etNetworkPort);
+				String ip = etIP.getText().toString().trim();
+				String portStr = etPort.getText().toString().trim();
+				int port = portStr.isEmpty() ? 9100 : Integer.parseInt(portStr);
+				connected = printerService.connectNetwork(ip, port);
+			} else if (checkedId == R.id.rbBluetooth) {
+				Spinner spDevices = rootView.findViewById(R.id.spBluetoothDevices);
+				String selectedDevice = (String) spDevices.getSelectedItem();
+				if (selectedDevice != null && !selectedDevice.equals("Select Bluetooth Device")) {
+					String address = selectedDevice.substring(selectedDevice.lastIndexOf('\n') + 1);
+					connected = printerService.connectBluetooth(address);
+				}
+			} else if (checkedId == R.id.rbUSB) {
+				// For USB, we would need to implement USB device discovery
+				// For now, show a message
+				Toast.makeText(getContext(), "USB printing not yet implemented", Toast.LENGTH_SHORT).show();
+				return;
+			}
+
+			if (connected) {
+				boolean success = printerService.printTest();
+				if (success) {
+					Toast.makeText(getContext(), "Test print successful!", Toast.LENGTH_SHORT).show();
+				} else {
+					Toast.makeText(getContext(), "Test print failed", Toast.LENGTH_SHORT).show();
+				}
+			} else {
+				Toast.makeText(getContext(), "Failed to connect to printer", Toast.LENGTH_SHORT).show();
+			}
+
+		} catch (Exception e) {
+			Log.e("PrinterSettings", "Error during test print", e);
+			Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+		} finally {
+			if (printerService != null) {
+				printerService.disconnect();
+			}
+		}
+	}
+
+	private void savePrinterSettings() {
+		View rootView = getView();
+		if (rootView == null) return;
+
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+		SharedPreferences.Editor editor = prefs.edit();
+
+		RadioGroup rgPrinterType = rootView.findViewById(R.id.rgPrinterType);
+		int checkedId = rgPrinterType.getCheckedRadioButtonId();
+
+		if (checkedId == R.id.rbNetwork) {
+			editor.putString("printer_type", "network");
+			EditText etIP = rootView.findViewById(R.id.etNetworkIP);
+			EditText etPort = rootView.findViewById(R.id.etNetworkPort);
+			editor.putString("network_ip", etIP.getText().toString().trim());
+			editor.putString("network_port", etPort.getText().toString().trim());
+		} else if (checkedId == R.id.rbBluetooth) {
+			editor.putString("printer_type", "bluetooth");
+			Spinner spDevices = rootView.findViewById(R.id.spBluetoothDevices);
+			String selectedDevice = (String) spDevices.getSelectedItem();
+			if (selectedDevice != null && !selectedDevice.equals("Select Bluetooth Device")) {
+				String address = selectedDevice.substring(selectedDevice.lastIndexOf('\n') + 1);
+				editor.putString("bluetooth_address", address);
+			}
+		} else if (checkedId == R.id.rbUSB) {
+			editor.putString("printer_type", "usb");
+		}
+
+		editor.apply();
+		Toast.makeText(getContext(), "Printer settings saved", Toast.LENGTH_SHORT).show();
+	}
+
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+
+		if (requestCode == REQUEST_BLUETOOTH_DEVICE && resultCode == Activity.RESULT_OK) {
+			String address = data.getExtras().getString(DeviceListActivity.EXTRA_DEVICE_ADDRESS);
+			if (address != null) {
+				View rootView = getView();
+				if (rootView != null) {
+					Spinner spDevices = rootView.findViewById(R.id.spBluetoothDevices);
+					loadBluetoothDevices(spDevices, address);
+				}
+			}
 		}
 	}
 	

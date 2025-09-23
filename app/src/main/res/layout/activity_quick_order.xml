@@ -402,6 +402,18 @@
                  android:text="@string/your_order"
                  android:textSize="16dp"
                  android:textColor="@color/putih" />
+
+            <Button
+                android:id="@+id/btnSelectTable"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:text="Table"
+                android:textSize="12sp"
+                android:background="@drawable/btn_transparent"
+                android:textColor="@color/putih" />
          </RelativeLayout>
      </RelativeLayout>
     

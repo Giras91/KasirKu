@@ -1,6 +1,6 @@
 package com.extropos.java;
 
-import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -71,7 +71,7 @@ public class SettingListFragment extends ListFragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setListAdapter(new ArrayAdapter<SettingContent.DummyItem>(getActivity(),
+		setListAdapter(new ArrayAdapter<SettingContent.DummyItem>(requireContext(),
 				android.R.layout.simple_list_item_activated_1,
 				android.R.id.text1, SettingContent.ITEMS));
 	}
@@ -89,16 +89,16 @@ public class SettingListFragment extends ListFragment {
 	}
 
 	@Override
-	public void onAttach(Activity activity) {
-		super.onAttach(activity);
+	public void onAttach(Context context) {
+		super.onAttach(context);
 
 		// Activities containing this fragment must implement its callbacks.
-		if (!(activity instanceof Callbacks)) {
+		if (!(context instanceof Callbacks)) {
 			throw new IllegalStateException(
 					"Activity must implement fragment's callbacks.");
 		}
 
-		mCallbacks = (Callbacks) activity;
+		mCallbacks = (Callbacks) context;
 	}
 
 	@Override

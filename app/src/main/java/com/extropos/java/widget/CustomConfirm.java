@@ -116,7 +116,8 @@ public class CustomConfirm extends Dialog implements android.view.View.OnClickLi
 				SQLiteDatabase db =  DatabaseManager.getInstance().openDatabase();
 				OrderDataSource DS = new OrderDataSource(db);
 				order.setDescription(params[0]);
-				
+				// mark order as paid, preserve table assignment for history
+				order.setStatus("paid");
 				DS.insert(order);
 				DatabaseManager.getInstance().closeDatabase();
 				

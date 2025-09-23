@@ -108,6 +108,17 @@ public class QuickOrderActivity extends Activity {
 		
 		menuWrapper = (RelativeLayout)findViewById(R.id.bgMenu);
 		cartWrapper = (RelativeLayout)findViewById(R.id.bgCart);
+
+		// Table selection button (restaurant feature)
+		android.widget.Button btnSelectTable = (android.widget.Button) findViewById(R.id.btnSelectTable);
+		if (btnSelectTable != null) {
+			btnSelectTable.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					startActivity(new Intent(QuickOrderActivity.this, TableActivity.class));
+				}
+			});
+		}
 		
 		menuGrid = (GridView)findViewById(R.id.gridView1);
 		menuadapter = new ProductGridAdapter(this);
@@ -208,6 +219,15 @@ public class QuickOrderActivity extends Activity {
 		
 		
 		TextView t1 =(TextView)findViewById(R.id.textView1);
+		// If launched from table selection, show table name in header
+		try {
+			String tableName = getIntent().getStringExtra("table_name");
+			if (tableName != null && !tableName.isEmpty()) {
+				t1.setText("Table: " + tableName);
+			}
+		} catch (Exception ex) {
+			// ignore
+		}
 		TextView t2 =(TextView)findViewById(R.id.textView2);
 		TextView t4 =(TextView)findViewById(R.id.textView4);
 		TextView t6 =(TextView)findViewById(R.id.textView6);
@@ -250,18 +270,31 @@ public class QuickOrderActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		 String address = Shared.read(Constants.KEY_SETTING_MAC_ADDRESS,"0F:03:E0:C2:42:86");
-		 if(!address.equals(""))
-		 {
-			 con_dev = mService.getDevByMac(address);
-			 BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-			 if(mBluetoothAdapter.isEnabled())
-			 {
-				 mService.connect(con_dev);
-				 Toast.makeText(QuickOrderActivity.this,"on",Toast.LENGTH_LONG).show();
-			 }
-		 }
-
+		
+		// Check for Bluetooth permissions before accessing Bluetooth functionality
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+			if (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED ||
+				checkSelfPermission(Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+				// Request permissions if not granted
+				requestPermissions(new String[]{
+					Manifest.permission.BLUETOOTH_SCAN,
+					Manifest.permission.BLUETOOTH_CONNECT
+				}, Constants.REQUEST_BLUETOOTH_PERMISSIONS);
+				return;
+			}
+		}
+		
+		String address = Shared.read(Constants.KEY_SETTING_MAC_ADDRESS,"0F:03:E0:C2:42:86");
+		if(!address.equals(""))
+		{
+			con_dev = mService.getDevByMac(address);
+			BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+			if(mBluetoothAdapter != null && mBluetoothAdapter.isEnabled())
+			{
+				mService.connect(con_dev);
+				Toast.makeText(QuickOrderActivity.this,"on",Toast.LENGTH_LONG).show();
+			}
+		}
 	}
 	
 	private void initLayout()
@@ -626,6 +659,31 @@ public class QuickOrderActivity extends Activity {
             break;
         }
     } 
+    
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        
+        if (requestCode == Constants.REQUEST_BLUETOOTH_PERMISSIONS) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permissions granted, retry Bluetooth connection
+                String address = Shared.read(Constants.KEY_SETTING_MAC_ADDRESS,"0F:03:E0:C2:42:86");
+                if(!address.equals(""))
+                {
+                    con_dev = mService.getDevByMac(address);
+                    BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+                    if(mBluetoothAdapter != null && mBluetoothAdapter.isEnabled())
+                    {
+                        mService.connect(con_dev);
+                        Toast.makeText(QuickOrderActivity.this,"on",Toast.LENGTH_LONG).show();
+                    }
+                }
+            } else {
+                Toast.makeText(this, "Bluetooth permissions required for printer connectivity", Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+    
     private void showCart()
     {
     	YoYo.with(Techniques.FadeOutDown).duration(700).withListener(new AnimatorListener() {

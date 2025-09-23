@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.extropos.java.app-mergeDebugResources-22:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.extropos.java.app-mergeDebugResources-31:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/home/hp/Documents/Quick Cash/app/src/main/res/values-sw600dp/refs.xml",
@@ -13,11 +13,11 @@
                         "endOffsets": "406,500"
                     },
                     "to": {
-                        "startLines": "10,11",
+                        "startLines": "22,23",
                         "startColumns": "4,4",
-                        "startOffsets": "611,702",
+                        "startOffsets": "1351,1442",
                         "endColumns": "90,92",
-                        "endOffsets": "697,790"
+                        "endOffsets": "1437,1530"
                     }
                 },
                 {
@@ -28,6 +28,25 @@
                         "startOffsets": "55,124,193,263,337,413,472,543",
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
+                    "source": "/home/hp/.gradle/caches/8.9/transforms/9de76193f8de5336e23560003192d8d5/transformed/material-1.8.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,553,617,673,732,795",
+                        "endLines": "2,3,4,5,6,7,9,10,11,12,13,17",
+                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
+                        "endOffsets": "110,180,251,323,381,439,548,612,668,727,790,962"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15,16,18,19,20,21,24",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "611,671,741,812,884,942,1000,1109,1173,1229,1288,1535",
+                        "endLines": "10,11,12,13,14,15,17,18,19,20,21,27",
+                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
+                        "endOffsets": "666,736,807,879,937,995,1104,1168,1224,1283,1346,1702"
                     }
                 }
             ]

@@ -1,0 +1,3 @@
+com.extropos.java.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
