@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="activity_master_list" type="layout">@layout/activity_master_twopane</item>
+    <item name="activity_setting_list" type="layout">@layout/activity_setting_twopane</item>
+</resources>

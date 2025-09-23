@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.extropos.java.SplashActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.drawable.ic_grid_on_black_36dp"
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable-hdpi/ic_grid_on_black_36dp.png"/>
+        <location id="R.drawable.ic_qr"
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable-hdpi/ic_qr.png"/>
+        <location id="R.string.title_activity_splash"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="6"
+            column="13"
+            startOffset="170"
+            endLine="6"
+            endColumn="41"
+            endOffset="198"/>
+        <location id="R.string.value"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="27"
+            column="13"
+            startOffset="1451"
+            endLine="27"
+            endColumn="25"
+            endOffset="1463"/>
+        <location id="R.style.AppBaseTheme"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/styles.xml"
+            line="7"
+            column="12"
+            startOffset="198"
+            endLine="7"
+            endColumn="31"
+            endOffset="217"/>
+        <location id="R.string.code"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="26"
+            column="13"
+            startOffset="1413"
+            endLine="26"
+            endColumn="24"
+            endOffset="1424"/>
+        <location id="R.string.hello_world"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="5"
+            column="13"
+            startOffset="116"
+            endLine="5"
+            endColumn="31"
+            endOffset="134"/>
+        <location id="R.color.bg_dark"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="5"
+            column="13"
+            startOffset="118"
+            endLine="5"
+            endColumn="27"
+            endOffset="132"/>
+        <location id="R.drawable.textbox_outline"
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable-hdpi/textbox_outline.png"/>
+        <location id="R.string.amount"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="30"
+            column="13"
+            startOffset="1573"
+            endLine="30"
+            endColumn="26"
+            endOffset="1586"/>
+        <location id="R.string.save"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="29"
+            column="13"
+            startOffset="1532"
+            endLine="29"
+            endColumn="24"
+            endOffset="1543"/>
+        <location id="R.style.AppTheme"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/styles.xml"
+            line="16"
+            column="12"
+            startOffset="529"
+            endLine="16"
+            endColumn="27"
+            endOffset="544"/>
+        <location id="R.layout.product_grid_list_item"
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_grid_list_item.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="72"
+            endColumn="49"
+            endOffset="2584"/>
+        <entry
+            name="model"
+            string="color[line_gray(U),item(U),putih_transparan(U),green(U),yellow(U),bg_default(U),putih(U),red(U),item_transparan2(U),item_transparan(U),blue(U),text_gray(U),text_black(U),bg_dark(D)],drawable[grid_container(U),ic_add_grey600_36dp(U),textbox(U),shadow(U),btnblue_state(U),icon_state(U),ic_arrow_big(U),rounded_bg(U),bg1(U),header_card(U),setting(U),ic_qr(D),ic_delete_grey600_36dp(U),ic_plus(U),logout(U),ic_plus_disabled(U),ic_save_grey600_36dp(U),textbox_large(U),btn_trans_state(U),rounded_white(U),btn_trans(U),ic_launcher(U),ic_minus_disabled(U),ic_list_black_36dp(U),ic_minus_clicked(U),ic_grid_on_black_36dp(D),btnblue(U),bg_btn_trans(U),ic_edit_grey600_36dp(U),ic_arrow_down(U),ic_noimage_square(U),grid_container_trans(U),ic_grid_checked(U),bg_btn_minus(U),master(U),textbox_outline(D),bg_btn_blue(U),footer_cart(U),logoyondev(U),ic_plus_clicked(U),report(U),ic_minus(U),body_cart(U),bg_btn_menu(U),btn_transparent(U),ic_sendok(U),gamewae(U),bg_btn_plus(U)],id[txtUserName(U),btnMasterData(U),bgCart(U),master_detail_container(U),paired_devices(U),main_frame(D),editText4(U),radio1(U),btnOrder(U),editText5(U),radio0(U),master_list(U),editText2(U),editText1(U),textView6(U),textView7(U),textView8(U),btnLogout(U),textView9(U),btnQuickOrder(U),textView2(U),textView3(U),loginWrapper(U),textView4(U),textView5(U),listView1(U),new_devices(U),listView2(D),title_new_devices(U),btnSetting(U),linearLayout1(D),btnSave(U),item_detail(U),linearLayout6(D),subtitle(U),logo2(U),activationWrapper(U),logo1(U),bg(D),scrollView1(U),gridView1(U),button_scan(U),cartContainer(U),title_paired_devices(U),setting_detail(U),bgMenu(U),txtSN(U),radioGroup1(U),textView1(U),txtPassword(U),checkOutContainer(U),setting_list(U),btnReport(D),imageView4(U),setting_detail_container(U),imageView1(U),imageView3(U),imageButton2(U),imageView2(U),imageButton1(U),relativeLayout1(U),btnCancelCheckout(U),btnCancel(U),master_detail(U),btnLogin(U),btnCheckout(U),relativeLayout5(D),relativeLayout4(U),relativeLayout3(U),spinner1(U),relativeLayout2(U),chevron(U),btnSubmit(U),sparator(U)],layout[fragment_user_list(U),activity_setting_list(U),product_list_item(U),fragment_setting_detail(U),activity_setting_detail(U),setting_list_item(U),fragment_user_add(U),product_grid_item(U),user_list_item(U),category_spinner_menu_item(U),activity_master_detail(U),device_name(U),activity_main(U),fragment_master_detail(U),cart_list_item(U),fragment_category_add(U),loading_dialog(U),device_list(U),product_grid_list_item(D),category_list_item(U),activity_master_twopane(U),activity_setting_twopane(U),confirm_dialog(U),fragment_category_list(U),activity_quick_order(U),activity_login(U),category_spinner_item(U),fragment_product_add(U),activity_activation(U),activity_master_list(U),fragment_product_list(U),activity_splash(U)],string[title_master_detail(U),title_activity_quick_order(U),cancel(U),your_order(U),none_found(U),title_setting_detail(U),receipt_total(U),discount(U),cancel_order(U),enter_description(U),activation_enter_sn_hint(U),title_activity_splash(D),select_file(U),setting(U),discount_less_zero(U),logout(U),password(U),none_paired(U),save_succeed(U),from_camera(U),hello_world(D),activation_failed(U),data_being_used(U),logout_success(U),price(U),price_less_zero(U),receipt_phone(U),order(U),add(U),image(U),sure(U),level(U),edit(U),master_data(U),activation_succeed(U),pay(U),transaction_succeed(U),confirmation(U),activation_message(U),quick_order(U),delete_message(U),receipt_discount(U),select_device(U),find_food(U),name(U),error_field_empty(U),hint_username(U),invalid_price_format(U),status(U),hint_password(U),no(U),code(D),submit(U),error_user_or_password(U),scanning(U),save(D),description(U),button_scan(U),from_gallery(U),login(U),title_activity_activation(U),total(U),name_exist(U),password_four_char(U),title_master_list(U),enter_payment(U),ok(U),value(D),complete_action_using(U),amount(D),empty_order(U),yes(U),change(U),invalid_discount_format(U),activation_enter_sn(U),title_setting_list(U),receipt_subtotal(U),app_name(U),username_exist(U),select_one(U),logout_confirmation(U),save_order(U),report(U),category(U),title_activity_login(U),username(U)],style[AppBaseTheme(D),AppTheme(D)];13^2,15^0,21^6,29^20^22,2f^26^24^37,32^12^28,39^2d^e,3a^9,3d^35^1d^1b,88^5^5e^13^f,89^9d,8a^6e^13^1a^75^2a,8d^6e,8e^5^5e^85^c4^13^1e^fd^b8^c7,8f^e^2c^11^8^2e^6^4,90^6e^52^13^1a^75^2a,92^5,94^6^16^39^3b^1^cf^c^30^c9^36^fa^18^b5^1c^b7,96^1^6e^3^3d^79^53^2f,97^5^5e^85^c4^13^1e^d4,98^21^3b,99^32^e1^6,9a^e^2c^11^8^2e^6^4,9b^13^1a^75^2a,9c^5,9e^38^75^7a^3a^ea^46^b0^84^c6^15^b1^52^33^17^cd^6,9f^5^5e^13^f,a0^5^1f^13^25^0^78^6^d3^83^87^b^2b^76^82^38^75^7a^3a^46^b0^f9^c3^84^e5^1^52^a^ee^81^cb^7f^15^e9^14^f0^7^33^17^ab,a1^5^16^10^d6^b^d9^29^e3^6,a3^5^5e^85^c4^13^1e^d4^fb^c0^e0^af^c5^2c^d8,a4^5^10^b2^b^32^dc^6^62^f2,a5^9c,a6^5^5e^13^f,a7^6^34^3c,ff^fe;;;"/>
+    </map>
+
+</incidents>

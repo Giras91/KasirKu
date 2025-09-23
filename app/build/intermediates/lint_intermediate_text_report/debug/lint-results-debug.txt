@@ -1,0 +1,2108 @@
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:103: Error: Missing permissions required by TelephonyManager.getImei: android.permission.READ_PRIVILEGED_PHONE_STATE [MissingPermission]
+                        imei = telephonyManager.getImei();
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:105: Error: Missing permissions required by TelephonyManager.getDeviceId: android.permission.READ_PRIVILEGED_PHONE_STATE [MissingPermission]
+                        imei = telephonyManager.getDeviceId();
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:113: Error: Missing permissions required by TelephonyManager.getImei: android.permission.READ_PRIVILEGED_PHONE_STATE [MissingPermission]
+                    imei = telephonyManager.getImei();
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:115: Error: Missing permissions required by TelephonyManager.getDeviceId: android.permission.READ_PRIVILEGED_PHONE_STATE [MissingPermission]
+                    imei = telephonyManager.getDeviceId();
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java:35: Error: Missing permissions required by TelephonyManager.getImei: android.permission.READ_PRIVILEGED_PHONE_STATE [MissingPermission]
+     imei = telephonyManager.getImei();
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java:37: Error: Missing permissions required by TelephonyManager.getDeviceId: android.permission.READ_PRIVILEGED_PHONE_STATE [MissingPermission]
+     imei = telephonyManager.getDeviceId();
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java:45: Error: Missing permissions required by TelephonyManager.getImei: android.permission.READ_PRIVILEGED_PHONE_STATE [MissingPermission]
+    imei = telephonyManager.getImei();
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java:47: Error: Missing permissions required by TelephonyManager.getDeviceId: android.permission.READ_PRIVILEGED_PHONE_STATE [MissingPermission]
+    imei = telephonyManager.getDeviceId();
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/printer/DeviceListActivity.java:109: Error: Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with checkPermission) or explicitly handle a potential SecurityException [MissingPermission]
+                mPairedDevicesArrayAdapter.add(device.getName() + "\n" + device.getAddress());
+                                               ~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/printer/DeviceListActivity.java:181: Error: Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with checkPermission) or explicitly handle a potential SecurityException [MissingPermission]
+                if (device.getBondState() != BluetoothDevice.BOND_BONDED) {
+                    ~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/printer/DeviceListActivity.java:182: Error: Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with checkPermission) or explicitly handle a potential SecurityException [MissingPermission]
+                    mNewDevicesArrayAdapter.add(device.getName() + "\n" + device.getAddress());
+                                                ~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java:586: Error: Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with checkPermission) or explicitly handle a potential SecurityException [MissingPermission]
+                startActivityForResult(enableIntent, Constants.REQUEST_ENABLE_BT);
+                                       ~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingPermission":
+   This check scans through your code and libraries and looks at the APIs
+   being used, and checks this against the set of permissions required to
+   access those APIs. If the code using those APIs is called at runtime, then
+   the program will crash.
+
+   Furthermore, for permissions that are revocable (with targetSdkVersion 23),
+   client code must also be prepared to handle the calls throwing an exception
+   if the user rejects the request for permission at runtime.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:70: Warning: This LinearLayout should use android:layout_height="wrap_content" [ScrollViewSize]
+              android:layout_height="match_parent"
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:69: Warning: This LinearLayout should use android:layout_height="wrap_content" [ScrollViewSize]
+                android:layout_height="match_parent"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:69: Warning: This LinearLayout should use android:layout_height="wrap_content" [ScrollViewSize]
+                android:layout_height="match_parent"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScrollViewSize":
+   ScrollView children must set their layout_width or layout_height attributes
+   to wrap_content rather than fill_parent or match_parent in the scrolling
+   dimension
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Shared.java:58: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+  editor.commit();
+         ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Shared.java:75: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+  editor.commit();
+         ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Shared.java:82: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+  editor.commit();
+         ~~~~~~~~
+
+   Explanation for issues of type "ApplySharedPref":
+   Consider using apply() instead of commit on shared preferences. Whereas
+   commit blocks and writes its data to persistent storage immediately, apply
+   will handle it in the background.
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:192: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_ORDER_CODE + ") = '"+code.toLowerCase()+"'";
+                                                                    ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:91: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_PRODUCT_CATEGORY_CODE + ") = '"+code.toLowerCase()+"'";
+                                                                               ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:104: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_PRODUCT_CATEGORY_NAME + ") = '"+name.toLowerCase()+"'";
+                                                                               ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:117: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_CODE + ") = '"+code.toLowerCase()+"'";
+                                                                                       ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:197: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_PRODUCT_CODE + ") = '"+code.toLowerCase()+"'";
+                                                                      ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:210: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_PRODUCT_NAME + ") = '"+name.toLowerCase()+"'";
+                                                                      ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:223: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE + ") = '"+code.toLowerCase()+"'";
+                                                                                           ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java:91: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_SETTING_CODE + ") = '"+code.toLowerCase()+"'";
+                                                                      ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:124: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_USER_CODE + ") = '"+code.toLowerCase()+"'";
+                                                                   ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:137: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_USER_NAME + ") = '"+name.toLowerCase()+"' and lower(" +DbSchema.COL_USER_PASSWORD + ") = '"+ Shared.getMD5(password) +"' ";
+                                                                   ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:172: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_USER_NAME + ") = '"+name.toLowerCase()+"'";
+                                                                   ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:185: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            " Where lower(" +DbSchema.COL_ORDER_USER_ID + ") = '"+code.toLowerCase()+"'";
+                                                                       ~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.US) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/ProductAddFragment.java:347: Warning: Calling setType after setting URI in Intent constructor will clear the data: Call setDataAndType instead? [IntentReset]
+      intent.setType("image/*");
+             ~~~~~~~~~~~~~~~~~~
+    /home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/ProductAddFragment.java:346: Originally set here
+
+   Explanation for issues of type "IntentReset":
+   Intent provides the following APIs: setData(Uri) and setType(String).
+   Unfortunately, setting one clears the other. If you want to set both, you
+   should call setDataAndType(Uri, String) instead.
+
+/home/hp/Documents/Quick Cash/app/build.gradle:16: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdkVersion 34
+        ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:40: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_CODE)));
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:41: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:42: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setAmount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_AMOUNT)));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:43: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:44: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setBranchID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_BRANCH_ID)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:45: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_USER_ID)));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:46: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:49: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_ORDERED_ON))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:50: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_UPDATED_ON))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:51: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_SYCN_ON))));
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:67: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setDetailID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_CODE)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:68: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:69: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_ORDER_CODE)));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:70: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE)));
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:71: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_NAME)));
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:72: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setQty(c.getInt(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_QTY)));
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:73: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_DISCOUNT)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:74: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRICE)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:102: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_CODE)));
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:103: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:104: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setAmount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_AMOUNT)));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:105: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:106: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setBranchID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_BRANCH_ID)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:107: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_USER_ID)));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:108: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:111: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_ORDERED_ON))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:112: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_UPDATED_ON))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:113: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_SYCN_ON))));
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:129: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setDetailID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_CODE)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:130: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:131: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_ORDER_CODE)));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:132: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE)));
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:133: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_NAME)));
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:134: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setQty(c.getInt(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_QTY)));
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:135: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_DISCOUNT)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:136: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+      order.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRICE)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:37: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:38: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:55: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:56: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:39: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CODE)));
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:40: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setProductName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:41: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:42: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:43: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_DESCRIPTION)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:44: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_PRICE)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:45: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_DISCOUNT)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:46: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCreateBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_BY)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:47: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUpdatedBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_BY)));
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:48: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setMerchantID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_MERCHANT_ID)));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:49: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setStatus(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_STATUS)));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:50: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setRefID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_REF_ID)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:51: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setImage(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_IMAGE)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:53: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_ON))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:54: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_ON))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:55: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_SYCN_ON))));
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:95: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CODE)));
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:96: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setProductName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:97: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:98: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:99: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_DESCRIPTION)));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:100: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_PRICE)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:101: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_DISCOUNT)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:102: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCreateBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_BY)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:103: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUpdatedBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_BY)));
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:104: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setMerchantID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_MERCHANT_ID)));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:105: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setStatus(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_STATUS)));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:106: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setRefID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_REF_ID)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:107: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setImage(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_IMAGE)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:109: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_ON))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:110: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_ON))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:111: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_SYCN_ON))));
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java:37: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCode(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_CODE)));
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java:38: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setValue(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_VALUE)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java:55: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCode(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_CODE)));
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java:56: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setValue(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_VALUE)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:38: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CODE)));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:39: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:40: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCashierID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CASHIER_ID)));
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:41: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setLevel(c.getString(c.getColumnIndex(DbSchema.COL_USER_LEVEL)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:44: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setLastLogin( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_USER_LAST_LOGIN))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:65: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CODE)));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:66: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:67: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCashierID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CASHIER_ID)));
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:68: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setLevel(c.getString(c.getColumnIndex(DbSchema.COL_USER_LEVEL)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:71: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setLastLogin( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_USER_LAST_LOGIN))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:144: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CODE)));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:145: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:146: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setCashierID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CASHIER_ID)));
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:147: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+    item.setLevel(c.getString(c.getColumnIndex(DbSchema.COL_USER_LEVEL)));
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:150: Error: Value must be ≥ 0 but getColumnIndex can be -1 [Range]
+        item.setLastLogin( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_USER_LAST_LOGIN))));
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Range":
+   Some parameters are required to in a particular numerical range; this check
+   makes sure that arguments passed fall within the range. For arrays, Strings
+   and collections this refers to the size or length.
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Shared.java:35: Warning: To get local formatting use getDateInstance(), getDateTimeInstance(), or getTimeInstance(), or use new SimpleDateFormat(String template, Locale locale) with for example Locale.US for ASCII dates. [SimpleDateFormat]
+ public static SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Shared.java:36: Warning: To get local formatting use getDateInstance(), getDateTimeInstance(), or getTimeInstance(), or use new SimpleDateFormat(String template, Locale locale) with for example Locale.US for ASCII dates. [SimpleDateFormat]
+ public static SimpleDateFormat dateformatID = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Shared.java:37: Warning: To get local formatting use getDateInstance(), getDateTimeInstance(), or getTimeInstance(), or use new SimpleDateFormat(String template, Locale locale) with for example Locale.US for ASCII dates. [SimpleDateFormat]
+ public static SimpleDateFormat dateformatStruk = new SimpleDateFormat("dd.MM.yyyy HH:mm");
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SimpleDateFormat":
+   Almost all callers should use getDateInstance(), getDateTimeInstance(), or
+   getTimeInstance() to get a ready-made instance of SimpleDateFormat suitable
+   for the user's locale. The main reason you'd create an instance this class
+   directly is because you need to format/parse a specific machine-readable
+   format, in which case you almost certainly want to explicitly ask for US to
+   ensure that you get ASCII digits (rather than, say, Arabic digits).
+
+   Therefore, you should either use the form of the SimpleDateFormat
+   constructor where you pass in an explicit locale, such as Locale.US, or use
+   one of the get instance methods, or suppress this error if really know what
+   you are doing.
+
+   https://developer.android.com/reference/java/text/SimpleDateFormat.html
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/ProductAddFragment.java:306: Error: Suspicious indentation: This is indented but is not nested under the previous expression (if (resultCode != ge...) [SuspiciousIndentation]
+        switch (requestCode) {
+        ~~~~~~~~~~~~~~~~~~~~~~
+    /home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/ProductAddFragment.java:304: Previous statement here
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CartListAdapter.java:97: Warning: The indentation string here is different from on the previous line (" " vs \t) [SuspiciousIndentation]
+  if(listener != null)
+~~
+    /home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CartListAdapter.java:96: Previous line indentation here
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CategoryListAdapter.java:150: Warning: The indentation string here is different from on the previous line (" " vs \t) [SuspiciousIndentation]
+                    dtList.remove(position);
+  ~~~~~~~~~~~~~~~~~~
+    /home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CategoryListAdapter.java:149: Previous line indentation here
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/CategoryListFragment.java:66: Warning: The indentation string here is different from on the previous line (" " vs \t) [SuspiciousIndentation]
+  adapter.set(dtlist);
+~~
+    /home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/CategoryListFragment.java:64: Previous line indentation here
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/widget/CustomConfirm.java:187: Warning: The indentation string here is different from on the previous line (" " vs \t) [SuspiciousIndentation]
+   disc += subtotal * (detail.getDiscount()/100);
+~~~
+    /home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/widget/CustomConfirm.java:186: Previous line indentation here
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/ProductListFragment.java:66: Warning: The indentation string here is different from on the previous line (" " vs \t) [SuspiciousIndentation]
+  adapter.set(dtlist);
+~~
+    /home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/ProductListFragment.java:64: Previous line indentation here
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/UserListFragment.java:66: Warning: The indentation string here is different from on the previous line (" " vs \t) [SuspiciousIndentation]
+  adapter.set(dtlist);
+~~
+    /home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/UserListFragment.java:64: Previous line indentation here
+
+   Explanation for issues of type "SuspiciousIndentation":
+   This check looks for cases where the indentation suggests a grouping that
+   isn't actually there in the code. A common example of this would be
+   something like
+   if (column > width)
+       line++
+       column = 0
+   Here, the column = 0 line will be executed every single time, not just if
+   the condition is true.
+
+   Available options:
+
+   **always-run** (default is false):
+   Whether this check should be included while editing.
+
+   While you're editing, it's common to have a temporary situation where you have suspicious indentation scenarios -- e.g. you start typing an `if` statement on the line above something you want to make conditional, and you haven't indented it yet. It can be distracting and misleading to suddenly have both statements light up as errors. Therefore, lint will avoid including this check when running on the fly in the editor, unless it looks like the file has not been recently edited. With this option, you can turn it on in all cases.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="SuspiciousIndentation">
+           <option name="always-run" value="false" />
+       </issue>
+   </lint>
+   ```
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CategoryListAdapter.java:129: Error: Must be one of: FragmentTransaction.TRANSIT_NONE, FragmentTransaction.TRANSIT_FRAGMENT_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_CLOSE, FragmentTransaction.TRANSIT_FRAGMENT_FADE, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_CLOSE [WrongConstant]
+    .setTransition(android.R.anim.slide_in_left)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/CategoryListFragment.java:77: Error: Must be one of: FragmentTransaction.TRANSIT_NONE, FragmentTransaction.TRANSIT_FRAGMENT_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_CLOSE, FragmentTransaction.TRANSIT_FRAGMENT_FADE, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_CLOSE [WrongConstant]
+  .setTransition(android.R.anim.slide_in_left)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/MasterDetailActivity.java:78: Error: Must be one of: FragmentTransaction.TRANSIT_NONE, FragmentTransaction.TRANSIT_FRAGMENT_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_CLOSE, FragmentTransaction.TRANSIT_FRAGMENT_FADE, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_CLOSE [WrongConstant]
+  .setTransition(android.R.anim.fade_in)
+                 ~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/MasterListActivity.java:124: Error: Must be one of: FragmentTransaction.TRANSIT_NONE, FragmentTransaction.TRANSIT_FRAGMENT_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_CLOSE, FragmentTransaction.TRANSIT_FRAGMENT_FADE, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_CLOSE [WrongConstant]
+  .setTransition(android.R.anim.fade_in)
+                 ~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/ProductListAdapter.java:129: Error: Must be one of: FragmentTransaction.TRANSIT_NONE, FragmentTransaction.TRANSIT_FRAGMENT_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_CLOSE, FragmentTransaction.TRANSIT_FRAGMENT_FADE, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_CLOSE [WrongConstant]
+                        .setTransition(android.R.anim.slide_in_left)
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/ProductListFragment.java:77: Error: Must be one of: FragmentTransaction.TRANSIT_NONE, FragmentTransaction.TRANSIT_FRAGMENT_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_CLOSE, FragmentTransaction.TRANSIT_FRAGMENT_FADE, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_CLOSE [WrongConstant]
+  .setTransition(android.R.anim.slide_in_left)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/UserListAdapter.java:136: Error: Must be one of: FragmentTransaction.TRANSIT_NONE, FragmentTransaction.TRANSIT_FRAGMENT_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_CLOSE, FragmentTransaction.TRANSIT_FRAGMENT_FADE, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_CLOSE [WrongConstant]
+                        .setTransition(android.R.anim.slide_in_left)
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/UserListFragment.java:77: Error: Must be one of: FragmentTransaction.TRANSIT_NONE, FragmentTransaction.TRANSIT_FRAGMENT_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_CLOSE, FragmentTransaction.TRANSIT_FRAGMENT_FADE, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_OPEN, FragmentTransaction.TRANSIT_FRAGMENT_MATCH_ACTIVITY_CLOSE [WrongConstant]
+  .setTransition(android.R.anim.slide_in_left)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "WrongConstant":
+   Ensures that when parameter in a method only allows a specific set of
+   constants, calls obey those rules.
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/SplashActivity.java:20: Warning: The application should not provide its own launch screen [CustomSplashScreen]
+public class SplashActivity extends Activity {
+             ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "CustomSplashScreen":
+   Starting in Android 12 (API 31+), the application's Launch Screen is
+   provided by the system and the application should not create its own,
+   otherwise the user will see two splashscreens. Please check the
+   SplashScreen class to check how the Splash Screen can be controlled and
+   customized.
+
+   https://developer.android.com/guide/topics/ui/splash-screen
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_master_list.xml:1: Warning: Replace the <fragment> tag with FragmentContainerView. [FragmentTagUsage from androidx.fragment]
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+ ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_master_twopane.xml:24: Warning: Replace the <fragment> tag with FragmentContainerView. [FragmentTagUsage from androidx.fragment]
+    <fragment
+     ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_setting_list.xml:1: Warning: Replace the <fragment> tag with FragmentContainerView. [FragmentTagUsage from androidx.fragment]
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+ ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_setting_twopane.xml:24: Warning: Replace the <fragment> tag with FragmentContainerView. [FragmentTagUsage from androidx.fragment]
+    <fragment
+     ~~~~~~~~
+
+   Explanation for issues of type "FragmentTagUsage":
+   FragmentContainerView replaces the <fragment> tag as the preferred         
+          way of adding fragments via XML. Unlike the <fragment> tag,
+   FragmentContainerView                 uses a normal FragmentTransaction
+   under the hood to add the initial fragment,                 allowing
+   further FragmentTransaction operations on the FragmentContainerView        
+           and providing a consistent timing for lifecycle events.
+
+   https://developer.android.com/reference/androidx/fragment/app/FragmentContainerView.html
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.fragment
+   Feedback: https://issuetracker.google.com/issues/new?component=460964
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CartListAdapter.java:106: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+         vi = inflater.inflate(R.layout.cart_list_item, null);
+                                                        ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CategoryListAdapter.java:100: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+         vi = inflater.inflate(R.layout.category_list_item, null);
+                                                            ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CategorySpinnerAdapter.java:100: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+         vi = inflater.inflate(R.layout.category_spinner_item, null);
+                                                               ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CategorySpinnerAdapter.java:123: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+         vi = inflater.inflate(R.layout.category_spinner_item, null);
+                                                               ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CategorySpinnerMenuAdapter.java:100: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+         vi = inflater.inflate(R.layout.category_spinner_menu_item, null);
+                                                                    ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CategorySpinnerMenuAdapter.java:123: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+         vi = inflater.inflate(R.layout.category_spinner_menu_item, null);
+                                                                    ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/ProductGridAdapter.java:130: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+                vi = inflater.inflate(R.layout.product_grid_item, null);
+                                                                  ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/ProductGridAdapter.java:132: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+                vi = inflater.inflate(R.layout.product_grid_item, null);
+                                                                  ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/ProductListAdapter.java:100: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+            vi = inflater.inflate(R.layout.product_list_item, null);
+                                                              ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/SettingListAdapter.java:76: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+         vi = inflater.inflate(R.layout.setting_list_item, null);
+                                                           ~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/UserListAdapter.java:103: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+            vi = inflater.inflate(R.layout.user_list_item, null);
+                                                           ~~~~
+
+   Explanation for issues of type "InflateParams":
+   When inflating a layout, avoid passing in null as the parent view, since
+   otherwise any layout parameters on the root of the inflated layout will be
+   ignored.
+
+   https://www.bignerdranch.com/blog/understanding-androids-layoutinflater-inflate/
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/MasterListActivity.java:44: Error: @layout/activity_master_list does not contain a declaration with id master_detail_container [MissingInflatedId]
+  if (findViewById(R.id.master_detail_container) != null) {
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java:203: Error: @layout/activity_quick_order does not contain a declaration with id scrollView1 [MissingInflatedId]
+  scroll = (ScrollView)findViewById(R.id.scrollView1);
+                                    ~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/SettingListActivity.java:41: Error: @layout/activity_setting_list does not contain a declaration with id setting_detail_container [MissingInflatedId]
+  if (findViewById(R.id.setting_detail_container) != null) {
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingInflatedId":
+   Checks calls to layout inflation and makes sure that the referenced ids are
+   found in the corresponding layout (or at least one of them, if the layout
+   has multiple configurations.)
+
+/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:33: Warning: Redundant label can be removed [RedundantLabel]
+            android:label="@string/app_name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:44: Warning: Redundant label can be removed [RedundantLabel]
+            android:label="@string/app_name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RedundantLabel":
+   When an activity does not have a label attribute, it will use the one from
+   the application tag. Since the application has already specified the same
+   label, the label on this activity can be omitted.
+
+/home/hp/Documents/Quick Cash/app/build.gradle:28: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/build.gradle:29: Warning: A newer version of androidx.core:core than 1.12.0 is available: 1.17.0 [GradleDependency]
+    implementation 'androidx.core:core:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/build.gradle:30: Warning: A newer version of androidx.fragment:fragment than 1.6.1 is available: 1.8.9 [GradleDependency]
+    implementation 'androidx.fragment:fragment:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/build.gradle:31: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.6.1 is available: 2.9.4 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_activation.xml:54: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="30dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:57: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                 android:textSize="30dp" />
+                 ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:120: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                      android:textSize="30dp" />
+                      ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:171: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                      android:textSize="30dp" />
+                      ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:231: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                      android:textSize="30dp" />
+                      ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:282: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                      android:textSize="30dp" />
+                      ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:55: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                android:textSize="15dp" >
+                ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:136: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:149: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:163: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:182: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:191: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="20dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:247: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:261: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:288: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp" />
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:294: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="20dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:312: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp" />
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:327: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                   android:textSize="24dp"
+                   ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:360: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp" />
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:366: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="20dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:403: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                 android:textSize="16dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:19: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="16dp" />
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:28: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:51: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_spinner_item.xml:17: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="18dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_spinner_menu_item.xml:17: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="14dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:36: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:51: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                     android:textSize="14dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:79: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+                 android:textSize="18dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:52: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="16dp" />
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:63: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:56: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="16dp" />
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:67: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SpUsage":
+   When setting text sizes, you should normally use sp, or "scale-independent
+   pixels". This is like the dp unit, but it is also scaled by the user's font
+   size preference. It is recommend you use this unit when specifying font
+   sizes, so they will be adjusted for both the screen density and the user's
+   preference.
+
+   There are cases where you might need to use dp; typically this happens when
+   the text is in a container with a specific dp-size. This will prevent the
+   text from spilling outside the container. Note however that this means that
+   the user's font size settings are not respected, so consider adjusting the
+   layout itself to be more flexible.
+
+   https://developer.android.com/training/multiscreen/screendensities.html
+
+/home/hp/Documents/Quick Cash/app/src/main/res/values-en/strings.xml:35: Warning: "ok" is usually capitalized as "OK" [Typos]
+    <string name="ok">ok</string>
+                      ^
+/home/hp/Documents/Quick Cash/app/src/main/res/values/strings.xml:35: Warning: "ok" is usually capitalized as "OK" [Typos]
+    <string name="ok">ok</string>
+                      ^
+
+   Explanation for issues of type "Typos":
+   This check looks through the string definitions, and if it finds any words
+   that look like likely misspellings, they are flagged.
+
+/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:16: Error: Permission exists without corresponding hardware <uses-feature android:name="android.hardware.camera" required="false"> tag [PermissionImpliesUnsupportedChromeOsHardware]
+    <uses-permission android:name="android.permission.CAMERA" />
+     ~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "PermissionImpliesUnsupportedChromeOsHardware":
+   The <uses-permission> element should not require a permission that implies
+   an unsupported large screen hardware feature. Google Play assumes that
+   certain hardware related permissions indicate that the underlying hardware
+   features are required by default. To fix the issue, consider declaring the
+   corresponding <uses-feature> element with required="false" attribute.
+
+   https://developer.android.com/topic/arc/manifest.html#implied-features
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:105: Warning: Using getDeviceId to get device identifiers is not recommended [HardwareIds]
+                        imei = telephonyManager.getDeviceId();
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:107: Warning: Using getString to get device identifiers is not recommended [HardwareIds]
+                    device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:115: Warning: Using getDeviceId to get device identifiers is not recommended [HardwareIds]
+                    imei = telephonyManager.getDeviceId();
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:117: Warning: Using getString to get device identifiers is not recommended [HardwareIds]
+                device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java:37: Warning: Using getDeviceId to get device identifiers is not recommended [HardwareIds]
+     imei = telephonyManager.getDeviceId();
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java:39: Warning: Using getString to get device identifiers is not recommended [HardwareIds]
+    device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java:47: Warning: Using getDeviceId to get device identifiers is not recommended [HardwareIds]
+    imei = telephonyManager.getDeviceId();
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java:49: Warning: Using getString to get device identifiers is not recommended [HardwareIds]
+   device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardwareIds":
+   Using these device identifiers is not recommended other than for high value
+   fraud prevention and advanced telephony use-cases. For advertising
+   use-cases, use AdvertisingIdClient$Info#getId and for analytics, use
+   InstanceId#getId.
+
+   https://developer.android.com/training/articles/user-data-ids.html
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:35: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:60: Warning: This Cursor should be freed up after use with #close() [Recycle]
+    Cursor cDetail = db.rawQuery(selectQueryDetail, null);
+                        ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:98: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:122: Warning: This Cursor should be freed up after use with #close() [Recycle]
+    Cursor cDetail = db.rawQuery(selectQueryDetail, null);
+                        ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java:194: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/fragment/ProductAddFragment.java:309: Warning: This Cursor should be freed up after use with #close() [Recycle]
+                Cursor cursor = getActivity().getContentResolver().query(iconUri, new String[] { android.provider.MediaStore.Images.ImageColumns.DATA }, null, null, null);
+                                                                   ~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:32: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:50: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:93: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:106: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java:119: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:34: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:91: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:199: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:212: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java:225: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java:32: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java:50: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java:93: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:33: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:60: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:126: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:139: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:174: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java:187: Warning: This Cursor should be freed up after use with #close() [Recycle]
+  Cursor c = db.rawQuery(selectQuery, null);
+                ~~~~~~~~
+
+   Explanation for issues of type "Recycle":
+   Many resources, such as TypedArrays, VelocityTrackers, etc., should be
+   recycled (with a recycle() call) after use. This lint check looks for
+   missing recycle() calls.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:135: Warning: Invalid layout param in a LinearLayout: layout_alignParentTop [ObsoleteLayoutParam]
+                     android:layout_alignParentTop="true"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:139: Warning: Invalid layout param in a LinearLayout: layout_toLeftOf [ObsoleteLayoutParam]
+                     android:layout_toLeftOf="@+id/btnOrder"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:148: Warning: Invalid layout param in a LinearLayout: layout_alignParentTop [ObsoleteLayoutParam]
+                     android:layout_alignParentTop="true"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:152: Warning: Invalid layout param in a LinearLayout: layout_toLeftOf [ObsoleteLayoutParam]
+                     android:layout_toLeftOf="@+id/btnOrder"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:161: Warning: Invalid layout param in a LinearLayout: layout_alignParentRight [ObsoleteLayoutParam]
+                     android:layout_alignParentRight="true"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:162: Warning: Invalid layout param in a LinearLayout: layout_alignParentTop [ObsoleteLayoutParam]
+                     android:layout_alignParentTop="true"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:320: Warning: Invalid layout param in a LinearLayout: layout_centerHorizontal [ObsoleteLayoutParam]
+                   android:layout_centerHorizontal="true"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:64: Warning: Invalid layout param in a LinearLayout: layout_alignParentLeft [ObsoleteLayoutParam]
+          android:layout_alignParentLeft="true"
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:71: Warning: Invalid layout param in a ScrollView: layout_alignParentLeft [ObsoleteLayoutParam]
+              android:layout_alignParentLeft="true"
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:93: Warning: Invalid layout param in a LinearLayout: layout_alignParentLeft [ObsoleteLayoutParam]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:94: Warning: Invalid layout param in a LinearLayout: layout_below [ObsoleteLayoutParam]
+            android:layout_below="@+id/item_detail"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:64: Warning: Invalid layout param in a LinearLayout: layout_alignParentLeft [ObsoleteLayoutParam]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:70: Warning: Invalid layout param in a ScrollView: layout_alignParentLeft [ObsoleteLayoutParam]
+                android:layout_alignParentLeft="true"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:195: Warning: Invalid layout param in a LinearLayout: layout_alignParentLeft [ObsoleteLayoutParam]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:196: Warning: Invalid layout param in a LinearLayout: layout_below [ObsoleteLayoutParam]
+            android:layout_below="@+id/item_detail"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:64: Warning: Invalid layout param in a LinearLayout: layout_alignParentLeft [ObsoleteLayoutParam]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:70: Warning: Invalid layout param in a ScrollView: layout_alignParentLeft [ObsoleteLayoutParam]
+                android:layout_alignParentLeft="true"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:136: Warning: Invalid layout param in a LinearLayout: layout_alignParentLeft [ObsoleteLayoutParam]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:137: Warning: Invalid layout param in a LinearLayout: layout_below [ObsoleteLayoutParam]
+            android:layout_below="@+id/item_detail"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteLayoutParam":
+   The given layout_param is not defined for the given layout, meaning it has
+   no effect. This usually happens when you change the parent layout or move
+   view code around without updating the layout params. This will cause
+   useless attribute processing at runtime, and is misleading for others
+   reading the layout so the parameter should be removed.
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:112: Warning: Unnecessary;` Build.VERSION.SDK_INT >= Build.VERSION_CODES.O` is never true here [ObsoleteSdkInt]
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java:44: Warning: Unnecessary;` Build.VERSION.SDK_INT >= Build.VERSION_CODES.O` is never true here [ObsoleteSdkInt]
+   if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values-v11: Warning: This folder configuration (v11) is unnecessary; minSdkVersion is 21. Merge all the resources in this folder into values. [ObsoleteSdkInt]
+/home/hp/Documents/Quick Cash/app/src/main/res/values-v14: Warning: This folder configuration (v14) is unnecessary; minSdkVersion is 21. Merge all the resources in this folder into values. [ObsoleteSdkInt]
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java:87: Warning: This AsyncTask class should be static or leaks might occur (com.extropos.java.ActivationActivity.GrabURL) [StaticFieldLeak]
+ public class GrabURL extends AsyncTask<String, String, String>
+              ~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/widget/CustomConfirm.java:98: Warning: This AsyncTask class should be static or leaks might occur (com.extropos.java.widget.CustomConfirm.SaveAsync) [StaticFieldLeak]
+ public class SaveAsync extends AsyncTask<String, String, String>
+              ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/LoginActivity.java:71: Warning: This AsyncTask class should be static or leaks might occur (com.extropos.java.LoginActivity.AsyncAction) [StaticFieldLeak]
+ public class AsyncAction extends AsyncTask<String, String, String>
+              ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Shared.java:25: Warning: Do not place Android context classes in static fields; this is a memory leak [StaticFieldLeak]
+ private static ContextWrapper instance;
+         ~~~~~~
+
+   Explanation for issues of type "StaticFieldLeak":
+   A static field will leak contexts.
+
+   Non-static inner classes have an implicit reference to their outer class.
+   If that outer class is for example a Fragment or Activity, then this
+   reference means that the long-running handler/loader/task will hold a
+   reference to the activity which prevents it from getting garbage
+   collected.
+
+   Similarly, direct field references to activities and fragments from these
+   longer running instances can cause leaks.
+
+   ViewModel classes should never point to Views or non-application Contexts.
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java:552: Warning: This Handler class should be static or leaks might occur (anonymous android.os.Handler) [HandlerLeak]
+ private final  Handler mHandler = new Handler() {
+                                   ^
+
+   Explanation for issues of type "HandlerLeak":
+   Since this Handler is declared as an inner class, it may prevent the outer
+   class from being garbage collected. If the Handler is using a Looper or
+   MessageQueue for a thread other than the main thread, then there is no
+   issue. If the Handler is using the Looper or MessageQueue of the main
+   thread, you need to fix your Handler declaration, as follows: Declare the
+   Handler as a static class; In the outer class, instantiate a WeakReference
+   to the outer class and pass this object to your Handler when you
+   instantiate the Handler; Make all references to members of the outer class
+   using the WeakReference object.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:1: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ ~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:69: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+         <LinearLayout
+          ~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:178: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+        <LinearLayout
+         ~~~~~~~~~~~~
+
+   Explanation for issues of type "DisableBaselineAlignment":
+   When a LinearLayout is used to distribute the space proportionally between
+   nested layouts, the baseline alignment property should be turned off to
+   make the layout computation faster.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:70: Warning: Nested weights are bad for performance [NestedWeights]
+             android:layout_weight="1"
+             ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:75: Warning: Nested weights are bad for performance [NestedWeights]
+               android:layout_weight="1"
+               ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NestedWeights":
+   Layout weights require a widget to be measured twice. When a LinearLayout
+   with non-zero weights is nested inside another LinearLayout with non-zero
+   weights, then the number of measurements increase exponentially.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_activation.xml:5: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_login.xml:5: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:5: Warning: Possible overdraw: Root element paints background @color/putih with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/putih"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_master_detail.xml:8: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_master_twopane.xml:10: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:6: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_splash.xml:5: Warning: Possible overdraw: Root element paints background @color/putih with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/putih"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:5: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_list.xml:7: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:5: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default" >
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_list.xml:7: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:5: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default" >
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_list.xml:7: Warning: Possible overdraw: Root element paints background @color/bg_default with a theme that also paints a background (inferred theme is @android:style/Theme.Holo.Light.NoActionBar.Fullscreen) [Overdraw]
+    android:background="@color/bg_default"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/values/colors.xml:5: Warning: The resource R.color.bg_dark appears to be unused [UnusedResources]
+     <color name="bg_dark">#33373F</color> 
+            ~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-hdpi/ic_grid_on_black_36dp.png: Warning: The resource R.drawable.ic_grid_on_black_36dp appears to be unused [UnusedResources]
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-hdpi/ic_qr.png: Warning: The resource R.drawable.ic_qr appears to be unused [UnusedResources]
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:2: Warning: The resource R.layout.product_grid_list_item appears to be unused [UnusedResources]
+<com.extropos.java.widget.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/hp/Documents/Quick Cash/app/src/main/res/values/strings.xml:5: Warning: The resource R.string.hello_world appears to be unused [UnusedResources]
+    <string name="hello_world">Hello world!</string>
+            ~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values/strings.xml:6: Warning: The resource R.string.title_activity_splash appears to be unused [UnusedResources]
+    <string name="title_activity_splash">SplashActivity</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values/strings.xml:26: Warning: The resource R.string.code appears to be unused [UnusedResources]
+    <string name="code">kod</string>
+            ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values/strings.xml:27: Warning: The resource R.string.value appears to be unused [UnusedResources]
+    <string name="value">nilai</string>
+            ~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values/strings.xml:29: Warning: The resource R.string.save appears to be unused [UnusedResources]
+    <string name="save">simpan</string>
+            ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values/strings.xml:30: Warning: The resource R.string.amount appears to be unused [UnusedResources]
+    <string name="amount">jumlah</string>
+            ~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values/styles.xml:7: Warning: The resource R.style.AppBaseTheme appears to be unused [UnusedResources]
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+           ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values/styles.xml:16: Warning: The resource R.style.AppTheme appears to be unused [UnusedResources]
+    <style name="AppTheme" parent="AppBaseTheme">
+           ~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-hdpi/textbox_outline.png: Warning: The resource R.drawable.textbox_outline appears to be unused [UnusedResources]
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:90: Warning: This LinearLayout view is unnecessary (no children, no background, no id, no style) [UselessLeaf]
+        <LinearLayout
+         ~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:192: Warning: This LinearLayout view is unnecessary (no children, no background, no id, no style) [UselessLeaf]
+        <LinearLayout
+         ~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:133: Warning: This LinearLayout view is unnecessary (no children, no background, no id, no style) [UselessLeaf]
+        <LinearLayout
+         ~~~~~~~~~~~~
+
+   Explanation for issues of type "UselessLeaf":
+   A layout that has no children or no background can often be removed (since
+   it is invisible) for a flatter and more efficient layout hierarchy.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:6: Warning: This RelativeLayout layout or its RelativeLayout parent is possibly unnecessary; transfer the background attribute to the other view [UselessParent]
+   <RelativeLayout
+    ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UselessParent":
+   A layout with children that has no siblings, is not a scrollview or a root
+   layout, and does not have a background, can be removed and have its
+   children moved directly into the parent for a flatter and more efficient
+   layout hierarchy.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/values-en/strings.xml:75: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="scanning">scanning for devices...</string>
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values/strings.xml:75: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="scanning">mengimbas peranti...</string>
+                            ~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "TypographyEllipsis":
+   You can replace the string "..." with a dedicated ellipsis character,
+   ellipsis character (u2026, &#8230;). This can help make the text more
+   readable.
+
+   https://en.wikipedia.org/wiki/Ellipsis
+
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-xhdpi/ic_add_grey600_36dp.png: Warning: Suspicious file name ic_add_grey600_36dp.png: The implied 36 dp size does not match the actual dp size (pixel size 108×108 in a drawable-xhdpi folder computes to 54×54 dp) [IconDipSize]
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-xhdpi/ic_delete_grey600_36dp.png: Warning: Suspicious file name ic_delete_grey600_36dp.png: The implied 36 dp size does not match the actual dp size (pixel size 108×108 in a drawable-xhdpi folder computes to 54×54 dp) [IconDipSize]
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-xhdpi/ic_edit_grey600_36dp.png: Warning: Suspicious file name ic_edit_grey600_36dp.png: The implied 36 dp size does not match the actual dp size (pixel size 108×108 in a drawable-xhdpi folder computes to 54×54 dp) [IconDipSize]
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-hdpi/ic_grid_on_black_36dp.png: Warning: Suspicious file name ic_grid_on_black_36dp.png: The implied 36 dp size does not match the actual dp size (pixel size 36×36 in a drawable-hdpi folder computes to 24×24 dp) [IconDipSize]
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-hdpi/ic_list_black_36dp.png: Warning: Suspicious file name ic_list_black_36dp.png: The implied 36 dp size does not match the actual dp size (pixel size 36×36 in a drawable-hdpi folder computes to 24×24 dp) [IconDipSize]
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-xhdpi/ic_save_grey600_36dp.png: Warning: Suspicious file name ic_save_grey600_36dp.png: The implied 36 dp size does not match the actual dp size (pixel size 108×108 in a drawable-xhdpi folder computes to 54×54 dp) [IconDipSize]
+
+   Explanation for issues of type "IconDipSize":
+   Checks the all icons which are provided in multiple densities, all compute
+   to roughly the same density-independent pixel (dip) size. This catches
+   errors where images are either placed in the wrong folder, or icons are
+   changed to new sizes but some folders are forgotten.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-hdpi: Warning: Missing the following drawables in drawable-hdpi: ic_add_grey600_36dp.png, ic_delete_grey600_36dp.png, ic_edit_grey600_36dp.png, ic_save_grey600_36dp.png [IconDensities]
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-mdpi: Warning: Missing the following drawables in drawable-mdpi: bg1.jpg, body_cart.png, btn_trans.png, btn_trans_state.png, btnblue.png... (33 more) [IconDensities]
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-xhdpi: Warning: Missing the following drawables in drawable-xhdpi: bg1.jpg, body_cart.png, btn_trans.png, btn_trans_state.png, btnblue.png... (29 more) [IconDensities]
+/home/hp/Documents/Quick Cash/app/src/main/res/drawable-xxhdpi: Warning: Missing the following drawables in drawable-xxhdpi: bg1.jpg, body_cart.png, btn_trans.png, btn_trans_state.png, btnblue.png... (33 more) [IconDensities]
+
+   Explanation for issues of type "IconDensities":
+   Icons will look best if a custom version is provided for each of the major
+   screen density classes (low, medium, high, extra high). This lint check
+   identifies icons which do not have complete coverage across the densities.
+
+   Low density is not really used much anymore, so this check ignores the ldpi
+   density. To force lint to include it, set the environment variable
+   ANDROID_LINT_INCLUDE_LDPI=true. For more information on current density
+   usage, see https://developer.android.com/about/dashboards
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:130: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+                 <Button
+                  ~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:143: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+                 <Button
+                  ~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:156: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+                 <Button
+                  ~~~~~~
+
+   Explanation for issues of type "ButtonStyle":
+   Button bars typically use a borderless style for the buttons. Set the
+   style="?android:attr/buttonBarButtonStyle" attribute on each of the
+   buttons, and set style="?android:attr/buttonBarStyle" on the parent layout
+
+   https://material.io/components/dialogs/
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_activation.xml:17: Warning: This text field does not specify an inputType [TextFields]
+        <EditText
+         ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_login.xml:22: Warning: This text field does not specify an inputType [TextFields]
+         <EditText
+          ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:43: Warning: This text field does not specify an inputType [TextFields]
+            <EditText
+             ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:82: Warning: This text field does not specify an inputType [TextFields]
+              <EditText
+               ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:80: Warning: This text field does not specify an inputType [TextFields]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:80: Warning: This text field does not specify an inputType [TextFields]
+                <EditText
+                 ~~~~~~~~
+
+   Explanation for issues of type "TextFields":
+   Providing an inputType attribute on a text field improves usability because
+   depending on the data to be input, optimized keyboards can be shown to the
+   user (such as just digits and parentheses for a phone number). 
+
+   The lint detector also looks at the id of the view, and if the id offers a
+   hint of the purpose of the field (for example, the id contains the phrase
+   phone or email), then lint will also ensure that the inputType contains the
+   corresponding type attributes.
+
+   If you really want to keep the text field generic, you can suppress this
+   warning by setting inputType="text".
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_activation.xml:17: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_login.xml:22: Warning: Missing autofillHints attribute [Autofill]
+         <EditText
+          ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_login.xml:35: Warning: Missing autofillHints attribute [Autofill]
+         <EditText
+          ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:43: Warning: Missing autofillHints attribute [Autofill]
+            <EditText
+             ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:315: Warning: Missing autofillHints attribute [Autofill]
+                    <EditText
+                     ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:82: Warning: Missing autofillHints attribute [Autofill]
+             <EditText
+              ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:82: Warning: Missing autofillHints attribute [Autofill]
+              <EditText
+               ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:80: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:105: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:120: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:135: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:80: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:94: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+/home/hp/Documents/Quick Cash/app/src/main/res/values-en/strings.xml:34: Warning: The standard Android way to capitalize cancel is "Cancel" (tip: use @android:string/cancel instead) [ButtonCase]
+    <string name="cancel">cancel</string>
+                          ~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values-en/strings.xml:35: Warning: The standard Android way to capitalize ok is "OK" (tip: use @android:string/ok instead) [ButtonCase]
+    <string name="ok">ok</string>
+                      ~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values/strings.xml:35: Warning: The standard Android way to capitalize ok is "OK" (tip: use @android:string/ok instead) [ButtonCase]
+    <string name="ok">ok</string>
+                      ~~
+/home/hp/Documents/Quick Cash/app/src/main/res/values-en/strings.xml:67: Warning: The standard Android way to capitalize CANCEL is "Cancel" (tip: use @android:string/cancel instead) [ButtonCase]
+    <string name="cancel_order">CANCEL</string>
+                                ~~~~~~
+
+   Explanation for issues of type "ButtonCase":
+   The standard capitalization for OK/Cancel dialogs is "OK" and "Cancel". To
+   ensure that your dialogs use the standard strings, you can use the resource
+   strings @android:string/ok and @android:string/cancel.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_login.xml:8: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView android:layout_width="match_parent"
+     ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:16: Warning: Missing contentDescription attribute on image [ContentDescription]
+        <ImageView android:layout_width="match_parent"
+         ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:30: Warning: Missing contentDescription attribute on image [ContentDescription]
+            <ImageView
+             ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:80: Warning: Missing contentDescription attribute on image [ContentDescription]
+          <ImageView android:layout_width="match_parent"
+           ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:131: Warning: Missing contentDescription attribute on image [ContentDescription]
+          <ImageView android:layout_width="match_parent"
+           ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:191: Warning: Missing contentDescription attribute on image [ContentDescription]
+          <ImageView android:layout_width="match_parent"
+           ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:242: Warning: Missing contentDescription attribute on image [ContentDescription]
+          <ImageView android:layout_width="match_parent"
+           ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:24: Warning: Missing contentDescription attribute on image [ContentDescription]
+            <ImageButton
+             ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:58: Warning: Missing contentDescription attribute on image [ContentDescription]
+            <ImageView
+             ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:332: Warning: Missing contentDescription attribute on image [ContentDescription]
+                    <ImageView
+                     ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:378: Warning: Missing contentDescription attribute on image [ContentDescription]
+           <ImageView
+            ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_splash.xml:8: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_splash.xml:16: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:31: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageButton
+     ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:54: Warning: Missing contentDescription attribute on image [ContentDescription]
+     <ImageButton
+      ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_list_item.xml:20: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageButton
+     ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_list_item.xml:32: Warning: Missing contentDescription attribute on image [ContentDescription]
+     <ImageButton
+      ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:105: Warning: Missing contentDescription attribute on image [ContentDescription]
+           <ImageView
+            ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:38: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageButton
+     ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_list.xml:26: Warning: Missing contentDescription attribute on image [ContentDescription]
+ <ImageButton
+  ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:37: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageButton
+     ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:149: Warning: Missing contentDescription attribute on image [ContentDescription]
+              <ImageView
+               ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_list.xml:26: Warning: Missing contentDescription attribute on image [ContentDescription]
+ <ImageButton
+  ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:37: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageButton
+     ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_list.xml:26: Warning: Missing contentDescription attribute on image [ContentDescription]
+ <ImageButton
+  ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/loading_dialog.xml:7: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:7: Warning: Missing contentDescription attribute on image [ContentDescription]
+     <ImageView
+      ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:14: Warning: Missing contentDescription attribute on image [ContentDescription]
+      <ImageView
+       ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:32: Warning: Missing contentDescription attribute on image [ContentDescription]
+          <ImageView
+           ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:7: Warning: Missing contentDescription attribute on image [ContentDescription]
+     <ImageView
+      ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:15: Warning: Missing contentDescription attribute on image [ContentDescription]
+      <ImageView
+       ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:36: Warning: Missing contentDescription attribute on image [ContentDescription]
+          <ImageView
+           ~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:28: Warning: Missing contentDescription attribute on image [ContentDescription]
+      <ImageButton
+       ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:40: Warning: Missing contentDescription attribute on image [ContentDescription]
+     <ImageButton
+      ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:38: Warning: Missing contentDescription attribute on image [ContentDescription]
+     <ImageButton
+      ~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:50: Warning: Missing contentDescription attribute on image [ContentDescription]
+     <ImageButton
+      ~~~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:26: Warning: 'clickable' attribute found, please also add 'focusable' [KeyboardInaccessibleWidget]
+            android:clickable="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:90: Warning: 'clickable' attribute found, please also add 'focusable' [KeyboardInaccessibleWidget]
+                 android:clickable="true"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:141: Warning: 'clickable' attribute found, please also add 'focusable' [KeyboardInaccessibleWidget]
+                 android:clickable="true"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:201: Warning: 'clickable' attribute found, please also add 'focusable' [KeyboardInaccessibleWidget]
+                 android:clickable="true"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:252: Warning: 'clickable' attribute found, please also add 'focusable' [KeyboardInaccessibleWidget]
+                 android:clickable="true"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "KeyboardInaccessibleWidget":
+   A widget that is declared to be clickable but not declared to be focusable
+   is not accessible via the keyboard. Please add the focusable attribute as
+   well.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:82: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+              <EditText
+               ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:80: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:105: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:120: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:135: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:80: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                <EditText
+                 ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:94: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+                <EditText
+                 ~~~~~~~~
+
+   Explanation for issues of type "LabelFor":
+   Editable text fields should provide an android:hint or, provided your
+   minSdkVersion is at least 17, they may be referenced by a view with a
+   android:labelFor attribute.
+
+   When using android:labelFor, be sure to provide an android:text or an
+   android:contentDescription.
+
+   If your view is labeled but by a label in a different layout which includes
+   this one, just suppress this warning from lint.
+
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/CartListAdapter.java:122: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        holder.price.setText(Shared.read(Constants.KEY_SETTING_CURRENCY_SYMBOL,Constants.VAL_DEFAULT_CURRENCY_SYMBOL) + ""+ Shared.decimalformat.format(cart.getSubtotal()));
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/ProductGridAdapter.java:148: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        holder.price.setText(Shared.read(Constants.KEY_SETTING_CURRENCY_SYMBOL,Constants.VAL_DEFAULT_CURRENCY_SYMBOL) + ""+ Shared.decimalformat.format(product.getPrice()));
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java:188: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    txtTotal.setText(Shared.read(Constants.KEY_SETTING_CURRENCY_SYMBOL,Constants.VAL_DEFAULT_CURRENCY_SYMBOL) + ""+ Shared.decimalformat.format(mtotal));
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java:525: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+     txtChange.setText(Shared.read(Constants.KEY_SETTING_CURRENCY_SYMBOL,Constants.VAL_DEFAULT_CURRENCY_SYMBOL) + ""+ Shared.decimalformat.format(change));
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java:529: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+     txtChange.setText(Shared.read(Constants.KEY_SETTING_CURRENCY_SYMBOL,Constants.VAL_DEFAULT_CURRENCY_SYMBOL) + ""+ Shared.decimalformat.format(0));
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/UserListAdapter.java:120: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            holder.desc1.setText("last login: " + Shared.dateformatID.format(user.getLastLogin()));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/UserListAdapter.java:120: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            holder.desc1.setText("last login: " + Shared.dateformatID.format(user.getLastLogin()));
+                                 ~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/adapter/UserListAdapter.java:122: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            holder.desc1.setText("last login: - ");
+                                 ~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:192: Warning: Hardcoded string "Rp. 0", should use @string resource [HardcodedText]
+                     android:text="Rp. 0"
+                     ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:295: Warning: Hardcoded string "Rp. 0", should use @string resource [HardcodedText]
+                     android:text="Rp. 0"
+                     ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:367: Warning: Hardcoded string "Rp. 0", should use @string resource [HardcodedText]
+                     android:text="Rp. 0"
+                     ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:17: Warning: Hardcoded string "title", should use @string resource [HardcodedText]
+        android:text="title"
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:29: Warning: Hardcoded string "Body", should use @string resource [HardcodedText]
+        android:text="Body" />
+        ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:52: Warning: Hardcoded string "2", should use @string resource [HardcodedText]
+        android:text="2" />
+        ~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_list_item.xml:18: Warning: Hardcoded string "TextView", should use @string resource [HardcodedText]
+        android:text="TextView" />
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_spinner_item.xml:18: Warning: Hardcoded string "TextView", should use @string resource [HardcodedText]
+        android:text="TextView" />
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_spinner_menu_item.xml:18: Warning: Hardcoded string "TextView", should use @string resource [HardcodedText]
+        android:text="TextView" />
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/device_list.xml:24: Warning: Hardcoded string "Paired Devices", should use @string resource [HardcodedText]
+        android:text="Paired Devices"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/device_list.xml:44: Warning: Hardcoded string "Other Available Devices", should use @string resource [HardcodedText]
+        android:text="Other Available Devices"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:14: Warning: Hardcoded string "title", should use @string resource [HardcodedText]
+        android:text="title" />
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:26: Warning: Hardcoded string ">", should use @string resource [HardcodedText]
+        android:text=">" />
+        ~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:13: Warning: Hardcoded string "title", should use @string resource [HardcodedText]
+        android:text="title" />
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:25: Warning: Hardcoded string ">", should use @string resource [HardcodedText]
+        android:text=">" />
+        ~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:179: Warning: Hardcoded string "Active", should use @string resource [HardcodedText]
+                        android:text="Active" />
+                        ~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:185: Warning: Hardcoded string "InActive", should use @string resource [HardcodedText]
+                        android:text="InActive" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:13: Warning: Hardcoded string "title", should use @string resource [HardcodedText]
+        android:text="title" />
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:25: Warning: Hardcoded string ">", should use @string resource [HardcodedText]
+        android:text=">" />
+        ~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:120: Warning: Hardcoded string "Cashier", should use @string resource [HardcodedText]
+                        android:text="Cashier" />
+                        ~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:126: Warning: Hardcoded string "Administrator", should use @string resource [HardcodedText]
+                        android:text="Administrator" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:50: Warning: Hardcoded string "cabe", should use @string resource [HardcodedText]
+        android:text="cabe"
+        ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:64: Warning: Hardcoded string "Rp. 10.000", should use @string resource [HardcodedText]
+        android:text="Rp. 10.000" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:54: Warning: Hardcoded string "cabe", should use @string resource [HardcodedText]
+        android:text="cabe"
+        ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:68: Warning: Hardcoded string "Rp. 10.000", should use @string resource [HardcodedText]
+        android:text="Rp. 10.000" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:15: Warning: Hardcoded string "title", should use @string resource [HardcodedText]
+        android:text="title"
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:26: Warning: Hardcoded string "Body", should use @string resource [HardcodedText]
+        android:text="Body" />
+        ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/setting_list_item.xml:14: Warning: Hardcoded string "title", should use @string resource [HardcodedText]
+        android:text="title"
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/setting_list_item.xml:25: Warning: Hardcoded string "Body", should use @string resource [HardcodedText]
+        android:text="Body" />
+        ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:15: Warning: Hardcoded string "title", should use @string resource [HardcodedText]
+        android:text="title"
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:26: Warning: Hardcoded string "Body", should use @string resource [HardcodedText]
+        android:text="Body" />
+        ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:35: Warning: Hardcoded string "last login : 01/01/2016", should use @string resource [HardcodedText]
+        android:text="last login : 01/01/2016" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:28: Warning: @id/subtitle can overlap @id/imageButton1 if @string/add grows due to localized text expansion [RelativeOverlap]
+    <TextView
+     ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_list.xml:10: Warning: @id/item_detail can overlap @id/imageButton1 if @id/item_detail grows due to localized text expansion [RelativeOverlap]
+ <TextView 
+  ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:27: Warning: @id/subtitle can overlap @id/imageButton1 if @string/add grows due to localized text expansion [RelativeOverlap]
+    <TextView
+     ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_list.xml:10: Warning: @id/item_detail can overlap @id/imageButton1 if @id/item_detail grows due to localized text expansion [RelativeOverlap]
+ <TextView 
+  ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:27: Warning: @id/subtitle can overlap @id/imageButton1 if @string/add grows due to localized text expansion [RelativeOverlap]
+    <TextView
+     ~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_list.xml:10: Warning: @id/item_detail can overlap @id/imageButton1 if @id/item_detail grows due to localized text expansion [RelativeOverlap]
+ <TextView 
+  ~~~~~~~~
+
+   Explanation for issues of type "RelativeOverlap":
+   If relative layout has text or button items aligned to left and right sides
+   they can overlap each other due to localized text expansion unless they
+   have mutual constraints like toEndOf/toStartOf.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:231: Warning: When you define paddingRight you should probably also define paddingLeft for right-to-left symmetry [RtlSymmetry]
+             android:paddingRight="20dp"
+             ~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RtlSymmetry":
+   If you specify padding or margin on the left side of a layout, you should
+   probably also specify padding on the right side (and vice versa) for
+   right-to-left layout symmetry.
+
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:14: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="2dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginRight="2dp" >
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:76: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="2dp" to better support right-to-left layouts [RtlHardcoded]
+               android:layout_marginRight="2dp"
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_main.xml:186: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="2dp" to better support right-to-left layouts [RtlHardcoded]
+               android:layout_marginRight="2dp"
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:28: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_alignParentLeft="true"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:29: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="16dp" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_marginLeft="16dp"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:38: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="8dp" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_marginLeft="8dp"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:40: Warning: Consider replacing android:layout_toRightOf with android:layout_toEndOf="@+id/imageView2" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_toRightOf="@+id/imageView2"
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:48: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="8dp" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_marginLeft="8dp"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:49: Warning: Consider replacing android:layout_toRightOf with android:layout_toEndOf="@+id/sparator" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_toRightOf="@+id/sparator"
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:54: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/spinner1" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_toLeftOf="@+id/spinner1"
+                ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:62: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_alignParentRight="true"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:64: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="20dp" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_marginRight="20dp"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:72: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="5dp" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_marginRight="5dp"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:75: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/imageView3" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_toLeftOf="@+id/imageView3" />
+                ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:127: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="10dp" to better support right-to-left layouts [RtlHardcoded]
+                 android:layout_marginRight="10dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:139: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/btnOrder" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_toLeftOf="@+id/btnOrder"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:152: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/btnOrder" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_toLeftOf="@+id/btnOrder"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:161: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_alignParentRight="true"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:176: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="8dp" to better support right-to-left layouts [RtlHardcoded]
+                 android:layout_marginLeft="8dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:231: Warning: Consider replacing android:paddingRight with android:paddingEnd="20dp" to better support right-to-left layouts [RtlHardcoded]
+             android:paddingRight="20dp"
+             ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:238: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="4dp" to better support right-to-left layouts [RtlHardcoded]
+                 android:layout_marginRight="4dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:245: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_alignParentRight="true"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:252: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="10dp" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_marginRight="10dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:266: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/btnCheckout" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_toLeftOf="@+id/btnCheckout"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:267: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="8dp" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_marginRight="8dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:278: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="10dp" to better support right-to-left layouts [RtlHardcoded]
+                 android:layout_marginRight="10dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/activity_quick_order.xml:350: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+                 android:layout_marginRight="16dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:14: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:16: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:25: Warning: Consider replacing android:layout_alignLeft with android:layout_alignStart="@+id/textView1" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignLeft="@+id/textView1"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:35: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentRight="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:37: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:48: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/imageButton1" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toLeftOf="@+id/imageButton1"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/cart_list_item.xml:59: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/textView3" to better support right-to-left layouts [RtlHardcoded]
+         android:layout_toLeftOf="@+id/textView3"
+         ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_list_item.xml:12: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_list_item.xml:14: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_list_item.xml:24: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentRight="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_list_item.xml:27: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_list_item.xml:37: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_list_item.xml:39: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/imageView1" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toLeftOf="@+id/imageView1"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_spinner_item.xml:12: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_spinner_item.xml:14: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_spinner_menu_item.xml:12: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/category_spinner_menu_item.xml:14: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:34: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_alignParentRight="true"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:37: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="10dp" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_marginRight="10dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:56: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/btnOrder" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_toLeftOf="@+id/btnOrder"
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:57: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="8dp" to better support right-to-left layouts [RtlHardcoded]
+                     android:layout_marginRight="8dp"
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:67: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="16dp" to better support right-to-left layouts [RtlHardcoded]
+                 android:layout_marginLeft="16dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:91: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="8dp" to better support right-to-left layouts [RtlHardcoded]
+                 android:layout_marginLeft="8dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/confirm_dialog.xml:92: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="12dp" to better support right-to-left layouts [RtlHardcoded]
+                 android:layout_marginRight="12dp"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:21: Warning: Consider replacing android:layout_toRightOf with android:layout_toEndOf="@+id/item_detail" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toRightOf="@+id/item_detail"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:23: Warning: Consider replacing android:paddingLeft with android:paddingStart="0dp" to better support right-to-left layouts [RtlHardcoded]
+        android:paddingLeft="0dp"
+        ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:24: Warning: Consider replacing android:paddingRight with android:paddingEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:paddingRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:33: Warning: Consider replacing android:layout_toRightOf with android:layout_toEndOf="@+id/chevron" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toRightOf="@+id/chevron"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:42: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentRight="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:53: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:64: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+          android:layout_alignParentLeft="true"
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:71: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+              android:layout_alignParentLeft="true"
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:93: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_add.xml:95: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="24dp" to better support right-to-left layouts [RtlHardcoded]
+            android:layout_marginLeft="24dp"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_category_list.xml:30: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+     android:layout_alignParentRight="true"
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:20: Warning: Consider replacing android:layout_toRightOf with android:layout_toEndOf="@+id/item_detail" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toRightOf="@+id/item_detail"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:22: Warning: Consider replacing android:paddingLeft with android:paddingStart="0dp" to better support right-to-left layouts [RtlHardcoded]
+        android:paddingLeft="0dp"
+        ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:23: Warning: Consider replacing android:paddingRight with android:paddingEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:paddingRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:32: Warning: Consider replacing android:layout_toRightOf with android:layout_toEndOf="@+id/chevron" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toRightOf="@+id/chevron"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:41: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentRight="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:52: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:64: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:70: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_alignParentLeft="true"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:178: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+                        android:layout_marginRight="16dp"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:195: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_add.xml:197: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="24dp" to better support right-to-left layouts [RtlHardcoded]
+            android:layout_marginLeft="24dp"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_product_list.xml:30: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+     android:layout_alignParentRight="true"
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:20: Warning: Consider replacing android:layout_toRightOf with android:layout_toEndOf="@+id/item_detail" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toRightOf="@+id/item_detail"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:22: Warning: Consider replacing android:paddingLeft with android:paddingStart="0dp" to better support right-to-left layouts [RtlHardcoded]
+        android:paddingLeft="0dp"
+        ~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:23: Warning: Consider replacing android:paddingRight with android:paddingEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:paddingRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:32: Warning: Consider replacing android:layout_toRightOf with android:layout_toEndOf="@+id/chevron" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toRightOf="@+id/chevron"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:41: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentRight="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:52: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:64: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:70: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_alignParentLeft="true"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:119: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+                        android:layout_marginRight="16dp"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:136: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+            android:layout_alignParentLeft="true"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_add.xml:138: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="24dp" to better support right-to-left layouts [RtlHardcoded]
+            android:layout_marginLeft="24dp"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/fragment_user_list.xml:30: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+     android:layout_alignParentRight="true"
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:46: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:48: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="8dp" to better support right-to-left layouts [RtlHardcoded]
+       android:layout_marginLeft="8dp"
+       ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:58: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+         android:layout_alignParentRight="true"
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_item.xml:60: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="8dp" to better support right-to-left layouts [RtlHardcoded]
+       android:layout_marginRight="8dp"
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:50: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:52: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="8dp" to better support right-to-left layouts [RtlHardcoded]
+       android:layout_marginLeft="8dp"
+       ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:62: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+         android:layout_alignParentRight="true"
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_grid_list_item.xml:64: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="8dp" to better support right-to-left layouts [RtlHardcoded]
+       android:layout_marginRight="8dp"
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:11: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:13: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:22: Warning: Consider replacing android:layout_alignLeft with android:layout_alignStart="@+id/textView1" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignLeft="@+id/textView1"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:32: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentRight="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:35: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:45: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/product_list_item.xml:47: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/imageView1" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toLeftOf="@+id/imageView1"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/setting_list_item.xml:10: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/setting_list_item.xml:12: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/setting_list_item.xml:21: Warning: Consider replacing android:layout_alignLeft with android:layout_alignStart="@+id/textView1" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignLeft="@+id/textView1"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:11: Warning: Consider replacing android:layout_alignParentLeft with android:layout_alignParentStart="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentLeft="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:13: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:22: Warning: Consider replacing android:layout_alignLeft with android:layout_alignStart="@+id/textView1" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignLeft="@+id/textView1"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:32: Warning: Consider replacing android:layout_alignLeft with android:layout_alignStart="@+id/textView2" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignLeft="@+id/textView2"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:42: Warning: Consider replacing android:layout_alignParentRight with android:layout_alignParentEnd="true" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_alignParentRight="true"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:45: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:55: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="16dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginRight="16dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hp/Documents/Quick Cash/app/src/main/res/layout/user_list_item.xml:57: Warning: Consider replacing android:layout_toLeftOf with android:layout_toStartOf="@+id/imageView1" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_toLeftOf="@+id/imageView1"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RtlHardcoded":
+   Using Gravity#LEFT and Gravity#RIGHT can lead to problems when a layout is
+   rendered in locales where text flows from right to left. Use Gravity#START
+   and Gravity#END instead. Similarly, in XML gravity and layout_gravity
+   attributes, use start rather than left.
+
+   For XML attributes such as paddingLeft and layout_marginLeft, use
+   paddingStart and layout_marginStart. NOTE: If your minSdkVersion is less
+   than 17, you should add both the older left/right attributes as well as the
+   new start/end attributes. On older platforms, where RTL is not supported
+   and the start/end attributes are unknown and therefore ignored, you need
+   the older left/right attributes. There is a separate lint check which
+   catches that type of error.
+
+   (Note: For Gravity#LEFT and Gravity#START, you can use these constants even
+   when targeting older platforms, because the start bitmask is a superset of
+   the left bitmask. Therefore, you can use gravity="start" rather than
+   gravity="left|start".)
+
+116 errors, 427 warnings

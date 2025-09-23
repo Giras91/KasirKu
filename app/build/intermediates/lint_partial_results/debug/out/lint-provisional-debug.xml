@@ -1,0 +1,3142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="conditional_incidents">
+
+    <incident
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        severity="error"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.camera&quot; required=&quot;false&quot;>` tag">
+        <fix-data featureName="android.hardware.camera"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="16"
+            column="6"
+            startOffset="814"
+            endLine="16"
+            endColumn="21"
+            endOffset="829"/>
+        <map>
+            <condition library="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;2dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;2dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="14"
+            column="9"
+            startOffset="536"
+            endLine="14"
+            endColumn="35"
+            endOffset="562"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="KeyboardInaccessibleWidget"
+        severity="warning"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <fix-attribute
+            description="Set focusable=&quot;true&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="focusable"
+            value="true"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="26"
+            column="13"
+            startOffset="981"
+            endLine="26"
+            endColumn="37"
+            endOffset="1005"/>
+        <map>
+            <condition minLT="fffffffffe000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;2dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;2dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="76"
+            column="16"
+            startOffset="2955"
+            endLine="76"
+            endColumn="42"
+            endOffset="2981"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="KeyboardInaccessibleWidget"
+        severity="warning"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <fix-attribute
+            description="Set focusable=&quot;true&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="focusable"
+            value="true"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="90"
+            column="18"
+            startOffset="3533"
+            endLine="90"
+            endColumn="42"
+            endOffset="3557"/>
+        <map>
+            <condition minLT="fffffffffe000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="KeyboardInaccessibleWidget"
+        severity="warning"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <fix-attribute
+            description="Set focusable=&quot;true&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="focusable"
+            value="true"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="141"
+            column="18"
+            startOffset="5685"
+            endLine="141"
+            endColumn="42"
+            endOffset="5709"/>
+        <map>
+            <condition minLT="fffffffffe000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;2dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;2dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="186"
+            column="16"
+            startOffset="7537"
+            endLine="186"
+            endColumn="42"
+            endOffset="7563"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="KeyboardInaccessibleWidget"
+        severity="warning"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <fix-attribute
+            description="Set focusable=&quot;true&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="focusable"
+            value="true"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="201"
+            column="18"
+            startOffset="8160"
+            endLine="201"
+            endColumn="42"
+            endOffset="8184"/>
+        <map>
+            <condition minLT="fffffffffe000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="KeyboardInaccessibleWidget"
+        severity="warning"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <fix-attribute
+            description="Set focusable=&quot;true&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="focusable"
+            value="true"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="252"
+            column="18"
+            startOffset="10343"
+            endLine="252"
+            endColumn="42"
+            endOffset="10367"/>
+        <map>
+            <condition minLT="fffffffffe000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="28"
+            column="17"
+            startOffset="1078"
+            endLine="28"
+            endColumn="47"
+            endOffset="1108"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;16dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="29"
+            column="17"
+            startOffset="1133"
+            endLine="29"
+            endColumn="42"
+            endOffset="1158"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;8dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="38"
+            column="17"
+            startOffset="1511"
+            endLine="38"
+            endColumn="42"
+            endOffset="1536"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/imageView2&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toEndOf=&quot;@+id/imageView2&quot;"
+            oldString="layout_toRightOf"
+            replacement="layout_toEndOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="40"
+            column="17"
+            startOffset="1609"
+            endLine="40"
+            endColumn="41"
+            endOffset="1633"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;8dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="48"
+            column="17"
+            startOffset="1955"
+            endLine="48"
+            endColumn="42"
+            endOffset="1980"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/spinner1&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/spinner1&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="54"
+            column="17"
+            startOffset="2251"
+            endLine="54"
+            endColumn="40"
+            endOffset="2274"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/sparator&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toEndOf=&quot;@+id/sparator&quot;"
+            oldString="layout_toRightOf"
+            replacement="layout_toEndOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="49"
+            column="17"
+            startOffset="2004"
+            endLine="49"
+            endColumn="41"
+            endOffset="2028"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="62"
+            column="17"
+            startOffset="2555"
+            endLine="62"
+            endColumn="48"
+            endOffset="2586"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;20dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;20dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="64"
+            column="17"
+            startOffset="2665"
+            endLine="64"
+            endColumn="43"
+            endOffset="2691"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;5dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;5dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="72"
+            column="17"
+            startOffset="2960"
+            endLine="72"
+            endColumn="43"
+            endOffset="2986"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/imageView3&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/imageView3&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="75"
+            column="17"
+            startOffset="3114"
+            endLine="75"
+            endColumn="40"
+            endOffset="3137"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;10dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="127"
+            column="18"
+            startOffset="4995"
+            endLine="127"
+            endColumn="44"
+            endOffset="5021"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/btnOrder&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/btnOrder&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="139"
+            column="22"
+            startOffset="5579"
+            endLine="139"
+            endColumn="45"
+            endOffset="5602"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/btnOrder&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/btnOrder&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="152"
+            column="22"
+            startOffset="6199"
+            endLine="152"
+            endColumn="45"
+            endOffset="6222"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="161"
+            column="22"
+            startOffset="6614"
+            endLine="161"
+            endColumn="53"
+            endOffset="6645"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;8dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="176"
+            column="18"
+            startOffset="7263"
+            endLine="176"
+            endColumn="43"
+            endOffset="7288"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlSymmetry"
+        severity="warning"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="231"
+            column="14"
+            startOffset="9708"
+            endLine="231"
+            endColumn="34"
+            endOffset="9728"/>
+        <map>
+            <entry
+                name="applies"
+                int="2"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;20dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:paddingEnd=&quot;20dp&quot;"
+            oldString="paddingRight"
+            replacement="paddingEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="231"
+            column="14"
+            startOffset="9708"
+            endLine="231"
+            endColumn="34"
+            endOffset="9728"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;4dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;4dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="238"
+            column="18"
+            startOffset="9996"
+            endLine="238"
+            endColumn="44"
+            endOffset="10022"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="245"
+            column="22"
+            startOffset="10300"
+            endLine="245"
+            endColumn="53"
+            endOffset="10331"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;10dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="252"
+            column="22"
+            startOffset="10663"
+            endLine="252"
+            endColumn="48"
+            endOffset="10689"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;8dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="267"
+            column="22"
+            startOffset="11404"
+            endLine="267"
+            endColumn="48"
+            endOffset="11430"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/btnCheckout&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/btnCheckout&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="266"
+            column="22"
+            startOffset="11339"
+            endLine="266"
+            endColumn="45"
+            endOffset="11362"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;10dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="278"
+            column="18"
+            startOffset="11810"
+            endLine="278"
+            endColumn="44"
+            endOffset="11836"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_quick_order.xml"
+            line="350"
+            column="18"
+            startOffset="14771"
+            endLine="350"
+            endColumn="44"
+            endOffset="14797"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/cart_list_item.xml"
+            line="14"
+            column="9"
+            startOffset="461"
+            endLine="14"
+            endColumn="39"
+            endOffset="491"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;16dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/cart_list_item.xml"
+            line="16"
+            column="9"
+            startOffset="554"
+            endLine="16"
+            endColumn="34"
+            endOffset="579"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignLeft` with `android:layout_alignStart=&quot;@+id/textView1&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignStart=&quot;@+id/textView1&quot;"
+            oldString="layout_alignLeft"
+            replacement="layout_alignStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/cart_list_item.xml"
+            line="25"
+            column="9"
+            startOffset="848"
+            endLine="25"
+            endColumn="33"
+            endOffset="872"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/cart_list_item.xml"
+            line="35"
+            column="9"
+            startOffset="1188"
+            endLine="35"
+            endColumn="40"
+            endOffset="1219"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/cart_list_item.xml"
+            line="37"
+            column="9"
+            startOffset="1282"
+            endLine="37"
+            endColumn="35"
+            endOffset="1308"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/imageButton1&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/imageButton1&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/cart_list_item.xml"
+            line="48"
+            column="9"
+            startOffset="1676"
+            endLine="48"
+            endColumn="32"
+            endOffset="1699"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/textView3&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/textView3&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/cart_list_item.xml"
+            line="59"
+            column="10"
+            startOffset="2061"
+            endLine="59"
+            endColumn="33"
+            endOffset="2084"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_list_item.xml"
+            line="12"
+            column="9"
+            startOffset="450"
+            endLine="12"
+            endColumn="39"
+            endOffset="480"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;16dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_list_item.xml"
+            line="14"
+            column="9"
+            startOffset="543"
+            endLine="14"
+            endColumn="34"
+            endOffset="568"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_list_item.xml"
+            line="24"
+            column="9"
+            startOffset="890"
+            endLine="24"
+            endColumn="40"
+            endOffset="921"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_list_item.xml"
+            line="27"
+            column="9"
+            startOffset="1019"
+            endLine="27"
+            endColumn="35"
+            endOffset="1045"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_list_item.xml"
+            line="37"
+            column="9"
+            startOffset="1362"
+            endLine="37"
+            endColumn="35"
+            endOffset="1388"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/imageView1&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/imageView1&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_list_item.xml"
+            line="39"
+            column="9"
+            startOffset="1440"
+            endLine="39"
+            endColumn="32"
+            endOffset="1463"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_spinner_item.xml"
+            line="12"
+            column="9"
+            startOffset="450"
+            endLine="12"
+            endColumn="39"
+            endOffset="480"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;16dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_spinner_item.xml"
+            line="14"
+            column="9"
+            startOffset="543"
+            endLine="14"
+            endColumn="34"
+            endOffset="568"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_spinner_menu_item.xml"
+            line="12"
+            column="9"
+            startOffset="450"
+            endLine="12"
+            endColumn="39"
+            endOffset="480"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;16dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/category_spinner_menu_item.xml"
+            line="14"
+            column="9"
+            startOffset="543"
+            endLine="14"
+            endColumn="34"
+            endOffset="568"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/confirm_dialog.xml"
+            line="34"
+            column="22"
+            startOffset="1361"
+            endLine="34"
+            endColumn="53"
+            endOffset="1392"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;10dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/confirm_dialog.xml"
+            line="37"
+            column="22"
+            startOffset="1527"
+            endLine="37"
+            endColumn="48"
+            endOffset="1553"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;8dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/confirm_dialog.xml"
+            line="57"
+            column="22"
+            startOffset="2523"
+            endLine="57"
+            endColumn="48"
+            endOffset="2549"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/btnOrder&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/btnOrder&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/confirm_dialog.xml"
+            line="56"
+            column="22"
+            startOffset="2461"
+            endLine="56"
+            endColumn="45"
+            endOffset="2484"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;16dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/confirm_dialog.xml"
+            line="67"
+            column="18"
+            startOffset="2969"
+            endLine="67"
+            endColumn="43"
+            endOffset="2994"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;8dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/confirm_dialog.xml"
+            line="91"
+            column="18"
+            startOffset="4007"
+            endLine="91"
+            endColumn="43"
+            endOffset="4032"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;12dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;12dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/confirm_dialog.xml"
+            line="92"
+            column="18"
+            startOffset="4057"
+            endLine="92"
+            endColumn="44"
+            endOffset="4083"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/item_detail&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toEndOf=&quot;@+id/item_detail&quot;"
+            oldString="layout_toRightOf"
+            replacement="layout_toEndOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="21"
+            column="9"
+            startOffset="716"
+            endLine="21"
+            endColumn="33"
+            endOffset="740"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;0dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:paddingStart=&quot;0dp&quot;"
+            oldString="paddingLeft"
+            replacement="paddingStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="23"
+            column="9"
+            startOffset="807"
+            endLine="23"
+            endColumn="28"
+            endOffset="826"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:paddingEnd=&quot;16dp&quot;"
+            oldString="paddingRight"
+            replacement="paddingEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="24"
+            column="9"
+            startOffset="842"
+            endLine="24"
+            endColumn="29"
+            endOffset="862"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/chevron&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toEndOf=&quot;@+id/chevron&quot;"
+            oldString="layout_toRightOf"
+            replacement="layout_toEndOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="33"
+            column="9"
+            startOffset="1138"
+            endLine="33"
+            endColumn="33"
+            endOffset="1162"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="42"
+            column="9"
+            startOffset="1434"
+            endLine="42"
+            endColumn="40"
+            endOffset="1465"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="53"
+            column="9"
+            startOffset="1862"
+            endLine="53"
+            endColumn="39"
+            endOffset="1892"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="64"
+            column="11"
+            startOffset="2273"
+            endLine="64"
+            endColumn="41"
+            endOffset="2303"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="71"
+            column="15"
+            startOffset="2537"
+            endLine="71"
+            endColumn="45"
+            endOffset="2567"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="93"
+            column="13"
+            startOffset="3371"
+            endLine="93"
+            endColumn="43"
+            endOffset="3401"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;24dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;24dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="95"
+            column="13"
+            startOffset="3475"
+            endLine="95"
+            endColumn="38"
+            endOffset="3500"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_add.xml"
+            line="82"
+            column="16"
+            startOffset="2946"
+            endLine="82"
+            endColumn="24"
+            endOffset="2954"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_category_list.xml"
+            line="30"
+            column="6"
+            startOffset="880"
+            endLine="30"
+            endColumn="37"
+            endOffset="911"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/item_detail&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toEndOf=&quot;@+id/item_detail&quot;"
+            oldString="layout_toRightOf"
+            replacement="layout_toEndOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="20"
+            column="9"
+            startOffset="710"
+            endLine="20"
+            endColumn="33"
+            endOffset="734"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;0dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:paddingStart=&quot;0dp&quot;"
+            oldString="paddingLeft"
+            replacement="paddingStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="22"
+            column="9"
+            startOffset="801"
+            endLine="22"
+            endColumn="28"
+            endOffset="820"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:paddingEnd=&quot;16dp&quot;"
+            oldString="paddingRight"
+            replacement="paddingEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="23"
+            column="9"
+            startOffset="836"
+            endLine="23"
+            endColumn="29"
+            endOffset="856"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/chevron&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toEndOf=&quot;@+id/chevron&quot;"
+            oldString="layout_toRightOf"
+            replacement="layout_toEndOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="32"
+            column="9"
+            startOffset="1132"
+            endLine="32"
+            endColumn="33"
+            endOffset="1156"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="41"
+            column="9"
+            startOffset="1428"
+            endLine="41"
+            endColumn="40"
+            endOffset="1459"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="52"
+            column="9"
+            startOffset="1856"
+            endLine="52"
+            endColumn="39"
+            endOffset="1886"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="64"
+            column="13"
+            startOffset="2322"
+            endLine="64"
+            endColumn="43"
+            endOffset="2352"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="70"
+            column="17"
+            startOffset="2550"
+            endLine="70"
+            endColumn="47"
+            endOffset="2580"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="178"
+            column="25"
+            startOffset="7151"
+            endLine="178"
+            endColumn="51"
+            endOffset="7177"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="195"
+            column="13"
+            startOffset="7720"
+            endLine="195"
+            endColumn="43"
+            endOffset="7750"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;24dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;24dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="197"
+            column="13"
+            startOffset="7824"
+            endLine="197"
+            endColumn="38"
+            endOffset="7849"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="80"
+            column="18"
+            startOffset="2955"
+            endLine="80"
+            endColumn="26"
+            endOffset="2963"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="105"
+            column="18"
+            startOffset="4024"
+            endLine="105"
+            endColumn="26"
+            endOffset="4032"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="120"
+            column="18"
+            startOffset="4653"
+            endLine="120"
+            endColumn="26"
+            endOffset="4661"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_add.xml"
+            line="135"
+            column="18"
+            startOffset="5280"
+            endLine="135"
+            endColumn="26"
+            endOffset="5288"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_product_list.xml"
+            line="30"
+            column="6"
+            startOffset="880"
+            endLine="30"
+            endColumn="37"
+            endOffset="911"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/item_detail&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toEndOf=&quot;@+id/item_detail&quot;"
+            oldString="layout_toRightOf"
+            replacement="layout_toEndOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="20"
+            column="9"
+            startOffset="710"
+            endLine="20"
+            endColumn="33"
+            endOffset="734"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;0dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:paddingStart=&quot;0dp&quot;"
+            oldString="paddingLeft"
+            replacement="paddingStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="22"
+            column="9"
+            startOffset="801"
+            endLine="22"
+            endColumn="28"
+            endOffset="820"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:paddingEnd=&quot;16dp&quot;"
+            oldString="paddingRight"
+            replacement="paddingEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="23"
+            column="9"
+            startOffset="836"
+            endLine="23"
+            endColumn="29"
+            endOffset="856"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toRightOf` with `android:layout_toEndOf=&quot;@+id/chevron&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toEndOf=&quot;@+id/chevron&quot;"
+            oldString="layout_toRightOf"
+            replacement="layout_toEndOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="32"
+            column="9"
+            startOffset="1132"
+            endLine="32"
+            endColumn="33"
+            endOffset="1156"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="41"
+            column="9"
+            startOffset="1428"
+            endLine="41"
+            endColumn="40"
+            endOffset="1459"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="52"
+            column="9"
+            startOffset="1856"
+            endLine="52"
+            endColumn="39"
+            endOffset="1886"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="64"
+            column="13"
+            startOffset="2322"
+            endLine="64"
+            endColumn="43"
+            endOffset="2352"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="70"
+            column="17"
+            startOffset="2550"
+            endLine="70"
+            endColumn="47"
+            endOffset="2580"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="119"
+            column="25"
+            startOffset="4637"
+            endLine="119"
+            endColumn="51"
+            endOffset="4663"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="136"
+            column="13"
+            startOffset="5212"
+            endLine="136"
+            endColumn="43"
+            endOffset="5242"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;24dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;24dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="138"
+            column="13"
+            startOffset="5316"
+            endLine="138"
+            endColumn="38"
+            endOffset="5341"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="80"
+            column="18"
+            startOffset="2959"
+            endLine="80"
+            endColumn="26"
+            endOffset="2967"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_add.xml"
+            line="94"
+            column="18"
+            startOffset="3534"
+            endLine="94"
+            endColumn="26"
+            endOffset="3542"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_user_list.xml"
+            line="30"
+            column="6"
+            startOffset="880"
+            endLine="30"
+            endColumn="37"
+            endOffset="911"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_grid_item.xml"
+            line="46"
+            column="9"
+            startOffset="1686"
+            endLine="46"
+            endColumn="39"
+            endOffset="1716"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;8dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_grid_item.xml"
+            line="48"
+            column="8"
+            startOffset="1778"
+            endLine="48"
+            endColumn="33"
+            endOffset="1803"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_grid_item.xml"
+            line="58"
+            column="10"
+            startOffset="2111"
+            endLine="58"
+            endColumn="41"
+            endOffset="2142"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;8dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_grid_item.xml"
+            line="60"
+            column="8"
+            startOffset="2204"
+            endLine="60"
+            endColumn="34"
+            endOffset="2230"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_grid_list_item.xml"
+            line="50"
+            column="9"
+            startOffset="1821"
+            endLine="50"
+            endColumn="39"
+            endOffset="1851"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;8dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_grid_list_item.xml"
+            line="52"
+            column="8"
+            startOffset="1913"
+            endLine="52"
+            endColumn="33"
+            endOffset="1938"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_grid_list_item.xml"
+            line="62"
+            column="10"
+            startOffset="2246"
+            endLine="62"
+            endColumn="41"
+            endOffset="2277"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;8dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_grid_list_item.xml"
+            line="64"
+            column="8"
+            startOffset="2339"
+            endLine="64"
+            endColumn="34"
+            endOffset="2365"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_list_item.xml"
+            line="11"
+            column="9"
+            startOffset="411"
+            endLine="11"
+            endColumn="39"
+            endOffset="441"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;16dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_list_item.xml"
+            line="13"
+            column="9"
+            startOffset="504"
+            endLine="13"
+            endColumn="34"
+            endOffset="529"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignLeft` with `android:layout_alignStart=&quot;@+id/textView1&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignStart=&quot;@+id/textView1&quot;"
+            oldString="layout_alignLeft"
+            replacement="layout_alignStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_list_item.xml"
+            line="22"
+            column="9"
+            startOffset="834"
+            endLine="22"
+            endColumn="33"
+            endOffset="858"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_list_item.xml"
+            line="32"
+            column="9"
+            startOffset="1188"
+            endLine="32"
+            endColumn="40"
+            endOffset="1219"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_list_item.xml"
+            line="35"
+            column="9"
+            startOffset="1317"
+            endLine="35"
+            endColumn="35"
+            endOffset="1343"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_list_item.xml"
+            line="45"
+            column="9"
+            startOffset="1660"
+            endLine="45"
+            endColumn="35"
+            endOffset="1686"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/imageView1&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/imageView1&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/product_list_item.xml"
+            line="47"
+            column="9"
+            startOffset="1738"
+            endLine="47"
+            endColumn="32"
+            endOffset="1761"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/setting_list_item.xml"
+            line="10"
+            column="9"
+            startOffset="354"
+            endLine="10"
+            endColumn="39"
+            endOffset="384"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;16dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/setting_list_item.xml"
+            line="12"
+            column="9"
+            startOffset="447"
+            endLine="12"
+            endColumn="34"
+            endOffset="472"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignLeft` with `android:layout_alignStart=&quot;@+id/textView1&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignStart=&quot;@+id/textView1&quot;"
+            oldString="layout_alignLeft"
+            replacement="layout_alignStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/setting_list_item.xml"
+            line="21"
+            column="9"
+            startOffset="777"
+            endLine="21"
+            endColumn="33"
+            endOffset="801"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentStart=&quot;true&quot;"
+            oldString="layout_alignParentLeft"
+            replacement="layout_alignParentStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/user_list_item.xml"
+            line="11"
+            column="9"
+            startOffset="412"
+            endLine="11"
+            endColumn="39"
+            endOffset="442"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;16dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/user_list_item.xml"
+            line="13"
+            column="9"
+            startOffset="505"
+            endLine="13"
+            endColumn="34"
+            endOffset="530"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignLeft` with `android:layout_alignStart=&quot;@+id/textView1&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignStart=&quot;@+id/textView1&quot;"
+            oldString="layout_alignLeft"
+            replacement="layout_alignStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/user_list_item.xml"
+            line="22"
+            column="9"
+            startOffset="835"
+            endLine="22"
+            endColumn="33"
+            endOffset="859"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignLeft` with `android:layout_alignStart=&quot;@+id/textView2&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignStart=&quot;@+id/textView2&quot;"
+            oldString="layout_alignLeft"
+            replacement="layout_alignStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/user_list_item.xml"
+            line="32"
+            column="9"
+            startOffset="1193"
+            endLine="32"
+            endColumn="33"
+            endOffset="1217"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_alignParentEnd=&quot;true&quot;"
+            oldString="layout_alignParentRight"
+            replacement="layout_alignParentEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/user_list_item.xml"
+            line="42"
+            column="9"
+            startOffset="1530"
+            endLine="42"
+            endColumn="40"
+            endOffset="1561"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/user_list_item.xml"
+            line="45"
+            column="9"
+            startOffset="1659"
+            endLine="45"
+            endColumn="35"
+            endOffset="1685"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginEnd=&quot;16dp&quot;"
+            oldString="layout_marginRight"
+            replacement="layout_marginEnd"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/user_list_item.xml"
+            line="55"
+            column="9"
+            startOffset="2002"
+            endLine="55"
+            endColumn="35"
+            endOffset="2028"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@+id/imageView1&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_toStartOf=&quot;@+id/imageView1&quot;"
+            oldString="layout_toLeftOf"
+            replacement="layout_toStartOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/user_list_item.xml"
+            line="57"
+            column="9"
+            startOffset="2080"
+            endLine="57"
+            endColumn="32"
+            endOffset="2103"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.READ_PRIVILEGED_PHONE_STATE" message="Missing permissions required by TelephonyManager.getImei: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/ActivationActivity.java"
+            line="103"
+            column="32"
+            startOffset="3132"
+            endLine="103"
+            endColumn="58"
+            endOffset="3158"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by TelephonyManager.getImei: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.READ_PRIVILEGED_PHONE_STATE" message="Missing permissions required by TelephonyManager.getDeviceId: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/ActivationActivity.java"
+            line="105"
+            column="32"
+            startOffset="3220"
+            endLine="105"
+            endColumn="62"
+            endOffset="3250"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by TelephonyManager.getDeviceId: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.READ_PRIVILEGED_PHONE_STATE" message="Missing permissions required by TelephonyManager.getImei: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/ActivationActivity.java"
+            line="113"
+            column="28"
+            startOffset="3533"
+            endLine="113"
+            endColumn="54"
+            endOffset="3559"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by TelephonyManager.getImei: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.READ_PRIVILEGED_PHONE_STATE" message="Missing permissions required by TelephonyManager.getDeviceId: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/ActivationActivity.java"
+            line="115"
+            column="28"
+            startOffset="3613"
+            endLine="115"
+            endColumn="58"
+            endOffset="3643"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by TelephonyManager.getDeviceId: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`">
+        <fix-data missing="android.permission.BLUETOOTH_CONNECT" requirement="android.permission.BLUETOOTH_CONNECT"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/QuickOrderActivity.java"
+            line="586"
+            column="40"
+            startOffset="18179"
+            endLine="586"
+            endColumn="52"
+            endOffset="18191"/>
+    </incident>
+
+    <incident
+        id="CustomSplashScreen"
+        severity="warning"
+        message="The application should not provide its own launch screen">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/SplashActivity.java"
+            line="20"
+            column="14"
+            startOffset="556"
+            endLine="20"
+            endColumn="28"
+            endOffset="570"/>
+        <map>
+            <condition targetGE="31"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`">
+        <fix-data missing="android.permission.BLUETOOTH_CONNECT" requirement="android.permission.BLUETOOTH_CONNECT"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/printer/DeviceListActivity.java"
+            line="181"
+            column="21"
+            startOffset="7083"
+            endLine="181"
+            endColumn="42"
+            endOffset="7104"/>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`">
+        <fix-data missing="android.permission.BLUETOOTH_CONNECT" requirement="android.permission.BLUETOOTH_CONNECT"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/printer/DeviceListActivity.java"
+            line="182"
+            column="49"
+            startOffset="7187"
+            endLine="182"
+            endColumn="65"
+            endOffset="7203"/>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`">
+        <fix-data missing="android.permission.BLUETOOTH_CONNECT" requirement="android.permission.BLUETOOTH_CONNECT"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/printer/DeviceListActivity.java"
+            line="109"
+            column="48"
+            startOffset="4375"
+            endLine="109"
+            endColumn="64"
+            endOffset="4391"/>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.READ_PRIVILEGED_PHONE_STATE" message="Missing permissions required by TelephonyManager.getImei: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/utils/Checker.java"
+            line="35"
+            column="13"
+            startOffset="989"
+            endLine="35"
+            endColumn="39"
+            endOffset="1015"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by TelephonyManager.getImei: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.READ_PRIVILEGED_PHONE_STATE" message="Missing permissions required by TelephonyManager.getDeviceId: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/utils/Checker.java"
+            line="37"
+            column="13"
+            startOffset="1042"
+            endLine="37"
+            endColumn="43"
+            endOffset="1072"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by TelephonyManager.getDeviceId: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.READ_PRIVILEGED_PHONE_STATE" message="Missing permissions required by TelephonyManager.getImei: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/utils/Checker.java"
+            line="45"
+            column="12"
+            startOffset="1251"
+            endLine="45"
+            endColumn="38"
+            endOffset="1277"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by TelephonyManager.getImei: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.READ_PRIVILEGED_PHONE_STATE" message="Missing permissions required by TelephonyManager.getDeviceId: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/extropos/java/utils/Checker.java"
+            line="47"
+            column="12"
+            startOffset="1302"
+            endLine="47"
+            endColumn="42"
+            endOffset="1332"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by TelephonyManager.getDeviceId: %1$s"/>
+        </map>
+    </incident>
+
+</incidents>

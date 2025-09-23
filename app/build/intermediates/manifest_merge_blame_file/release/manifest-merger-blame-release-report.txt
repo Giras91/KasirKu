@@ -1,0 +1,292 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.extropos.java"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:9:5-67
+11-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:9:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:10:5-79
+12-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:10:22-76
+13    <uses-permission
+13-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:11:5-95
+14        android:name="android.permission.BLUETOOTH"
+14-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:11:22-65
+15        android:maxSdkVersion="30" />
+15-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:11:66-92
+16    <uses-permission
+16-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:12:5-101
+17        android:name="android.permission.BLUETOOTH_ADMIN"
+17-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:12:22-71
+18        android:maxSdkVersion="30" />
+18-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:12:72-98
+19    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+19-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:13:5-76
+19-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:13:22-73
+20    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+20-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:14:5-73
+20-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:14:22-70
+21    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+21-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:15:5-78
+21-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:15:22-75
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:16:5-65
+22-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:16:22-62
+23    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+23-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:17:5-76
+23-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:17:22-73
+24    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+24-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:18:5-75
+24-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:18:22-72
+25    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+25-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:19:5-75
+25-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:19:22-72
+26    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+26-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:20:5-75
+26-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:20:22-72
+27
+28    <permission
+28-->[androidx.core:core:1.12.0] /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+29        android:name="com.extropos.java.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.12.0] /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.12.0] /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.extropos.java.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.12.0] /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.12.0] /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:22:5-107:19
+35        android:allowBackup="true"
+35-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:23:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.12.0] /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+37        android:extractNativeLibs="true"
+38        android:hardwareAccelerated="false"
+38-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:26:9-44
+39        android:icon="@drawable/ic_launcher"
+39-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:24:9-45
+40        android:label="@string/app_name"
+40-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:25:9-41
+41        android:largeHeap="true"
+41-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:27:9-33
+42        android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+42-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:28:9-79
+43        <activity
+43-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:31:9-41:20
+44            android:name="com.extropos.java.SplashActivity"
+44-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:32:13-43
+45            android:exported="true"
+45-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:35:13-36
+46            android:label="@string/app_name"
+46-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:33:13-45
+47            android:screenOrientation="landscape" >
+47-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:34:13-50
+48            <intent-filter>
+48-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:36:13-40:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:37:17-69
+49-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:37:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:39:17-77
+51-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:39:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:42:9-47:20
+55            android:name="com.extropos.java.MainActivity"
+55-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:43:13-41
+56            android:exported="false"
+56-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:46:13-37
+57            android:label="@string/app_name"
+57-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:44:13-45
+58            android:screenOrientation="landscape" >
+58-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:45:13-50
+59        </activity>
+60        <activity
+60-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:48:9-54:20
+61            android:name="com.extropos.java.ActivationActivity"
+61-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:49:13-47
+62            android:exported="false"
+62-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:53:13-37
+63            android:label="@string/title_activity_activation"
+63-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:50:13-62
+64            android:screenOrientation="landscape"
+64-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:51:13-50
+65            android:windowSoftInputMode="adjustPan|adjustResize" >
+65-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:52:13-65
+66        </activity>
+67        <activity
+67-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:55:9-61:20
+68            android:name="com.extropos.java.LoginActivity"
+68-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:56:13-42
+69            android:exported="false"
+69-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:60:13-37
+70            android:label="@string/title_activity_login"
+70-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:57:13-57
+71            android:screenOrientation="landscape"
+71-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:58:13-50
+72            android:windowSoftInputMode="adjustPan|adjustResize" >
+72-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:59:13-65
+73        </activity>
+74        <activity
+74-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:62:9-68:20
+75            android:name="com.extropos.java.MasterListActivity"
+75-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:63:13-47
+76            android:exported="false"
+76-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:67:13-37
+77            android:label="@string/title_master_list"
+77-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:64:13-54
+78            android:screenOrientation="landscape"
+78-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:65:13-50
+79            android:windowSoftInputMode="adjustPan|adjustResize" >
+79-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:66:13-65
+80        </activity>
+81        <activity
+81-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:69:9-79:20
+82            android:name="com.extropos.java.MasterDetailActivity"
+82-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:70:13-49
+83            android:exported="false"
+83-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:75:13-37
+84            android:label="@string/title_master_detail"
+84-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:71:13-56
+85            android:parentActivityName="com.extropos.java.MasterListActivity"
+85-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:72:13-61
+86            android:screenOrientation="landscape"
+86-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:73:13-50
+87            android:windowSoftInputMode="adjustPan|adjustResize" >
+87-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:74:13-65
+88            <meta-data
+88-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:76:13-78:72
+89                android:name="androidx.appcompat.app.AppCompatActivity.PARENT_ACTIVITY"
+89-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:77:17-88
+90                android:value="com.extropos.java.MasterListActivity" />
+90-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:78:17-69
+91        </activity>
+92        <activity
+92-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:80:9-85:20
+93            android:name="com.extropos.java.QuickOrderActivity"
+93-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:81:13-47
+94            android:exported="false"
+94-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:84:13-37
+95            android:label="@string/title_activity_quick_order"
+95-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:82:13-63
+96            android:screenOrientation="landscape" >
+96-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:83:13-50
+97        </activity>
+98        <activity
+98-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:86:9-92:20
+99            android:name="com.extropos.java.printer.DeviceListActivity"
+99-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:87:13-55
+100            android:exported="false"
+100-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:91:13-37
+101            android:label="@string/select_device"
+101-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:88:13-50
+102            android:screenOrientation="landscape"
+102-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:89:13-50
+103            android:theme="@android:style/Theme.Dialog" >
+103-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:90:13-56
+104        </activity>
+105        <activity
+105-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:93:9-97:20
+106            android:name="com.extropos.java.SettingListActivity"
+106-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:94:13-48
+107            android:exported="false"
+107-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:96:13-37
+108            android:label="@string/title_setting_list" >
+108-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:95:13-55
+109        </activity>
+110        <activity
+110-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:98:9-106:20
+111            android:name="com.extropos.java.SettingDetailActivity"
+111-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:99:13-50
+112            android:exported="false"
+112-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:102:13-37
+113            android:label="@string/title_setting_detail"
+113-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:100:13-57
+114            android:parentActivityName="com.extropos.java.SettingListActivity" >
+114-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:101:13-62
+115            <meta-data
+115-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:76:13-78:72
+116                android:name="androidx.appcompat.app.AppCompatActivity.PARENT_ACTIVITY"
+116-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:77:17-88
+117                android:value="com.extropos.java.SettingListActivity" />
+117-->/home/hp/Documents/Quick Cash/app/src/main/AndroidManifest.xml:78:17-69
+118        </activity>
+119
+120        <provider
+120-->[androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+121            android:name="androidx.startup.InitializationProvider"
+121-->[androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+122            android:authorities="com.extropos.java.androidx-startup"
+122-->[androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+123            android:exported="false" >
+123-->[androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+124            <meta-data
+124-->[androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+125                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+125-->[androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+126                android:value="androidx.startup" />
+126-->[androidx.emoji2:emoji2:1.2.0] /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+127            <meta-data
+127-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+128-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+129                android:value="androidx.startup" />
+129-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+130            <meta-data
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+131                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+132                android:value="androidx.startup" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+133        </provider>
+134
+135        <receiver
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+136            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+137            android:directBootAware="false"
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+138            android:enabled="true"
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+139            android:exported="true"
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+140            android:permission="android.permission.DUMP" >
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+141            <intent-filter>
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+142                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+143            </intent-filter>
+144            <intent-filter>
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+145                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+146            </intent-filter>
+147            <intent-filter>
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+148                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+149            </intent-filter>
+150            <intent-filter>
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+151                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+152            </intent-filter>
+153        </receiver>
+154    </application>
+155
+156</manifest>
