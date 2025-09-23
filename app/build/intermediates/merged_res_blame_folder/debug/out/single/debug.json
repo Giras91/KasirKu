@@ -1,334 +1,354 @@
 [
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_list_black_36dp.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_list_black_36dp.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_list_black_36dp.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_list_black_36dp.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_textbox_large.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/textbox_large.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_cart_list_item.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/cart_list_item.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_loading_dialog.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/loading_dialog.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_main.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_main.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_splash.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_splash.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_minus_disabled.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_minus_disabled.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-xhdpi_ic_save_grey600_36dp.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-xhdpi/ic_save_grey600_36dp.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_plus_disabled.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_plus_disabled.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_product_grid_list_item.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/product_grid_list_item.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_shadow.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/shadow.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_confirm_dialog.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/confirm_dialog.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_minus_clicked.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_minus_clicked.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable_bg_btn_blue.xml.flat",
-        "source": "com.extropos.java.app-main-27:/drawable/bg_btn_blue.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_fragment_product_list.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/fragment_product_list.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_master.jpg.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/master.jpg"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_gamewae.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/gamewae.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_fragment_product_add.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/fragment_product_add.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_setting.jpg.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/setting.jpg"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_gamewae.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/gamewae.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable_bg_btn_trans.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable/bg_btn_trans.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_grid_container_trans.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/grid_container_trans.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_footer_cart.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/footer_cart.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_product_list_item.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/product_list_item.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable_bg_btn_plus.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable/bg_btn_plus.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_grid_container.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/grid_container.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_fragment_category_add.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/fragment_category_add.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_fragment_master_detail.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/fragment_master_detail.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_logoyondev.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/logoyondev.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_quick_order.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_quick_order.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-xhdpi_ic_add_grey600_36dp.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-xhdpi/ic_add_grey600_36dp.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_shadow.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/shadow.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_fragment_product_add.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/fragment_product_add.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_btn_trans_state.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/btn_trans_state.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_fragment_user_add.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/fragment_user_add.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_minus.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_minus.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_product_grid_item.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/product_grid_item.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_plus_clicked.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_plus_clicked.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_fragment_user_list.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/fragment_user_list.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_textbox_outline.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/textbox_outline.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_noimage_square.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_noimage_square.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_sendok.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_sendok.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable_bg_btn_minus.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable/bg_btn_minus.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-xhdpi_ic_add_grey600_36dp.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-xhdpi/ic_add_grey600_36dp.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_plus_clicked.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_plus_clicked.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_setting_list.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_setting_list.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_product_grid_list_item.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/product_grid_list_item.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_textbox.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/textbox.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_master_twopane.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_master_twopane.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_master_list.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_master_list.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_qr.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_qr.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_cart_list_item.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/cart_list_item.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_header_card.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/header_card.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_setting_twopane.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_setting_twopane.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_bg1.jpg.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/bg1.jpg"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_btnblue_state.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/btnblue_state.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-xhdpi_ic_launcher.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-xhdpi/ic_launcher.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_body_cart.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/body_cart.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_category_spinner_item.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/category_spinner_item.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_user_list_item.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/user_list_item.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_btnblue.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/btnblue.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_product_list_item.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/product_list_item.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_fragment_category_list.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/fragment_category_list.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_category_list_item.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/category_list_item.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_login.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_login.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_setting_list.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_setting_list.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_report.jpg.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/report.jpg"
+        "merged": "com.extropos.java.app-merged_res-24:/layout_fragment_printer_settings.xml.flat",
+        "source": "com.extropos.java.app-main-26:/layout/fragment_printer_settings.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_grid_on_black_36dp.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_grid_on_black_36dp.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_header_card.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/header_card.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_setting_detail.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_setting_detail.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable_bg_btn_blue.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable/bg_btn_blue.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable_bg_btn_plus.xml.flat",
-        "source": "com.extropos.java.app-main-27:/drawable/bg_btn_plus.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_device_name.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/device_name.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable_icon_state.xml.flat",
-        "source": "com.extropos.java.app-main-27:/drawable/icon_state.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_category_spinner_item.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/category_spinner_item.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_category_spinner_menu_item.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/category_spinner_menu_item.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_setting_list_item.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/setting_list_item.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_logout.jpg.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/logout.jpg"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_quick_order.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_quick_order.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_category_list_item.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/category_list_item.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_setting_twopane.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_setting_twopane.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_textbox_outline.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/textbox_outline.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-xhdpi_ic_delete_grey600_36dp.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-xhdpi/ic_delete_grey600_36dp.png"
+        "merged": "com.extropos.java.app-merged_res-24:/layout_fragment_kitchen_printer_settings.xml.flat",
+        "source": "com.extropos.java.app-main-26:/layout/fragment_kitchen_printer_settings.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_fragment_setting_detail.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/fragment_setting_detail.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_fragment_master_detail.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/fragment_master_detail.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-xxhdpi_ic_launcher.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-xxhdpi/ic_launcher.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_bg1.jpg.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/bg1.jpg"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_minus_clicked.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_minus_clicked.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_master_detail.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_master_detail.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_fragment_category_add.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/fragment_category_add.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_setting_detail.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_setting_detail.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_plus.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_plus.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-mdpi/ic_launcher.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable_rounded_bg.xml.flat",
-        "source": "com.extropos.java.app-main-27:/drawable/rounded_bg.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_btnblue.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/btnblue.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_launcher.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_launcher.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_btn_trans.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/btn_trans.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_fragment_product_list.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/fragment_product_list.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_minus.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_minus.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_master_twopane.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_master_twopane.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_master_list.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_master_list.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_logoyondev.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/logoyondev.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_sendok.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_sendok.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_device_name.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/device_name.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_arrow_down.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_arrow_down.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_device_list.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/device_list.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_grid_on_black_36dp.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_grid_on_black_36dp.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_noimage_square.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_noimage_square.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_arrow_big.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_arrow_big.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_btnblue_state.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/btnblue_state.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable_bg_btn_menu.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable/bg_btn_menu.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_plus_disabled.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_plus_disabled.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable_rounded_bg.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable/rounded_bg.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_setting_list_item.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/setting_list_item.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_fragment_category_list.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/fragment_category_list.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_minus_disabled.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_minus_disabled.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_master.jpg.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/master.jpg"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_master_detail.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_master_detail.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable_icon_state.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable/icon_state.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_body_cart.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/body_cart.png"
+        "merged": "com.extropos.java.app-merged_res-24:/layout_fragment_license_settings.xml.flat",
+        "source": "com.extropos.java.app-main-26:/layout/fragment_license_settings.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_fragment_user_add.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/fragment_user_add.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_report.jpg.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/report.jpg"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_activation.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_activation.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable_rounded_white.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable/rounded_white.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_footer_cart.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/footer_cart.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_grid_container_trans.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/grid_container_trans.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_fragment_user_list.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/fragment_user_list.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_splash.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable_bg_btn_minus.xml.flat",
-        "source": "com.extropos.java.app-main-27:/drawable/bg_btn_minus.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_grid_container.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/grid_container.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable_bg_btn_trans.xml.flat",
-        "source": "com.extropos.java.app-main-27:/drawable/bg_btn_trans.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable_btn_transparent.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable/btn_transparent.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_arrow_down.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_arrow_down.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-xhdpi_ic_edit_grey600_36dp.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-xhdpi/ic_edit_grey600_36dp.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-xhdpi_ic_edit_grey600_36dp.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-xhdpi/ic_edit_grey600_36dp.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_plus.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_plus.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_activity_main.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/activity_main.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_category_spinner_menu_item.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/category_spinner_menu_item.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_setting.jpg.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/setting.jpg"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_grid_checked.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_grid_checked.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-xhdpi_ic_save_grey600_36dp.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-xhdpi/ic_save_grey600_36dp.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_product_grid_item.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/product_grid_item.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_logout.jpg.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/logout.jpg"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable_btn_transparent.xml.flat",
-        "source": "com.extropos.java.app-main-27:/drawable/btn_transparent.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_textbox_large.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/textbox_large.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_btn_trans.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/btn_trans.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_device_list.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/device_list.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_arrow_big.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_arrow_big.png"
+        "merged": "com.extropos.java.app-merged_res-24:/layout_fragment_einvoice_settings.xml.flat",
+        "source": "com.extropos.java.app-main-26:/layout/fragment_einvoice_settings.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable_rounded_white.xml.flat",
-        "source": "com.extropos.java.app-main-27:/drawable/rounded_white.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-xhdpi_ic_delete_grey600_36dp.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-xhdpi/ic_delete_grey600_36dp.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/layout_user_list_item.xml.flat",
-        "source": "com.extropos.java.app-main-27:/layout/user_list_item.xml"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_ic_grid_checked.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/ic_grid_checked.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-hdpi_ic_qr.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-hdpi/ic_qr.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_fragment_setting_detail.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/fragment_setting_detail.xml"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable-mdpi_ic_launcher.png.flat",
-        "source": "com.extropos.java.app-main-27:/drawable-mdpi/ic_launcher.png"
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_textbox.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/textbox.png"
     },
     {
-        "merged": "com.extropos.java.app-merged_res-25:/drawable_bg_btn_menu.xml.flat",
-        "source": "com.extropos.java.app-main-27:/drawable/bg_btn_menu.xml"
+        "merged": "com.extropos.java.app-merged_res-24:/layout_fragment_user_management.xml.flat",
+        "source": "com.extropos.java.app-main-26:/layout/fragment_user_management.xml"
+    },
+    {
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_confirm_dialog.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/confirm_dialog.xml"
+    },
+    {
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_loading_dialog.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/loading_dialog.xml"
+    },
+    {
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/drawable-hdpi_btn_trans_state.png.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/drawable-hdpi/btn_trans_state.png"
+    },
+    {
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_activation.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_activation.xml"
+    },
+    {
+        "merged": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-merged_res-24:/layout_activity_login.xml.flat",
+        "source": "/home/hp/.gradle/daemon/8.9/com.extropos.java.app-main-26:/layout/activity_login.xml"
     }
 ]

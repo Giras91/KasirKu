@@ -33,9 +33,13 @@ public class ProductCategoryDataSource {
 	
 		if (c.moveToFirst()) {
 			do {
-			
-				item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));
-				item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE);
+				if (colIndex >= 0) item.setCategoryID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME);
+				if (colIndex >= 0) item.setCategoryName(c.getString(colIndex));
 				
 			} while (c.moveToNext());
 		}
@@ -52,8 +56,14 @@ public class ProductCategoryDataSource {
 		if (c.moveToFirst()) {
 			do {
 				ProductCategory item = new ProductCategory();
-				item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));
-				item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE);
+				if (colIndex >= 0) item.setCategoryID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME);
+				if (colIndex >= 0) item.setCategoryName(c.getString(colIndex));
+				
 				items.add(item);
 			} while (c.moveToNext());
 		}

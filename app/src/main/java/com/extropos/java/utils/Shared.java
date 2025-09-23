@@ -53,6 +53,9 @@ public final class Shared
 	}
 	public static void write(String key, String value)
 	{
+		if (pref == null) {
+			return;
+		}
 		SharedPreferences.Editor editor = pref.edit();
 		editor.putString(key, value);
 		editor.commit();
@@ -65,11 +68,17 @@ public final class Shared
 	
 	public static String read(String key, String defValue)
 	{
+		if (pref == null) {
+			return defValue;
+		}
 		return pref.getString(key, defValue);
 	}
 	
 	public static void clear()
 	{
+		if (pref == null) {
+			return;
+		}
 		SharedPreferences.Editor editor = pref.edit();
 		editor.clear();
 		editor.commit();
@@ -77,6 +86,9 @@ public final class Shared
 	
 	public static void clear(String key)
 	{
+		if (pref == null) {
+			return;
+		}
 		SharedPreferences.Editor editor = pref.edit();
 		editor.remove(key);
 		editor.commit();
@@ -146,7 +158,7 @@ public final class Shared
 	 
 	public static String getAppDir()
 	{
-		File f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator  + instance.getResources().getString(R.string.app_name));
+		File f = new File(instance.getExternalFilesDir(null), instance.getResources().getString(R.string.app_name));
 		if(!f.exists())
 			f.mkdir();
 		

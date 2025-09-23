@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.extropos.java.app-mergeDebugResources-23:/values-bn/values-bn.xml",
+            "outputFile": "com.extropos.java.app-mergeDebugResources-22:/values-bn/values-bn.xml",
             "map": [
                 {
                     "source": "/home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/res/values-bn/values-bn.xml",

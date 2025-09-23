@@ -26,11 +26,11 @@ public class LoadingDialog extends Dialog{
 		
 		setCancelable(false);
 		
-		 ObjectAnimator fadeOut = ObjectAnimator.ofFloat(findViewById(R.id.imageView1), "alpha", 0.5f);
-		 fadeOut.setDuration(1000);
-		 fadeOut.setRepeatCount(ObjectAnimator.INFINITE);
-		 fadeOut.setRepeatMode(ObjectAnimator.REVERSE);
-		 fadeOut.start();;
+		// ObjectAnimator fadeOut = ObjectAnimator.ofFloat(findViewById(R.id.imageView1), "alpha", 0.5f);
+		// fadeOut.setDuration(1000);
+		// fadeOut.setRepeatCount(ObjectAnimator.INFINITE);
+		// fadeOut.setRepeatMode(ObjectAnimator.REVERSE);
+		// fadeOut.start();
 		
 	}
 	

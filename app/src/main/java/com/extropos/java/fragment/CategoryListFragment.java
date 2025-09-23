@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -74,7 +75,7 @@ public class CategoryListFragment extends Fragment implements OnClickListener{
 		arguments.putString(Constants.ARG_ITEM_ID, mItem.id);
 		fragment.setArguments(arguments);
 		getFragmentManager().beginTransaction()
-		.setTransition(android.R.anim.slide_in_left)
+		.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
 		.addToBackStack("add")
 		.replace(R.id.master_detail_container, fragment).commit();
 	}

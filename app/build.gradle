@@ -25,20 +25,21 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.core:core:1.12.0'
-    implementation 'androidx.fragment:fragment:1.6.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation ('androidx.appcompat:appcompat:1.6.1') {
+        exclude group: 'org.jetbrains.kotlin'
+    }
+    implementation ('androidx.core:core:1.12.0') {
+        exclude group: 'org.jetbrains.kotlin'
+    }
+    implementation ('androidx.fragment:fragment:1.6.1') {
+        exclude group: 'org.jetbrains.kotlin'
+    }
+    implementation ('androidx.lifecycle:lifecycle-runtime:2.6.1') {
+        exclude group: 'org.jetbrains.kotlin'
+    }
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
     implementation files('libs/AndroidEasingFunctions-1.0.0.jar')
     implementation files('libs/btsdk.jar')
     implementation files('libs/NineOldAndroid-2.4.0.jar')
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
-
-    // Exclude conflicting Kotlin libraries
-    configurations {
-        all {
-            exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
-            exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
-        }
-    }
 }

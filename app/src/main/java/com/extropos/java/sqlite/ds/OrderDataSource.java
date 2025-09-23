@@ -36,19 +36,38 @@ public class OrderDataSource {
 	
 		if (c.moveToFirst()) {
 			do {
-			
-				item.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_CODE)));
-				item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION)));
-				item.setAmount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_AMOUNT)));
-				item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION)));
-				item.setBranchID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_BRANCH_ID)));
-				item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_USER_ID)));
-				item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_CODE);
+				if (colIndex >= 0) item.setOrderID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION);
+				if (colIndex >= 0) item.setDescription(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_AMOUNT);
+				if (colIndex >= 0) item.setAmount(c.getDouble(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION);
+				if (colIndex >= 0) item.setDiscount(c.getDouble(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_BRANCH_ID);
+				if (colIndex >= 0) item.setBranchID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_ORDER_USER_ID);
+				if (colIndex >= 0) item.setUserID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_NAME);
+				if (colIndex >= 0) item.setUserName(c.getString(colIndex));
 				
 				try {  
-				    item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_ORDERED_ON))));
-				    item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_UPDATED_ON))));
-				    item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_SYCN_ON))));
+					colIndex = c.getColumnIndex(DbSchema.COL_ORDER_ORDERED_ON);
+					if (colIndex >= 0) item.setCreatedOn(Shared.dateformat.parse(c.getString(colIndex)));
+					
+					colIndex = c.getColumnIndex(DbSchema.COL_ORDER_UPDATED_ON);
+					if (colIndex >= 0) item.setUpdatedOn(Shared.dateformat.parse(c.getString(colIndex)));
+					
+					colIndex = c.getColumnIndex(DbSchema.COL_ORDER_SYCN_ON);
+					if (colIndex >= 0) item.setSycnOn(Shared.dateformat.parse(c.getString(colIndex)));
 				} catch (Exception e) {  
 				}
 				
@@ -64,14 +83,22 @@ public class OrderDataSource {
 					do {
 						
 						OrderDetails  order = new OrderDetails();
-						order.setDetailID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_CODE)));
-						order.setName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));
-						order.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_ORDER_CODE)));
-						order.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE)));
-						order.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_NAME)));
-						order.setQty(c.getInt(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_QTY)));
-						order.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_DISCOUNT)));
-						order.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRICE)));
+						int colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_CODE);
+						if (colIndexDetail >= 0) order.setDetailID(cDetail.getString(colIndexDetail));
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_NAME);
+						if (colIndexDetail >= 0) order.setName(cDetail.getString(colIndexDetail));
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_ORDER_CODE);
+						if (colIndexDetail >= 0) order.setOrderID(cDetail.getString(colIndexDetail));
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE);
+						if (colIndexDetail >= 0) order.setProductID(cDetail.getString(colIndexDetail));
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_NAME);
+						if (colIndexDetail >= 0) order.setCategoryName(cDetail.getString(colIndexDetail));
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_QTY);
+						if (colIndexDetail >= 0) order.setQty(cDetail.getInt(colIndexDetail));
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_DISCOUNT);
+						if (colIndexDetail >= 0) order.setDiscount(cDetail.getDouble(colIndexDetail));
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRICE);
+						if (colIndexDetail >= 0) order.setPrice(cDetail.getDouble(colIndexDetail));
 						
 						details.add(order);
 					} while (cDetail.moveToNext());
@@ -126,14 +153,31 @@ public class OrderDataSource {
 					do {
 						
 						OrderDetails  order = new OrderDetails();
-						order.setDetailID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_CODE)));
-						order.setName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));
-						order.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_ORDER_CODE)));
-						order.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE)));
-						order.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_NAME)));
-						order.setQty(c.getInt(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_QTY)));
-						order.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_DISCOUNT)));
-						order.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRICE)));
+						int colIndexDetail;
+						
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_CODE);
+						if (colIndexDetail >= 0) order.setDetailID(cDetail.getString(colIndexDetail));
+						
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_NAME);
+						if (colIndexDetail >= 0) order.setName(cDetail.getString(colIndexDetail));
+						
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_ORDER_CODE);
+						if (colIndexDetail >= 0) order.setOrderID(cDetail.getString(colIndexDetail));
+						
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE);
+						if (colIndexDetail >= 0) order.setProductID(cDetail.getString(colIndexDetail));
+						
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_NAME);
+						if (colIndexDetail >= 0) order.setCategoryName(cDetail.getString(colIndexDetail));
+						
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_QTY);
+						if (colIndexDetail >= 0) order.setQty(cDetail.getInt(colIndexDetail));
+						
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_DISCOUNT);
+						if (colIndexDetail >= 0) order.setDiscount(cDetail.getDouble(colIndexDetail));
+						
+						colIndexDetail = cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRICE);
+						if (colIndexDetail >= 0) order.setPrice(cDetail.getDouble(colIndexDetail));
 						
 						details.add(order);
 					} while (cDetail.moveToNext());

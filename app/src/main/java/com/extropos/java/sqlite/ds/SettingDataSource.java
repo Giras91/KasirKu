@@ -33,9 +33,13 @@ public class SettingDataSource {
 	
 		if (c.moveToFirst()) {
 			do {
-			
-				item.setCode(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_CODE)));
-				item.setValue(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_VALUE)));
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_SETTING_CODE);
+				if (colIndex >= 0) item.setCode(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_SETTING_VALUE);
+				if (colIndex >= 0) item.setValue(c.getString(colIndex));
 				
 			} while (c.moveToNext());
 		}
@@ -52,8 +56,14 @@ public class SettingDataSource {
 		if (c.moveToFirst()) {
 			do {
 				Setting item = new Setting();
-				item.setCode(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_CODE)));
-				item.setValue(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_VALUE)));
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_SETTING_CODE);
+				if (colIndex >= 0) item.setCode(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_SETTING_VALUE);
+				if (colIndex >= 0) item.setValue(c.getString(colIndex));
+				
 				items.add(item);
 			} while (c.moveToNext());
 		}

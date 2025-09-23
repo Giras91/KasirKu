@@ -2,198 +2,6 @@
 <issues format="6" by="lint 8.1.0">
 
     <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Missing permissions required by TelephonyManager.getImei: android.permission.READ_PRIVILEGED_PHONE_STATE"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="                        imei = telephonyManager.getImei();"
-        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="103"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Missing permissions required by TelephonyManager.getDeviceId: android.permission.READ_PRIVILEGED_PHONE_STATE"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="                        imei = telephonyManager.getDeviceId();"
-        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="105"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Missing permissions required by TelephonyManager.getImei: android.permission.READ_PRIVILEGED_PHONE_STATE"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="                    imei = telephonyManager.getImei();"
-        errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="113"
-            column="28"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Missing permissions required by TelephonyManager.getDeviceId: android.permission.READ_PRIVILEGED_PHONE_STATE"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="                    imei = telephonyManager.getDeviceId();"
-        errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="115"
-            column="28"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Missing permissions required by TelephonyManager.getImei: android.permission.READ_PRIVILEGED_PHONE_STATE"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="     imei = telephonyManager.getImei();"
-        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java"
-            line="35"
-            column="13"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Missing permissions required by TelephonyManager.getDeviceId: android.permission.READ_PRIVILEGED_PHONE_STATE"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="     imei = telephonyManager.getDeviceId();"
-        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java"
-            line="37"
-            column="13"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Missing permissions required by TelephonyManager.getImei: android.permission.READ_PRIVILEGED_PHONE_STATE"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="    imei = telephonyManager.getImei();"
-        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java"
-            line="45"
-            column="12"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Missing permissions required by TelephonyManager.getDeviceId: android.permission.READ_PRIVILEGED_PHONE_STATE"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="    imei = telephonyManager.getDeviceId();"
-        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java"
-            line="47"
-            column="12"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="                mPairedDevicesArrayAdapter.add(device.getName() + &quot;\n&quot; + device.getAddress());"
-        errorLine2="                                               ~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/printer/DeviceListActivity.java"
-            line="109"
-            column="48"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="                if (device.getBondState() != BluetoothDevice.BOND_BONDED) {"
-        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/printer/DeviceListActivity.java"
-            line="181"
-            column="21"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="                    mNewDevicesArrayAdapter.add(device.getName() + &quot;\n&quot; + device.getAddress());"
-        errorLine2="                                                ~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/printer/DeviceListActivity.java"
-            line="182"
-            column="49"/>
-    </issue>
-
-    <issue
-        id="MissingPermission"
-        severity="Error"
-        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
-        category="Correctness"
-        priority="9"
-        summary="Missing Permissions"
-        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with `targetSdkVersion` 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
-        errorLine1="                startActivityForResult(enableIntent, Constants.REQUEST_ENABLE_BT);"
-        errorLine2="                                       ~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java"
-            line="586"
-            column="40"/>
-    </issue>
-
-    <issue
         id="ScrollViewSize"
         severity="Warning"
         message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`"
@@ -303,7 +111,7 @@
         errorLine2="                                                                    ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="192"
+            line="228"
             column="69"/>
     </issue>
 
@@ -321,7 +129,7 @@
         errorLine2="                                                                               ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="91"
+            line="101"
             column="80"/>
     </issue>
 
@@ -339,7 +147,7 @@
         errorLine2="                                                                               ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="104"
+            line="114"
             column="80"/>
     </issue>
 
@@ -357,7 +165,7 @@
         errorLine2="                                                                                       ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="117"
+            line="127"
             column="88"/>
     </issue>
 
@@ -375,7 +183,7 @@
         errorLine2="                                                                      ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="197"
+            line="262"
             column="71"/>
     </issue>
 
@@ -393,7 +201,7 @@
         errorLine2="                                                                      ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="210"
+            line="275"
             column="71"/>
     </issue>
 
@@ -411,7 +219,7 @@
         errorLine2="                                                                                           ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="223"
+            line="288"
             column="92"/>
     </issue>
 
@@ -429,7 +237,7 @@
         errorLine2="                                                                      ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java"
-            line="91"
+            line="101"
             column="71"/>
     </issue>
 
@@ -447,7 +255,7 @@
         errorLine2="                                                                   ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="124"
+            line="143"
             column="68"/>
     </issue>
 
@@ -465,7 +273,7 @@
         errorLine2="                                                                   ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="137"
+            line="156"
             column="68"/>
     </issue>
 
@@ -483,7 +291,7 @@
         errorLine2="                                                                   ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="172"
+            line="191"
             column="68"/>
     </issue>
 
@@ -501,7 +309,7 @@
         errorLine2="                                                                       ~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="185"
+            line="204"
             column="72"/>
     </issue>
 
@@ -552,11 +360,139 @@
         priority="6"
         summary="Outside Range"
         explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="      order.setDetailID(cDetail.getString(cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_CODE)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
+            line="86"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="      order.setName(cDetail.getString(cDetail.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
+            line="87"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="      order.setOrderID(cDetail.getString(cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_ORDER_CODE)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
+            line="88"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="      order.setProductID(cDetail.getString(cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
+            line="89"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="      order.setCategoryName(cDetail.getString(cDetail.getColumnIndex(DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_NAME)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
+            line="90"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="      order.setQty(cDetail.getInt(cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_QTY)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
+            line="91"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="      order.setDiscount(cDetail.getDouble(cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_DISCOUNT)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
+            line="92"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="      order.setPrice(cDetail.getDouble(cDetail.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRICE)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
+            line="93"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
         errorLine1="    item.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_CODE)));"
         errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="40"
+            line="121"
             column="33"/>
     </issue>
 
@@ -572,7 +508,7 @@
         errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="41"
+            line="122"
             column="37"/>
     </issue>
 
@@ -588,7 +524,7 @@
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="42"
+            line="123"
             column="32"/>
     </issue>
 
@@ -604,7 +540,7 @@
         errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="43"
+            line="124"
             column="34"/>
     </issue>
 
@@ -620,7 +556,7 @@
         errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="44"
+            line="125"
             column="34"/>
     </issue>
 
@@ -636,7 +572,7 @@
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="45"
+            line="126"
             column="32"/>
     </issue>
 
@@ -652,7 +588,7 @@
         errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="46"
+            line="127"
             column="34"/>
     </issue>
 
@@ -666,362 +602,10 @@
         explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
         errorLine1="        item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_ORDERED_ON))));"
         errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="49"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_UPDATED_ON))));"
-        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="50"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_SYCN_ON))));"
-        errorLine2="                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="51"
-            column="61"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setDetailID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_CODE)));"
-        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="67"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));"
-        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="68"
-            column="33"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_ORDER_CODE)));"
-        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="69"
-            column="36"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE)));"
-        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="70"
-            column="38"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_NAME)));"
-        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="71"
-            column="41"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setQty(c.getInt(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_QTY)));"
-        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="72"
-            column="29"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_DISCOUNT)));"
-        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="73"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRICE)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="74"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_CODE)));"
-        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="102"
-            column="33"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION)));"
-        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="103"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setAmount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_AMOUNT)));"
-        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="104"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_ORDER_DESCRIPTION)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="105"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setBranchID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_BRANCH_ID)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="106"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_USER_ID)));"
-        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="107"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="108"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_ORDERED_ON))));"
-        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="111"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_UPDATED_ON))));"
-        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="112"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_SYCN_ON))));"
-        errorLine2="                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="113"
-            column="61"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setDetailID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_CODE)));"
-        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="129"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));"
-        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
             line="130"
-            column="33"/>
+            column="64"/>
     </issue>
 
     <issue
@@ -1032,12 +616,12 @@
         priority="6"
         summary="Outside Range"
         explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setOrderID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_ORDER_CODE)));"
-        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        errorLine1="        item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_UPDATED_ON))));"
+        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
             line="131"
-            column="36"/>
+            column="64"/>
     </issue>
 
     <issue
@@ -1048,395 +632,11 @@
         priority="6"
         summary="Outside Range"
         explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRODUCT_CODE)));"
-        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        errorLine1="        item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_ORDER_SYCN_ON))));"
+        errorLine2="                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
             line="132"
-            column="38"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_PRODUCT_CATEGORY_NAME)));"
-        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="133"
-            column="41"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setQty(c.getInt(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_QTY)));"
-        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="134"
-            column="29"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_DISCOUNT)));"
-        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="135"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="      order.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_ORDER_DETAIL_PRICE)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="136"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));"
-        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="37"
-            column="36"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));"
-        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="38"
-            column="38"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));"
-        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="55"
-            column="36"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));"
-        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="56"
-            column="38"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CODE)));"
-        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="39"
-            column="35"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setProductName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));"
-        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="40"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));"
-        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="41"
-            column="36"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));"
-        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="42"
-            column="38"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_DESCRIPTION)));"
-        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="43"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_PRICE)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="44"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_DISCOUNT)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="45"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCreateBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_BY)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="46"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setUpdatedBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_BY)));"
-        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="47"
-            column="35"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setMerchantID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_MERCHANT_ID)));"
-        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="48"
-            column="36"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setStatus(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_STATUS)));"
-        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="49"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setRefID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_REF_ID)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="50"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setImage(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_IMAGE)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="51"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_ON))));"
-        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="53"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_ON))));"
-        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="54"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_SYCN_ON))));"
-        errorLine2="                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="55"
             column="61"/>
     </issue>
 
@@ -1448,331 +648,11 @@
         priority="6"
         summary="Outside Range"
         explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CODE)));"
-        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="95"
-            column="35"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setProductName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));"
-        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="96"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));"
-        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="97"
-            column="36"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));"
-        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="98"
-            column="38"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_DESCRIPTION)));"
-        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="99"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_PRICE)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="100"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_DISCOUNT)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="101"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCreateBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_BY)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="102"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setUpdatedBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_BY)));"
-        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="103"
-            column="35"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setMerchantID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_MERCHANT_ID)));"
-        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="104"
-            column="36"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setStatus(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_STATUS)));"
-        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="105"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setRefID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_REF_ID)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="106"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setImage(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_IMAGE)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="107"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_ON))));"
-        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="109"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_ON))));"
-        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="110"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_SYCN_ON))));"
-        errorLine2="                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="111"
-            column="61"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCode(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_CODE)));"
-        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java"
-            line="37"
-            column="30"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setValue(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_VALUE)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java"
-            line="38"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCode(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_CODE)));"
-        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java"
-            line="55"
-            column="30"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setValue(c.getString(c.getColumnIndex(DbSchema.COL_SETTING_VALUE)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java"
-            line="56"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
         errorLine1="    item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CODE)));"
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="38"
+            line="163"
             column="32"/>
     </issue>
 
@@ -1788,7 +668,7 @@
         errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="39"
+            line="164"
             column="34"/>
     </issue>
 
@@ -1804,7 +684,7 @@
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="40"
+            line="165"
             column="35"/>
     </issue>
 
@@ -1820,7 +700,7 @@
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="41"
+            line="166"
             column="31"/>
     </issue>
 
@@ -1836,167 +716,7 @@
         errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="44"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CODE)));"
-        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="65"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="66"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCashierID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CASHIER_ID)));"
-        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="67"
-            column="35"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setLevel(c.getString(c.getColumnIndex(DbSchema.COL_USER_LEVEL)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="68"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setLastLogin( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_USER_LAST_LOGIN))));"
-        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="71"
-            column="64"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CODE)));"
-        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="144"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="145"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setCashierID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CASHIER_ID)));"
-        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="146"
-            column="35"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="    item.setLevel(c.getString(c.getColumnIndex(DbSchema.COL_USER_LEVEL)));"
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="147"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="Range"
-        severity="Error"
-        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
-        category="Correctness"
-        priority="6"
-        summary="Outside Range"
-        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
-        errorLine1="        item.setLastLogin( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_USER_LAST_LOGIN))));"
-        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="150"
+            line="169"
             column="64"/>
     </issue>
 
@@ -2645,7 +1365,7 @@
         errorLine2="                                    ~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java"
-            line="203"
+            line="206"
             column="37"/>
     </issue>
 
@@ -3408,19 +2128,19 @@
     <issue
         id="HardwareIds"
         severity="Warning"
-        message="Using `getDeviceId` to get device identifiers is not recommended"
+        message="Using `getString` to get device identifiers is not recommended"
         category="Security"
         priority="6"
         summary="Hardware Id Usage"
         explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
         url="https://developer.android.com/training/articles/user-data-ids.html"
         urls="https://developer.android.com/training/articles/user-data-ids.html"
-        errorLine1="                        imei = telephonyManager.getDeviceId();"
-        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        errorLine1="            device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="105"
-            column="32"/>
+            line="99"
+            column="25"/>
     </issue>
 
     <issue
@@ -3433,120 +2153,12 @@
         explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
         url="https://developer.android.com/training/articles/user-data-ids.html"
         urls="https://developer.android.com/training/articles/user-data-ids.html"
-        errorLine1="                    device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);"
-        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="107"
-            column="33"/>
-    </issue>
-
-    <issue
-        id="HardwareIds"
-        severity="Warning"
-        message="Using `getDeviceId` to get device identifiers is not recommended"
-        category="Security"
-        priority="6"
-        summary="Hardware Id Usage"
-        explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
-        url="https://developer.android.com/training/articles/user-data-ids.html"
-        urls="https://developer.android.com/training/articles/user-data-ids.html"
-        errorLine1="                    imei = telephonyManager.getDeviceId();"
-        errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="115"
-            column="28"/>
-    </issue>
-
-    <issue
-        id="HardwareIds"
-        severity="Warning"
-        message="Using `getString` to get device identifiers is not recommended"
-        category="Security"
-        priority="6"
-        summary="Hardware Id Usage"
-        explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
-        url="https://developer.android.com/training/articles/user-data-ids.html"
-        urls="https://developer.android.com/training/articles/user-data-ids.html"
-        errorLine1="                device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);"
-        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="117"
-            column="29"/>
-    </issue>
-
-    <issue
-        id="HardwareIds"
-        severity="Warning"
-        message="Using `getDeviceId` to get device identifiers is not recommended"
-        category="Security"
-        priority="6"
-        summary="Hardware Id Usage"
-        explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
-        url="https://developer.android.com/training/articles/user-data-ids.html"
-        urls="https://developer.android.com/training/articles/user-data-ids.html"
-        errorLine1="     imei = telephonyManager.getDeviceId();"
-        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        errorLine1="  device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java"
-            line="37"
-            column="13"/>
-    </issue>
-
-    <issue
-        id="HardwareIds"
-        severity="Warning"
-        message="Using `getString` to get device identifiers is not recommended"
-        category="Security"
-        priority="6"
-        summary="Hardware Id Usage"
-        explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
-        url="https://developer.android.com/training/articles/user-data-ids.html"
-        urls="https://developer.android.com/training/articles/user-data-ids.html"
-        errorLine1="    device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);"
-        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java"
-            line="39"
-            column="17"/>
-    </issue>
-
-    <issue
-        id="HardwareIds"
-        severity="Warning"
-        message="Using `getDeviceId` to get device identifiers is not recommended"
-        category="Security"
-        priority="6"
-        summary="Hardware Id Usage"
-        explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
-        url="https://developer.android.com/training/articles/user-data-ids.html"
-        urls="https://developer.android.com/training/articles/user-data-ids.html"
-        errorLine1="    imei = telephonyManager.getDeviceId();"
-        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java"
-            line="47"
-            column="12"/>
-    </issue>
-
-    <issue
-        id="HardwareIds"
-        severity="Warning"
-        message="Using `getString` to get device identifiers is not recommended"
-        category="Security"
-        priority="6"
-        summary="Hardware Id Usage"
-        explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
-        url="https://developer.android.com/training/articles/user-data-ids.html"
-        urls="https://developer.android.com/training/articles/user-data-ids.html"
-        errorLine1="   device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);"
-        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java"
-            line="49"
-            column="16"/>
+            line="33"
+            column="15"/>
     </issue>
 
     <issue
@@ -3577,7 +2189,7 @@
         errorLine2="                        ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="60"
+            line="79"
             column="25"/>
     </issue>
 
@@ -3593,7 +2205,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="98"
+            line="117"
             column="17"/>
     </issue>
 
@@ -3609,7 +2221,7 @@
         errorLine2="                        ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="122"
+            line="141"
             column="25"/>
     </issue>
 
@@ -3625,7 +2237,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/OrderDataSource.java"
-            line="194"
+            line="230"
             column="17"/>
     </issue>
 
@@ -3673,7 +2285,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="50"
+            line="54"
             column="17"/>
     </issue>
 
@@ -3689,7 +2301,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="93"
+            line="103"
             column="17"/>
     </issue>
 
@@ -3705,7 +2317,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="106"
+            line="116"
             column="17"/>
     </issue>
 
@@ -3721,7 +2333,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductCategoryDataSource.java"
-            line="119"
+            line="129"
             column="17"/>
     </issue>
 
@@ -3753,7 +2365,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="91"
+            line="123"
             column="17"/>
     </issue>
 
@@ -3769,7 +2381,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="199"
+            line="264"
             column="17"/>
     </issue>
 
@@ -3785,7 +2397,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="212"
+            line="277"
             column="17"/>
     </issue>
 
@@ -3801,7 +2413,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/ProductDataSource.java"
-            line="225"
+            line="290"
             column="17"/>
     </issue>
 
@@ -3833,7 +2445,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java"
-            line="50"
+            line="54"
             column="17"/>
     </issue>
 
@@ -3849,7 +2461,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/SettingDataSource.java"
-            line="93"
+            line="103"
             column="17"/>
     </issue>
 
@@ -3881,7 +2493,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="60"
+            line="69"
             column="17"/>
     </issue>
 
@@ -3897,7 +2509,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="126"
+            line="145"
             column="17"/>
     </issue>
 
@@ -3913,7 +2525,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="139"
+            line="158"
             column="17"/>
     </issue>
 
@@ -3929,7 +2541,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="174"
+            line="193"
             column="17"/>
     </issue>
 
@@ -3945,7 +2557,7 @@
         errorLine2="                ~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/sqlite/ds/UserDataSource.java"
-            line="187"
+            line="206"
             column="17"/>
     </issue>
 
@@ -4256,38 +2868,6 @@
     <issue
         id="ObsoleteSdkInt"
         severity="Warning"
-        message="Unnecessary;` Build.VERSION.SDK_INT >= Build.VERSION_CODES.O` is never true here"
-        category="Performance"
-        priority="6"
-        summary="Obsolete SDK_INT Version Check"
-        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder."
-        errorLine1="                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {"
-        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="112"
-            column="21"/>
-    </issue>
-
-    <issue
-        id="ObsoleteSdkInt"
-        severity="Warning"
-        message="Unnecessary;` Build.VERSION.SDK_INT >= Build.VERSION_CODES.O` is never true here"
-        category="Performance"
-        priority="6"
-        summary="Obsolete SDK_INT Version Check"
-        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder."
-        errorLine1="   if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {"
-        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/utils/Checker.java"
-            line="44"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="ObsoleteSdkInt"
-        severity="Warning"
         message="This folder configuration (`v11`) is unnecessary; `minSdkVersion` is 21. Merge all the resources in this folder into `values`."
         category="Performance"
         priority="6"
@@ -4321,7 +2901,7 @@
         errorLine2="              ~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/ActivationActivity.java"
-            line="87"
+            line="86"
             column="15"/>
     </issue>
 
@@ -4385,7 +2965,7 @@
         errorLine2="                                   ^">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java"
-            line="552"
+            line="555"
             column="36"/>
     </issue>
 
@@ -6439,7 +5019,7 @@
         errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java"
-            line="188"
+            line="191"
             column="22"/>
     </issue>
 
@@ -6457,7 +5037,7 @@
         errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java"
-            line="525"
+            line="528"
             column="24"/>
     </issue>
 
@@ -6475,7 +5055,7 @@
         errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/hp/Documents/Quick Cash/app/src/main/java/com/extropos/java/QuickOrderActivity.java"
-            line="529"
+            line="532"
             column="24"/>
     </issue>
 

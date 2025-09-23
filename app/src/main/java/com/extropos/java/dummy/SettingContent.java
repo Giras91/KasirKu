@@ -24,10 +24,15 @@ public class SettingContent {
 	public static Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
 
 	static {
-		// Add 3 sample items.
-		addItem(new DummyItem("1", "Item 1"));
-		addItem(new DummyItem("2", "Item 2"));
-		addItem(new DummyItem("3", "Item 3"));
+		// Add enhanced settings items
+		addItem(new DummyItem("1", "Printer Selection"));
+		addItem(new DummyItem("2", "User Management"));
+		addItem(new DummyItem("3", "License Activation"));
+		addItem(new DummyItem("4", "Malaysian E-Invoice Setup"));
+		addItem(new DummyItem("5", "Kitchen Printer Setup"));
+		addItem(new DummyItem("6", "Store Information"));
+		addItem(new DummyItem("7", "Tax Settings"));
+		addItem(new DummyItem("8", "Currency Settings"));
 	}
 
 	private static void addItem(DummyItem item) {

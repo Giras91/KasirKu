@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import androidx.fragment.app.ListFragment;
 
-import com.extropos.java.dummy.MasterContent;
+import com.extropos.java.dummy.SettingContent;
 
 /**
  * A list fragment representing a list of Settings. This fragment also supports
@@ -71,9 +71,9 @@ public class SettingListFragment extends ListFragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setListAdapter(new ArrayAdapter<MasterContent.DummyItem>(getActivity(),
+		setListAdapter(new ArrayAdapter<SettingContent.DummyItem>(getActivity(),
 				android.R.layout.simple_list_item_activated_1,
-				android.R.id.text1, MasterContent.ITEMS));
+				android.R.id.text1, SettingContent.ITEMS));
 	}
 
 	@Override
@@ -116,7 +116,7 @@ public class SettingListFragment extends ListFragment {
 
 		// Notify the active callbacks interface (the activity, if the
 		// fragment is attached to one) that an item has been selected.
-		mCallbacks.onItemSelected(MasterContent.ITEMS.get(position).id);
+		mCallbacks.onItemSelected(SettingContent.ITEMS.get(position).id);
 	}
 
 	@Override

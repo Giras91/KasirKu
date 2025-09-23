@@ -35,24 +35,56 @@ public class ProductDataSource {
 	
 		if (c.moveToFirst()) {
 			do {
-			
-				item.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CODE)));
-				item.setProductName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));
-				item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));
-				item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));
-				item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_DESCRIPTION)));
-				item.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_PRICE)));
-				item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_DISCOUNT)));
-				item.setCreateBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_BY)));
-				item.setUpdatedBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_BY)));
-				item.setMerchantID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_MERCHANT_ID)));
-				item.setStatus(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_STATUS)));
-				item.setRefID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_REF_ID)));
-				item.setImage(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_IMAGE)));
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CODE);
+				if (colIndex >= 0) item.setProductID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_NAME);
+				if (colIndex >= 0) item.setProductName(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE);
+				if (colIndex >= 0) item.setCategoryID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME);
+				if (colIndex >= 0) item.setCategoryName(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_DESCRIPTION);
+				if (colIndex >= 0) item.setDescription(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_PRICE);
+				if (colIndex >= 0) item.setPrice(c.getDouble(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_DISCOUNT);
+				if (colIndex >= 0) item.setDiscount(c.getDouble(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_BY);
+				if (colIndex >= 0) item.setCreateBy(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_BY);
+				if (colIndex >= 0) item.setUpdatedBy(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_MERCHANT_ID);
+				if (colIndex >= 0) item.setMerchantID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_STATUS);
+				if (colIndex >= 0) item.setStatus(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_REF_ID);
+				if (colIndex >= 0) item.setRefID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_IMAGE);
+				if (colIndex >= 0) item.setImage(c.getString(colIndex));
+				
 				try {  
-				    item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_ON))));
-				    item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_ON))));
-				    item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_SYCN_ON))));
+					colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_ON);
+					if (colIndex >= 0) item.setCreatedOn(Shared.dateformat.parse(c.getString(colIndex)));
+					
+					colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_ON);
+					if (colIndex >= 0) item.setUpdatedOn(Shared.dateformat.parse(c.getString(colIndex)));
+					
+					colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_SYCN_ON);
+					if (colIndex >= 0) item.setSycnOn(Shared.dateformat.parse(c.getString(colIndex)));
 				} catch (Exception e) {  
 				}
 			
@@ -92,23 +124,56 @@ public class ProductDataSource {
 		if (c.moveToFirst()) {
 			do {
 				Product item = new Product();
-				item.setProductID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CODE)));
-				item.setProductName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_NAME)));
-				item.setCategoryID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE)));
-				item.setCategoryName(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME)));
-				item.setDescription(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_DESCRIPTION)));
-				item.setPrice(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_PRICE)));
-				item.setDiscount(c.getDouble(c.getColumnIndex(DbSchema.COL_PRODUCT_DISCOUNT)));
-				item.setCreateBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_BY)));
-				item.setUpdatedBy(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_BY)));
-				item.setMerchantID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_MERCHANT_ID)));
-				item.setStatus(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_STATUS)));
-				item.setRefID(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_REF_ID)));
-				item.setImage(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_IMAGE)));
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CODE);
+				if (colIndex >= 0) item.setProductID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_NAME);
+				if (colIndex >= 0) item.setProductName(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_CODE);
+				if (colIndex >= 0) item.setCategoryID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CATEGORY_NAME);
+				if (colIndex >= 0) item.setCategoryName(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_DESCRIPTION);
+				if (colIndex >= 0) item.setDescription(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_PRICE);
+				if (colIndex >= 0) item.setPrice(c.getDouble(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_DISCOUNT);
+				if (colIndex >= 0) item.setDiscount(c.getDouble(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_BY);
+				if (colIndex >= 0) item.setCreateBy(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_BY);
+				if (colIndex >= 0) item.setUpdatedBy(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_MERCHANT_ID);
+				if (colIndex >= 0) item.setMerchantID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_STATUS);
+				if (colIndex >= 0) item.setStatus(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_REF_ID);
+				if (colIndex >= 0) item.setRefID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_IMAGE);
+				if (colIndex >= 0) item.setImage(c.getString(colIndex));
+				
 				try {  
-				    item.setCreatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_ON))));
-				    item.setUpdatedOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_ON))));
-				    item.setSycnOn( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_PRODUCT_SYCN_ON))));
+					colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_CREATED_ON);
+					if (colIndex >= 0) item.setCreatedOn(Shared.dateformat.parse(c.getString(colIndex)));
+					
+					colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_UPDATED_ON);
+					if (colIndex >= 0) item.setUpdatedOn(Shared.dateformat.parse(c.getString(colIndex)));
+					
+					colIndex = c.getColumnIndex(DbSchema.COL_PRODUCT_SYCN_ON);
+					if (colIndex >= 0) item.setSycnOn(Shared.dateformat.parse(c.getString(colIndex)));
 				} catch (Exception e) {  
 				}
 				

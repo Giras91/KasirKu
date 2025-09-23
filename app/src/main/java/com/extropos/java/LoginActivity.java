@@ -36,6 +36,9 @@ public class LoginActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 		
+		// Initialize Shared preferences and fonts
+		Shared.initialize(getBaseContext());
+		
 		btnLogin = (Button)findViewById(R.id.btnLogin);
 		btnLogin.setOnClickListener(this);
 		

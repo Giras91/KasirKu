@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.MenuItem;
 
 import com.extropos.java.fragment.CategoryListFragment;
@@ -75,7 +76,7 @@ public class MasterDetailActivity extends FragmentActivity {
 		fragment.setArguments(arguments);
 		getSupportFragmentManager()
 		.beginTransaction()
-		.setTransition(android.R.anim.fade_in)
+		.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
 		.replace(R.id.master_detail_container, fragment,tag)
 		.commit();
 	}

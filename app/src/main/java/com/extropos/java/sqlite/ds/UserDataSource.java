@@ -34,14 +34,23 @@ public class UserDataSource {
 	
 		if (c.moveToFirst()) {
 			do {
-			
-				item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CODE)));
-				item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));
-				item.setCashierID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CASHIER_ID)));
-				item.setLevel(c.getString(c.getColumnIndex(DbSchema.COL_USER_LEVEL)));
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_CODE);
+				if (colIndex >= 0) item.setUserID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_NAME);
+				if (colIndex >= 0) item.setUserName(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_CASHIER_ID);
+				if (colIndex >= 0) item.setCashierID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_LEVEL);
+				if (colIndex >= 0) item.setLevel(c.getString(colIndex));
 				
 				try {  
-				    item.setLastLogin( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_USER_LAST_LOGIN))));
+					colIndex = c.getColumnIndex(DbSchema.COL_USER_LAST_LOGIN);
+					if (colIndex >= 0) item.setLastLogin(Shared.dateformat.parse(c.getString(colIndex)));
 				} catch (Exception e) {  
 				}
 			
@@ -62,13 +71,23 @@ public class UserDataSource {
 		if (c.moveToFirst()) {
 			do {
 				User item = new User();
-				item.setUserID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CODE)));
-				item.setUserName(c.getString(c.getColumnIndex(DbSchema.COL_USER_NAME)));
-				item.setCashierID(c.getString(c.getColumnIndex(DbSchema.COL_USER_CASHIER_ID)));
-				item.setLevel(c.getString(c.getColumnIndex(DbSchema.COL_USER_LEVEL)));
+				int colIndex;
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_CODE);
+				if (colIndex >= 0) item.setUserID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_NAME);
+				if (colIndex >= 0) item.setUserName(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_CASHIER_ID);
+				if (colIndex >= 0) item.setCashierID(c.getString(colIndex));
+				
+				colIndex = c.getColumnIndex(DbSchema.COL_USER_LEVEL);
+				if (colIndex >= 0) item.setLevel(c.getString(colIndex));
 				
 				try {  
-				    item.setLastLogin( Shared.dateformat.parse(c.getString(c.getColumnIndex(DbSchema.COL_USER_LAST_LOGIN))));
+					colIndex = c.getColumnIndex(DbSchema.COL_USER_LAST_LOGIN);
+					if (colIndex >= 0) item.setLastLogin(Shared.dateformat.parse(c.getString(colIndex)));
 				} catch (Exception e) {  
 				}
 				

@@ -121,7 +121,7 @@ public class MasterListActivity extends FragmentActivity implements
 		fragment.setArguments(arguments);
 		getSupportFragmentManager()
 		.beginTransaction()
-		.setTransition(android.R.anim.fade_in)
+		.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
 		.replace(R.id.master_detail_container, fragment,tag)
 		.commit();
 	}

@@ -6,11 +6,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.provider.Settings.Secure;
-import android.telephony.TelephonyManager;
 import android.widget.Toast;
 
 import com.extropos.java.ActivationActivity;
 import com.extropos.java.R;
+import com.extropos.java.utils.Constants;
+import com.extropos.java.utils.Shared;
 
 public class Checker {
 	private Activity context;
@@ -24,30 +25,15 @@ public class Checker {
 	}
 
 	public boolean cek(boolean isRedirect) {
-		TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(context.TELEPHONY_SERVICE);
 
 		String imei = "";
 		String device_id = "";
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
-		{
-			if (this.context.checkSelfPermission(Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
-				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-					imei = telephonyManager.getImei();
-				} else {
-					imei = telephonyManager.getDeviceId();
-				}
-				device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
-			}
-		}
-		else
-		{
-			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-				imei = telephonyManager.getImei();
-			} else {
-				imei = telephonyManager.getDeviceId();
-			}
-			device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
-		}
+		
+		// Get ANDROID_ID (no permission required)
+		device_id = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
+		
+		// Use ANDROID_ID as device identifier (IMEI requires system permissions not available to regular apps)
+		imei = device_id;
 
 		boolean hasActive = false;
 		if(!Shared.read(Constants.KEY_SETTING_CASHIER_SN, "").equals(""))
