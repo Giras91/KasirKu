@@ -160,6 +160,11 @@ public class ProductAddFragment extends Fragment{
 	        ProductDataSource ds = new ProductDataSource(db);
 	        
 	        Product dt =  ds.get(lastCode);
+	        if (dt == null) {
+	        	Toast.makeText(getActivity(), "Product not found", Toast.LENGTH_SHORT).show();
+	        	getFragmentManager().popBackStack();
+	        	return;
+	        }
 	        txtName.setText(dt.getProductName());
 	        txtPrice.setText(Shared.decimalformat2.format(dt.getPrice()));
 	        txtDiscount.setText(Shared.decimalformat2.format(dt.getDiscount()));
@@ -186,6 +191,9 @@ public class ProductAddFragment extends Fragment{
 	        }
 	        
 	        spinnerCategory.setSelection( adapter.indexOf(dt.getCategoryID()));
+	        if (spinnerCategory.getSelectedItemPosition() == -1 && adapter.getCount() > 0) {
+	        	spinnerCategory.setSelection(0); // Default to first category if not found
+	        }
 	        lastName = dt.getProductName();
 	        
 		}
@@ -203,9 +211,13 @@ public class ProductAddFragment extends Fragment{
 			String discount = txtDiscount.getText().toString();
 			
 			ProductCategory cat =   (ProductCategory) spinnerCategory.getSelectedItem();
+			if (cat == null) {
+				Toast.makeText(getActivity(), "Please select a category", Toast.LENGTH_SHORT).show();
+				return;
+			}
 			String category = cat.getCategoryID();
 			
-			if(name.equals("") || price.equals("") || description.equals("") || category == null)
+			if(name.equals("") || price.equals("") || description.equals("") || category == null || category.equals(""))
 			{
 				Toast.makeText(getActivity(), getString(R.string.error_field_empty), Toast.LENGTH_SHORT).show();
 				return;
@@ -239,52 +251,59 @@ public class ProductAddFragment extends Fragment{
 			}
 			
 			
-			SQLiteDatabase db =  DatabaseManager.getInstance().openDatabase();
-			ProductDataSource ds = new ProductDataSource(db);
-	        
-			Product data = new Product();
-			
-			data.setProductID(isEdit ? lastCode : Shared.getProductID());
-			data.setProductName(name);
-			data.setStatus(radio1.isChecked() ? "1" : "0");
-			data.setMerchantID(Shared.read(Constants.KEY_SETTING_MERCHANT_ID));
-			data.setRefID(MainActivity.SesID);
-			data.setImage(saveImage(Shared.getMD5(String.valueOf(System.currentTimeMillis()))));
-			data.setPrice(Double.parseDouble(price));
-			data.setDiscount(discount.equals("") ? 0 : Double.parseDouble(discount));
-			data.setDescription(description);
-			data.setCategoryID(category);
-			data.setBranchID(Shared.read(Constants.KEY_SETTING_BRANCH_ID));
-			if(isEdit)
-			{
-				if(!lastName.equals(name))
+			SQLiteDatabase db = null;
+			try {
+				db = DatabaseManager.getInstance().openDatabase();
+				ProductDataSource ds = new ProductDataSource(db);
+		        
+				Product data = new Product();
+				
+				data.setProductID(isEdit ? lastCode : Shared.getProductID());
+				data.setProductName(name);
+				data.setStatus(radio1.isChecked() ? "1" : "0");
+				data.setMerchantID(Shared.read(Constants.KEY_SETTING_MERCHANT_ID, ""));
+				data.setRefID(MainActivity.SesID != null ? MainActivity.SesID : "");
+				data.setImage(saveImage(Shared.getMD5(String.valueOf(System.currentTimeMillis()))));
+				data.setPrice(Double.parseDouble(price));
+				data.setDiscount(discount.equals("") ? 0 : Double.parseDouble(discount));
+				data.setDescription(description);
+				data.setCategoryID(category);
+				data.setBranchID(Shared.read(Constants.KEY_SETTING_BRANCH_ID, ""));
+				if(isEdit)
+				{
+					if(!lastName.equals(name))
+					{
+						if(ds.cekName(name))
+						{
+							Toast.makeText(getActivity(), getString(R.string.name_exist), Toast.LENGTH_SHORT).show();
+							return;
+						}
+					}
+					
+					ds.update(data,lastCode);
+				}
+				else
 				{
 					if(ds.cekName(name))
 					{
 						Toast.makeText(getActivity(), getString(R.string.name_exist), Toast.LENGTH_SHORT).show();
 						return;
 					}
+					
+					ds.insert(data);
 				}
 				
-				ds.update(data,lastCode);
-			}
-			else
-			{
-				if(ds.cekName(name))
-				{
-					Toast.makeText(getActivity(), getString(R.string.name_exist), Toast.LENGTH_SHORT).show();
-					return;
+				Toast.makeText(getActivity(), getString(R.string.save_succeed), Toast.LENGTH_SHORT).show();
+				if (getFragmentManager() != null) {
+					getFragmentManager().popBackStack();
 				}
+				hideKeyboard();
 				
-				ds.insert(data);
+			} finally {
+				if (DatabaseManager.getInstance() != null) {
+					DatabaseManager.getInstance().closeDatabase();
+				}
 			}
-			
-			
-			DatabaseManager.getInstance().closeDatabase();
-		
-			Toast.makeText(getActivity(), getString(R.string.save_succeed), Toast.LENGTH_SHORT).show();
-			getFragmentManager().popBackStack();
-			hideKeyboard();
 			
 		}
 	};
