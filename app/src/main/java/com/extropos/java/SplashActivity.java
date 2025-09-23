@@ -5,11 +5,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.extropos.java.utils.Shared;
+
 public class SplashActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
+
+		// Initialize Shared utilities (fonts, preferences, etc.)
+		Shared.initialize(this);
 
 		// Simple delay then proceed to activation
 		Handler h = new Handler();
