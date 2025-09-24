@@ -1,6 +1,9 @@
 package com.extropos.java.sqlite;
 
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.extropos.java.room.AppDatabase;
 
 public class DatabaseManager {
 
@@ -8,12 +11,19 @@ public class DatabaseManager {
 
     private static DatabaseManager instance;
     private static DatabaseHelper mDatabaseHelper;
+    private static AppDatabase mRoomDatabase;
     private SQLiteDatabase mDatabase;
 
     public static synchronized void initializeInstance(DatabaseHelper helper) {
         if (instance == null) {
             instance = new DatabaseManager();
             mDatabaseHelper = helper;
+        }
+    }
+
+    public static synchronized void initializeRoomInstance(Context context) {
+        if (mRoomDatabase == null) {
+            mRoomDatabase = AppDatabase.getInstance(context);
         }
     }
 
@@ -24,6 +34,15 @@ public class DatabaseManager {
         }
 
         return instance;
+    }
+
+    public static synchronized AppDatabase getRoomInstance() {
+        if (mRoomDatabase == null) {
+            throw new IllegalStateException(DatabaseManager.class.getSimpleName() +
+                    " Room database is not initialized, call initializeRoomInstance(..) method first.");
+        }
+
+        return mRoomDatabase;
     }
 
     public synchronized SQLiteDatabase openDatabase() {

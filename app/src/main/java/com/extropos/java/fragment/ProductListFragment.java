@@ -1,8 +1,5 @@
 package com.extropos.java.fragment;
 
-import java.util.ArrayList;
-
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -17,7 +14,7 @@ import com.extropos.java.adapter.ProductListAdapter;
 import com.extropos.java.dummy.MasterContent;
 import com.extropos.java.entity.Product;
 import com.extropos.java.sqlite.DatabaseManager;
-import com.extropos.java.sqlite.ds.ProductDataSource;
+import com.extropos.java.room.datasource.ProductDataSource;
 import com.extropos.java.utils.Constants;
 import com.extropos.java.utils.Shared;
 
@@ -59,12 +56,10 @@ public class ProductListFragment extends Fragment implements OnClickListener{
 	
 	private void popolateAdapter()
 	{
-		SQLiteDatabase db =  DatabaseManager.getInstance().openDatabase();
-        ProductDataSource ds = new ProductDataSource(db);
+		ProductDataSource ds = new ProductDataSource(getActivity());
         dtlist = ds.getAll();
-     
+
 		adapter.set(dtlist);
-		DatabaseManager.getInstance().closeDatabase();
 	}
 
 	@Override
@@ -73,7 +68,7 @@ public class ProductListFragment extends Fragment implements OnClickListener{
 		Bundle arguments = new Bundle();
 		arguments.putString(Constants.ARG_ITEM_ID, mItem.id);
 		fragment.setArguments(arguments);
-		getFragmentManager().beginTransaction()
+		getSupportFragmentManager().beginTransaction()
 		.setTransition(android.R.anim.slide_in_left)
 		.addToBackStack("add")
 		.replace(R.id.master_detail_container, fragment).commit();

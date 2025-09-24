@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.extropos.java.app-mergeDebugResources-31:/values-v16/values-v16.xml",
+            "outputFile": "com.extropos.java.app-mergeDebugResources-35:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/hp/.gradle/caches/8.9/transforms/0e559d42ecdf6f9622399d9dbfb46886/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "source": "/home/hp/.gradle/caches/8.9/transforms/b9398e298918d45ceed86aa123815a76/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/hp/.gradle/caches/8.9/transforms/4427ea441abf7f7d0532b32b467014c1/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

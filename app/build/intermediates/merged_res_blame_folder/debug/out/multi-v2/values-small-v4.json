@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.extropos.java.app-mergeDebugResources-31:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.extropos.java.app-mergeDebugResources-35:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/home/hp/.gradle/caches/8.9/transforms/9de76193f8de5336e23560003192d8d5/transformed/material-1.8.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "/home/hp/.gradle/caches/8.9/transforms/7990870a7e09d696d54df7fd79ce7035/transformed/material-1.8.0/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

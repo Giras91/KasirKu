@@ -110,7 +110,7 @@ public class QuickOrderActivity extends Activity {
 		cartWrapper = (RelativeLayout)findViewById(R.id.bgCart);
 
 		// Table selection button (restaurant feature)
-		android.widget.Button btnSelectTable = (android.widget.Button) findViewById(R.id.btnSelectTable);
+		ImageButton btnSelectTable = (ImageButton) findViewById(R.id.btnSelectTable);
 		if (btnSelectTable != null) {
 			btnSelectTable.setOnClickListener(new OnClickListener() {
 				@Override

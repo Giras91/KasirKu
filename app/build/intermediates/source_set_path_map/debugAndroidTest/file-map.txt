@@ -1,6 +1,0 @@
-com.extropos.java.test.app-jetified-annotation-experimental-1.3.0-0 /home/hp/.gradle/caches/8.9/transforms/18582aff3e54bf87e4e0e0f72ff4b6f1/transformed/jetified-annotation-experimental-1.3.0/res
-com.extropos.java.test.app-jetified-core-1.5.0-1 /home/hp/.gradle/caches/8.9/transforms/da6645bba915fd05b79998d23e454e51/transformed/jetified-core-1.5.0/res
-com.extropos.java.test.app-androidTest-2 /home/hp/Documents/Quick Cash/app/build/generated/res/resValues/androidTest/debug
-com.extropos.java.test.app-mergeDebugAndroidTestResources-3 /home/hp/Documents/Quick Cash/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.extropos.java.test.app-mergeDebugAndroidTestResources-4 /home/hp/Documents/Quick Cash/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.extropos.java.test.app-merged_res-5 /home/hp/Documents/Quick Cash/app/build/intermediates/merged_res/debugAndroidTest

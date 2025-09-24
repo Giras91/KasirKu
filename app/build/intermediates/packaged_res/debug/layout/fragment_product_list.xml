@@ -34,4 +34,15 @@
 	    android:background="@drawable/icon_state"
 	    android:src="@drawable/ic_add_grey600_36dp" />
 
+	<ImageButton
+	    android:id="@+id/btnBulkAdd"
+	    android:layout_width="26dp"
+	    android:layout_height="26dp"
+	    android:layout_toLeftOf="@+id/imageButton1"
+	    android:layout_alignParentTop="true"
+	    android:layout_margin="12dp"
+	    android:scaleType="fitXY"
+	    android:background="@drawable/icon_state"
+	    android:src="@drawable/ic_plus" />
+
 </RelativeLayout>

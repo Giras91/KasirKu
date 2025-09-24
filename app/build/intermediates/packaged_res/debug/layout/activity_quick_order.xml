@@ -40,13 +40,33 @@
                 android:layout_toRightOf="@+id/imageView2"
                 android:background="@color/line_gray" />
 
+            <ImageButton
+                android:id="@+id/btnSelectTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/sparator"
+                android:background="@drawable/icon_state"
+                android:src="@drawable/ic_grid_on_black_36dp"
+                android:contentDescription="Select Table" />
+
+            <View
+                android:id="@+id/sparator2"
+                android:layout_width="0.5dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/btnSelectTable"
+                android:background="@color/line_gray" />
+
             <EditText
                 android:id="@+id/editText1"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_alignTop="@+id/imageView2"
                 android:layout_marginLeft="8dp"
-                android:layout_toRightOf="@+id/sparator"
+                android:layout_toRightOf="@+id/sparator2"
                 android:background="@color/putih"
                 android:ems="10"
                 android:hint="@string/find_food"

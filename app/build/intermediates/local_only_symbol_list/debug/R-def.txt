@@ -62,6 +62,7 @@ drawable rounded_bg
 drawable rounded_white
 drawable setting
 drawable shadow
+drawable splash_image
 drawable textbox
 drawable textbox_large
 drawable textbox_outline
@@ -72,6 +73,7 @@ id bgMenu
 id btnActivateLicense
 id btnAddUser
 id btnBack
+id btnBulkAdd
 id btnCancel
 id btnCancelCheckout
 id btnCheckout
@@ -79,6 +81,7 @@ id btnExportEmail
 id btnExportLocal
 id btnLogin
 id btnLogout
+id btnManageTables
 id btnMasterData
 id btnMoveHistory
 id btnNewOrder
@@ -137,8 +140,6 @@ id listViewReport
 id llBluetoothSettings
 id llNetworkSettings
 id loginWrapper
-id logo1
-id logo2
 id lvUsers
 id main_frame
 id master_detail
@@ -150,9 +151,11 @@ id radio0
 id radio1
 id radioGroup1
 id rbBluetooth
+id rbEscPosCoffee
 id rbKitchenNetwork
 id rbKitchenUSB
 id rbNetwork
+id rbThermalPrinter
 id rbUSB
 id relativeLayout1
 id relativeLayout2
@@ -160,6 +163,7 @@ id relativeLayout3
 id relativeLayout4
 id relativeLayout5
 id rgKitchenType
+id rgPrinterLibrary
 id rgPrinterType
 id scrollView1
 id setting_detail
@@ -167,7 +171,9 @@ id setting_detail_container
 id setting_list
 id spBluetoothDevices
 id sparator
+id sparator2
 id spinner1
+id splashImage
 id subtitle
 id textAmount
 id textDate
@@ -204,6 +210,7 @@ id tvOrderId
 id tvOrderStatus
 id tvPrinterTitle
 id tvTableName
+id tvTableTitle
 id tvTableTotal
 id tvUserTitle
 id txtPassword
@@ -243,6 +250,7 @@ layout fragment_printer_settings
 layout fragment_product_add
 layout fragment_product_list
 layout fragment_setting_detail
+layout fragment_table_management
 layout fragment_user_add
 layout fragment_user_list
 layout fragment_user_management

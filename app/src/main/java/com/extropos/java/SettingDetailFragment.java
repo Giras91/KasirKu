@@ -31,6 +31,7 @@ import androidx.fragment.app.Fragment;
 import com.extropos.java.dummy.SettingContent;
 import com.extropos.java.printer.DeviceListActivity;
 import com.extropos.java.printer.EscPosPrinterService;
+import com.extropos.java.printer.ThermalPrinterService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,6 +104,10 @@ public class SettingDetailFragment extends Fragment {
 					rootView = inflater.inflate(R.layout.fragment_kitchen_printer_settings, container, false);
 					setupKitchenPrinterSettings(rootView);
 					break;
+				case "9": // Table Management
+					rootView = inflater.inflate(R.layout.fragment_table_management, container, false);
+					setupTableManagement(rootView);
+					break;
 				default:
 					rootView = inflater.inflate(R.layout.fragment_setting_detail, container, false);
 					((TextView) rootView.findViewById(R.id.setting_detail)).setText(mItem.content);
@@ -117,6 +122,7 @@ public class SettingDetailFragment extends Fragment {
 	
 	private void setupPrinterSettings(View rootView) {
 		// Initialize UI components
+		RadioGroup rgPrinterLibrary = rootView.findViewById(R.id.rgPrinterLibrary);
 		RadioGroup rgPrinterType = rootView.findViewById(R.id.rgPrinterType);
 		LinearLayout llNetworkSettings = rootView.findViewById(R.id.llNetworkSettings);
 		LinearLayout llBluetoothSettings = rootView.findViewById(R.id.llBluetoothSettings);
@@ -129,6 +135,7 @@ public class SettingDetailFragment extends Fragment {
 
 		// Load saved settings
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+		String printerLibrary = prefs.getString("printer_library", "escpos_coffee");
 		String printerType = prefs.getString("printer_type", "usb");
 		String networkIP = prefs.getString("network_ip", "");
 		String networkPort = prefs.getString("network_port", "9100");
@@ -137,6 +144,16 @@ public class SettingDetailFragment extends Fragment {
 		// Set initial values
 		etNetworkIP.setText(networkIP);
 		etNetworkPort.setText(networkPort);
+
+		// Set printer library radio button
+		switch (printerLibrary) {
+			case "thermal_printer":
+				rgPrinterLibrary.check(R.id.rbThermalPrinter);
+				break;
+			default: // escpos_coffee
+				rgPrinterLibrary.check(R.id.rbEscPosCoffee);
+				break;
+		}
 
 		// Set printer type radio button
 		switch (printerType) {
@@ -156,6 +173,11 @@ public class SettingDetailFragment extends Fragment {
 				llBluetoothSettings.setVisibility(View.GONE);
 				break;
 		}
+
+		// Setup printer library change listener
+		rgPrinterLibrary.setOnCheckedChangeListener((group, checkedId) -> {
+			// Could add library-specific UI changes here if needed
+		});
 
 		// Setup printer type change listener
 		rgPrinterType.setOnCheckedChangeListener((group, checkedId) -> {
@@ -193,7 +215,7 @@ public class SettingDetailFragment extends Fragment {
 	}
 
 	private static final int REQUEST_BLUETOOTH_DEVICE = 1;
-	private EscPosPrinterService printerService;
+	private Object printerService;
 
 	private void loadBluetoothDevices(Spinner spinner, String selectedAddress) {
 		if (!checkBluetoothPermissions()) {
@@ -254,10 +276,20 @@ public class SettingDetailFragment extends Fragment {
 		View rootView = getView();
 		if (rootView == null) return;
 
+		RadioGroup rgPrinterLibrary = rootView.findViewById(R.id.rgPrinterLibrary);
+		int libraryCheckedId = rgPrinterLibrary.getCheckedRadioButtonId();
+		boolean useThermalPrinter = (libraryCheckedId == R.id.rbThermalPrinter);
+
 		RadioGroup rgPrinterType = rootView.findViewById(R.id.rgPrinterType);
 		int checkedId = rgPrinterType.getCheckedRadioButtonId();
 
-		printerService = new EscPosPrinterService(getContext());
+		// Instantiate the appropriate printer service
+		if (useThermalPrinter) {
+			printerService = new ThermalPrinterService(getContext());
+		} else {
+			printerService = new EscPosPrinterService(getContext());
+		}
+
 		boolean connected = false;
 
 		try {
@@ -267,23 +299,43 @@ public class SettingDetailFragment extends Fragment {
 				String ip = etIP.getText().toString().trim();
 				String portStr = etPort.getText().toString().trim();
 				int port = portStr.isEmpty() ? 9100 : Integer.parseInt(portStr);
-				connected = printerService.connectNetwork(ip, port);
+
+				if (useThermalPrinter) {
+					connected = ((ThermalPrinterService) printerService).connectNetwork(ip, port);
+				} else {
+					connected = ((EscPosPrinterService) printerService).connectNetwork(ip, port);
+				}
 			} else if (checkedId == R.id.rbBluetooth) {
 				Spinner spDevices = rootView.findViewById(R.id.spBluetoothDevices);
 				String selectedDevice = (String) spDevices.getSelectedItem();
 				if (selectedDevice != null && !selectedDevice.equals("Select Bluetooth Device")) {
 					String address = selectedDevice.substring(selectedDevice.lastIndexOf('\n') + 1);
-					connected = printerService.connectBluetooth(address);
+
+					if (useThermalPrinter) {
+						connected = ((ThermalPrinterService) printerService).connectBluetooth(address);
+					} else {
+						connected = ((EscPosPrinterService) printerService).connectBluetooth(address);
+					}
 				}
 			} else if (checkedId == R.id.rbUSB) {
-				// For USB, we would need to implement USB device discovery
-				// For now, show a message
-				Toast.makeText(getContext(), "USB printing not yet implemented", Toast.LENGTH_SHORT).show();
-				return;
+				if (useThermalPrinter) {
+					// Use ThermalPrinterService for USB connection
+					connected = ((ThermalPrinterService) printerService).connectUsb();
+				} else {
+					// EscPosPrinterService doesn't support USB yet
+					Toast.makeText(getContext(), "USB printing not supported with EscPos Coffee library", Toast.LENGTH_SHORT).show();
+					return;
+				}
 			}
 
 			if (connected) {
-				boolean success = printerService.printTest();
+				boolean success;
+				if (useThermalPrinter) {
+					success = ((ThermalPrinterService) printerService).printTest();
+				} else {
+					success = ((EscPosPrinterService) printerService).printTest();
+				}
+
 				if (success) {
 					Toast.makeText(getContext(), "Test print successful!", Toast.LENGTH_SHORT).show();
 				} else {
@@ -298,7 +350,11 @@ public class SettingDetailFragment extends Fragment {
 			Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
 		} finally {
 			if (printerService != null) {
-				printerService.disconnect();
+				if (useThermalPrinter) {
+					((ThermalPrinterService) printerService).disconnect();
+				} else {
+					((EscPosPrinterService) printerService).disconnect();
+				}
 			}
 		}
 	}
@@ -309,6 +365,15 @@ public class SettingDetailFragment extends Fragment {
 
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
 		SharedPreferences.Editor editor = prefs.edit();
+
+		// Save printer library selection
+		RadioGroup rgPrinterLibrary = rootView.findViewById(R.id.rgPrinterLibrary);
+		int libraryCheckedId = rgPrinterLibrary.getCheckedRadioButtonId();
+		if (libraryCheckedId == R.id.rbThermalPrinter) {
+			editor.putString("printer_library", "thermal_printer");
+		} else {
+			editor.putString("printer_library", "escpos_coffee");
+		}
 
 		RadioGroup rgPrinterType = rootView.findViewById(R.id.rgPrinterType);
 		int checkedId = rgPrinterType.getCheckedRadioButtonId();
@@ -380,6 +445,23 @@ public class SettingDetailFragment extends Fragment {
 		TextView title = rootView.findViewById(R.id.tvKitchenTitle);
 		if (title != null) {
 			title.setText("Setup kitchen order printing");
+		}
+	}
+	
+	private void setupTableManagement(View rootView) {
+		// Setup table management interface
+		TextView title = rootView.findViewById(R.id.tvTableTitle);
+		if (title != null) {
+			title.setText("Manage restaurant tables and seating");
+		}
+		
+		// Add button to navigate to table management activity
+		Button btnManageTables = rootView.findViewById(R.id.btnManageTables);
+		if (btnManageTables != null) {
+			btnManageTables.setOnClickListener(v -> {
+				Intent intent = new Intent(getContext(), TableActivity.class);
+				startActivity(intent);
+			});
 		}
 	}
 }

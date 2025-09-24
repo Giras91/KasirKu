@@ -1,36 +1,40 @@
-com.extropos.java.app-lifecycle-runtime-2.6.1-0 /home/hp/.gradle/caches/8.9/transforms/03565dddffa8ea52444d8df31f63e287/transformed/lifecycle-runtime-2.6.1/res
-com.extropos.java.app-core-runtime-2.2.0-1 /home/hp/.gradle/caches/8.9/transforms/04157bc3ce18fb51f92c9dfdcc77c336/transformed/core-runtime-2.2.0/res
-com.extropos.java.app-lifecycle-livedata-2.6.1-2 /home/hp/.gradle/caches/8.9/transforms/071c59e631581a66a6d0d31e4fcd1a2d/transformed/lifecycle-livedata-2.6.1/res
-com.extropos.java.app-jetified-library-2.4-3 /home/hp/.gradle/caches/8.9/transforms/08dd933a084aadc67ffea27737c5c5ce/transformed/jetified-library-2.4/res
-com.extropos.java.app-appcompat-1.6.1-4 /home/hp/.gradle/caches/8.9/transforms/0e559d42ecdf6f9622399d9dbfb46886/transformed/appcompat-1.6.1/res
-com.extropos.java.app-lifecycle-livedata-core-2.6.1-5 /home/hp/.gradle/caches/8.9/transforms/13f9c193f40701462776ff2ad0488abf/transformed/lifecycle-livedata-core-2.6.1/res
-com.extropos.java.app-jetified-annotation-experimental-1.3.0-6 /home/hp/.gradle/caches/8.9/transforms/18582aff3e54bf87e4e0e0f72ff4b6f1/transformed/jetified-annotation-experimental-1.3.0/res
-com.extropos.java.app-jetified-activity-1.7.2-7 /home/hp/.gradle/caches/8.9/transforms/1bc9b33d27a9c3dccd8ae73064275e9e/transformed/jetified-activity-1.7.2/res
-com.extropos.java.app-jetified-customview-poolingcontainer-1.0.0-8 /home/hp/.gradle/caches/8.9/transforms/287a89b9676869da21a8f8b0816dacab/transformed/jetified-customview-poolingcontainer-1.0.0/res
-com.extropos.java.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-9 /home/hp/.gradle/caches/8.9/transforms/4116de0a75d975eb169744fca52f860c/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/res
-com.extropos.java.app-lifecycle-viewmodel-2.6.1-10 /home/hp/.gradle/caches/8.9/transforms/43a1fa60e9256f0a921477f5533e6659/transformed/lifecycle-viewmodel-2.6.1/res
-com.extropos.java.app-jetified-lifecycle-process-2.6.1-11 /home/hp/.gradle/caches/8.9/transforms/4612e711e02a7083ccf5d4728abc3f88/transformed/jetified-lifecycle-process-2.6.1/res
-com.extropos.java.app-jetified-core-ktx-1.12.0-12 /home/hp/.gradle/caches/8.9/transforms/486600cdeb2305627e0b0a5154dd7af4/transformed/jetified-core-ktx-1.12.0/res
-com.extropos.java.app-fragment-1.6.1-13 /home/hp/.gradle/caches/8.9/transforms/4d8eb891ecbd9f24eac4f35f6453a851/transformed/fragment-1.6.1/res
-com.extropos.java.app-jetified-profileinstaller-1.3.0-14 /home/hp/.gradle/caches/8.9/transforms/75969552930480950e4fc5853d1b8c0b/transformed/jetified-profileinstaller-1.3.0/res
-com.extropos.java.app-jetified-appcompat-resources-1.6.1-15 /home/hp/.gradle/caches/8.9/transforms/79be3f954c5ffaa1cd8e3872dcd8c9ff/transformed/jetified-appcompat-resources-1.6.1/res
-com.extropos.java.app-jetified-viewpager2-1.0.0-16 /home/hp/.gradle/caches/8.9/transforms/7d4c3f1f7029a6722e06892886afcf7d/transformed/jetified-viewpager2-1.0.0/res
-com.extropos.java.app-jetified-emoji2-1.2.0-17 /home/hp/.gradle/caches/8.9/transforms/94f3b6f394c93eb025d331a23cfeb32f/transformed/jetified-emoji2-1.2.0/res
-com.extropos.java.app-material-1.8.0-18 /home/hp/.gradle/caches/8.9/transforms/9de76193f8de5336e23560003192d8d5/transformed/material-1.8.0/res
-com.extropos.java.app-constraintlayout-2.0.1-19 /home/hp/.gradle/caches/8.9/transforms/b02d72315cfd12fc4d32b58b407b111d/transformed/constraintlayout-2.0.1/res
-com.extropos.java.app-jetified-startup-runtime-1.1.1-20 /home/hp/.gradle/caches/8.9/transforms/baa9026c8b478a29930a6afc4d4b1a91/transformed/jetified-startup-runtime-1.1.1/res
-com.extropos.java.app-coordinatorlayout-1.1.0-21 /home/hp/.gradle/caches/8.9/transforms/bbeb06035715b4853d56dc842be4211b/transformed/coordinatorlayout-1.1.0/res
-com.extropos.java.app-transition-1.2.0-22 /home/hp/.gradle/caches/8.9/transforms/bcaf6d382c891b6e51ae40f74ef3e63a/transformed/transition-1.2.0/res
-com.extropos.java.app-jetified-savedstate-1.2.1-23 /home/hp/.gradle/caches/8.9/transforms/beb9905c59bb78723b985e54cbed186b/transformed/jetified-savedstate-1.2.1/res
-com.extropos.java.app-drawerlayout-1.1.1-24 /home/hp/.gradle/caches/8.9/transforms/d4016f9bbd153b4b618e90c16f57e3af/transformed/drawerlayout-1.1.1/res
-com.extropos.java.app-jetified-emoji2-views-helper-1.2.0-25 /home/hp/.gradle/caches/8.9/transforms/dc2c3ff40049c57349db2feeed7b65e0/transformed/jetified-emoji2-views-helper-1.2.0/res
-com.extropos.java.app-recyclerview-1.3.0-26 /home/hp/.gradle/caches/8.9/transforms/e733871581edf702ff6c29ca227ff555/transformed/recyclerview-1.3.0/res
-com.extropos.java.app-cardview-1.0.0-27 /home/hp/.gradle/caches/8.9/transforms/f495d85bb18be9f1e2cc9fc15537ca9b/transformed/cardview-1.0.0/res
-com.extropos.java.app-core-1.12.0-28 /home/hp/.gradle/caches/8.9/transforms/f878da112ca91c6134a639770f71e5de/transformed/core-1.12.0/res
-com.extropos.java.app-pngs-29 /home/hp/Documents/Quick Cash/app/build/generated/res/pngs/debug
-com.extropos.java.app-resValues-30 /home/hp/Documents/Quick Cash/app/build/generated/res/resValues/debug
-com.extropos.java.app-packageDebugResources-31 /home/hp/Documents/Quick Cash/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.extropos.java.app-packageDebugResources-32 /home/hp/Documents/Quick Cash/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.extropos.java.app-merged_res-33 /home/hp/Documents/Quick Cash/app/build/intermediates/merged_res/debug
-com.extropos.java.app-debug-34 /home/hp/Documents/Quick Cash/app/src/debug/res
-com.extropos.java.app-main-35 /home/hp/Documents/Quick Cash/app/src/main/res
+com.extropos.java.app-sqlite-2.2.0-0 /home/hp/.gradle/caches/8.9/transforms/0be0ecc51562d634dd50dd29ad1d3043/transformed/sqlite-2.2.0/res
+com.extropos.java.app-lifecycle-runtime-2.6.1-1 /home/hp/.gradle/caches/8.9/transforms/12761dd02405b645a06fc4af561801bd/transformed/lifecycle-runtime-2.6.1/res
+com.extropos.java.app-lifecycle-viewmodel-2.6.1-2 /home/hp/.gradle/caches/8.9/transforms/16828d5944c5402d27b8e0285b10a753/transformed/lifecycle-viewmodel-2.6.1/res
+com.extropos.java.app-jetified-library-2.4-3 /home/hp/.gradle/caches/8.9/transforms/18fc6959c2363d7683af4e1fadbc0d30/transformed/jetified-library-2.4/res
+com.extropos.java.app-recyclerview-1.1.0-4 /home/hp/.gradle/caches/8.9/transforms/288e6a584fd55e6299f0ef4b3901832b/transformed/recyclerview-1.1.0/res
+com.extropos.java.app-jetified-lifecycle-process-2.6.1-5 /home/hp/.gradle/caches/8.9/transforms/34dbfa253c571e06fdb6afc3b890d2fa/transformed/jetified-lifecycle-process-2.6.1/res
+com.extropos.java.app-drawerlayout-1.1.1-6 /home/hp/.gradle/caches/8.9/transforms/389f6a4354f83a0cde66e9e8d05c9e46/transformed/drawerlayout-1.1.1/res
+com.extropos.java.app-jetified-viewpager2-1.0.0-7 /home/hp/.gradle/caches/8.9/transforms/38dba8624031060bdc4d68b8cb5441e1/transformed/jetified-viewpager2-1.0.0/res
+com.extropos.java.app-core-1.12.0-8 /home/hp/.gradle/caches/8.9/transforms/4427ea441abf7f7d0532b32b467014c1/transformed/core-1.12.0/res
+com.extropos.java.app-transition-1.2.0-9 /home/hp/.gradle/caches/8.9/transforms/4ae477a530202bf9fe57b177bf3cf71a/transformed/transition-1.2.0/res
+com.extropos.java.app-jetified-appcompat-resources-1.6.1-10 /home/hp/.gradle/caches/8.9/transforms/5254cfef2e9c8927e591297c602bf14b/transformed/jetified-appcompat-resources-1.6.1/res
+com.extropos.java.app-jetified-annotation-experimental-1.3.0-11 /home/hp/.gradle/caches/8.9/transforms/570345b1e0c4e90b2c669c5a92d9a56c/transformed/jetified-annotation-experimental-1.3.0/res
+com.extropos.java.app-lifecycle-livedata-2.6.1-12 /home/hp/.gradle/caches/8.9/transforms/6bb655765e0fce8c55b0e71c8ea0c265/transformed/lifecycle-livedata-2.6.1/res
+com.extropos.java.app-material-1.8.0-13 /home/hp/.gradle/caches/8.9/transforms/7990870a7e09d696d54df7fd79ce7035/transformed/material-1.8.0/res
+com.extropos.java.app-jetified-profileinstaller-1.3.0-14 /home/hp/.gradle/caches/8.9/transforms/7bb541e89a8ec9179225e79c20f29722/transformed/jetified-profileinstaller-1.3.0/res
+com.extropos.java.app-jetified-startup-runtime-1.1.1-15 /home/hp/.gradle/caches/8.9/transforms/8997ecda29daa73f3ed78e8eebef86a3/transformed/jetified-startup-runtime-1.1.1/res
+com.extropos.java.app-lifecycle-livedata-core-2.6.1-16 /home/hp/.gradle/caches/8.9/transforms/8e92b02b3e3a71df00ca194a84d2a38b/transformed/lifecycle-livedata-core-2.6.1/res
+com.extropos.java.app-core-runtime-2.2.0-17 /home/hp/.gradle/caches/8.9/transforms/95e0fa97b0b94957fa804caa787b1d62/transformed/core-runtime-2.2.0/res
+com.extropos.java.app-cardview-1.0.0-18 /home/hp/.gradle/caches/8.9/transforms/9e5d1e6c676d50cc0fc3cbd5149cfafe/transformed/cardview-1.0.0/res
+com.extropos.java.app-fragment-1.6.1-19 /home/hp/.gradle/caches/8.9/transforms/a90af33526a147a12a40b60e863a6284/transformed/fragment-1.6.1/res
+com.extropos.java.app-jetified-room-rxjava3-2.4.3-20 /home/hp/.gradle/caches/8.9/transforms/a98c95b609e5f11c156480a65afea6a3/transformed/jetified-room-rxjava3-2.4.3/res
+com.extropos.java.app-jetified-activity-1.7.2-21 /home/hp/.gradle/caches/8.9/transforms/ab25691f9e651ac2886d0db2239c3b22/transformed/jetified-activity-1.7.2/res
+com.extropos.java.app-jetified-emoji2-views-helper-1.2.0-22 /home/hp/.gradle/caches/8.9/transforms/ac660e22aebc68db996495dc7c4b369e/transformed/jetified-emoji2-views-helper-1.2.0/res
+com.extropos.java.app-jetified-ESCPOS-ThermalPrinter-Android-3.2.0-23 /home/hp/.gradle/caches/8.9/transforms/b7915e73aacd37fb822158aa41306822/transformed/jetified-ESCPOS-ThermalPrinter-Android-3.2.0/res
+com.extropos.java.app-appcompat-1.6.1-24 /home/hp/.gradle/caches/8.9/transforms/b9398e298918d45ceed86aa123815a76/transformed/appcompat-1.6.1/res
+com.extropos.java.app-jetified-savedstate-1.2.1-25 /home/hp/.gradle/caches/8.9/transforms/c9fb244398b526244f5a93c847312c94/transformed/jetified-savedstate-1.2.1/res
+com.extropos.java.app-jetified-emoji2-1.2.0-26 /home/hp/.gradle/caches/8.9/transforms/cdc393a6a0ca74c7f7d5e8146c1f4fa4/transformed/jetified-emoji2-1.2.0/res
+com.extropos.java.app-constraintlayout-2.0.1-27 /home/hp/.gradle/caches/8.9/transforms/d3a57ddd7cb665228a797e456e0eb5e7/transformed/constraintlayout-2.0.1/res
+com.extropos.java.app-coordinatorlayout-1.1.0-28 /home/hp/.gradle/caches/8.9/transforms/e4d071d5b0a5698762100d5a23f770b9/transformed/coordinatorlayout-1.1.0/res
+com.extropos.java.app-sqlite-framework-2.2.0-29 /home/hp/.gradle/caches/8.9/transforms/e52b30f0211e95524916aec1b87eb5dc/transformed/sqlite-framework-2.2.0/res
+com.extropos.java.app-jetified-core-ktx-1.12.0-30 /home/hp/.gradle/caches/8.9/transforms/ef69b13773273fc36eb7fc31fb679452/transformed/jetified-core-ktx-1.12.0/res
+com.extropos.java.app-room-runtime-2.4.3-31 /home/hp/.gradle/caches/8.9/transforms/fbcf7d5abd2fb0c1cdd07ac79b0394af/transformed/room-runtime-2.4.3/res
+com.extropos.java.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-32 /home/hp/.gradle/caches/8.9/transforms/fc99d96091ca23c4d8043830d3c8959d/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/res
+com.extropos.java.app-pngs-33 /home/hp/Documents/Quick Cash/app/build/generated/res/pngs/debug
+com.extropos.java.app-resValues-34 /home/hp/Documents/Quick Cash/app/build/generated/res/resValues/debug
+com.extropos.java.app-packageDebugResources-35 /home/hp/Documents/Quick Cash/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.extropos.java.app-packageDebugResources-36 /home/hp/Documents/Quick Cash/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.extropos.java.app-merged_res-37 /home/hp/Documents/Quick Cash/app/build/intermediates/merged_res/debug
+com.extropos.java.app-debug-38 /home/hp/Documents/Quick Cash/app/src/debug/res
+com.extropos.java.app-main-39 /home/hp/Documents/Quick Cash/app/src/main/res

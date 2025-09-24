@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.extropos.java.sqlite.DatabaseHelper;
+import com.extropos.java.sqlite.DatabaseManager;
 import com.extropos.java.utils.Shared;
 
 public class SplashActivity extends Activity {
@@ -15,6 +17,11 @@ public class SplashActivity extends Activity {
 
 		// Initialize Shared utilities (fonts, preferences, etc.)
 		Shared.initialize(this);
+
+		// Initialize databases
+		DatabaseHelper dbHelper = new DatabaseHelper(this);
+		DatabaseManager.initializeInstance(dbHelper);
+		DatabaseManager.initializeRoomInstance(this);
 
 		// Simple delay then proceed to activation
 		Handler h = new Handler();

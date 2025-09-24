@@ -28,6 +28,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		// Initialize Shared utilities (fonts, preferences, etc.)
+		Shared.initialize(this);
+		
 		findViewById(R.id.btnMasterData).setOnClickListener(this);
 		findViewById(R.id.btnLogout).setOnClickListener(this);
 		findViewById(R.id.btnQuickOrder).setOnClickListener(this);

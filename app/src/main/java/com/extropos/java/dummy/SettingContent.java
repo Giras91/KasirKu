@@ -33,6 +33,7 @@ public class SettingContent {
 		addItem(new DummyItem("6", "Store Information"));
 		addItem(new DummyItem("7", "Tax Settings"));
 		addItem(new DummyItem("8", "Currency Settings"));
+		addItem(new DummyItem("9", "Table Management"));
 	}
 
 	private static void addItem(DummyItem item) {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.extropos.java.app-mergeDebugResources-31:/values-v11/values-v11.xml",
+            "outputFile": "com.extropos.java.app-mergeDebugResources-35:/values-v11/values-v11.xml",
             "map": [
                 {
                     "source": "/home/hp/Documents/Quick Cash/app/src/main/res/values-v11/styles.xml",

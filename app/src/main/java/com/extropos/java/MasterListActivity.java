@@ -4,6 +4,7 @@ import com.extropos.java.fragment.CategoryListFragment;
 import com.extropos.java.fragment.ProductListFragment;
 import com.extropos.java.fragment.UserListFragment;
 import com.extropos.java.utils.Constants;
+import com.extropos.java.utils.Shared;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -40,6 +41,9 @@ public class MasterListActivity extends FragmentActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_master_list);
+		
+		// Initialize Shared utilities (fonts, preferences, etc.)
+		Shared.initialize(this);
 
 		if (findViewById(R.id.master_detail_container) != null) {
 			// The detail container view will be present only in the
