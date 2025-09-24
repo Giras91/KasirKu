@@ -68,9 +68,11 @@ Quick Cash is a modern Point of Sale (POS) cashier application designed for Andr
 
 ### Prerequisites
 1. Android Studio Arctic Fox or later
-2. Java JDK 8 or higher
+2. Java JDK 17 (required for Android builds in this project)
 3. Android SDK with API Level 34
 4. Bluetooth-enabled Android device for testing
+
+Note: While newer system JDKs (for example Java 21) may be installed on your machine, the Android Gradle Plugin in this project is pinned to use Java 17 for reliable builds. See `gradle.properties` (`org.gradle.java.home`) for the configured JDK path.
 
 ### Build Instructions
 ```bash
